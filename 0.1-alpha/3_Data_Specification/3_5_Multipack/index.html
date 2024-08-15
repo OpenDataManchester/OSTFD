@@ -53,8 +53,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -582,14 +580,6 @@
     Base Materials
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -610,14 +600,6 @@
   <span class="md-ellipsis">
     Materials
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
   
 
       </a>
@@ -640,14 +622,6 @@
     Components
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -668,14 +642,6 @@
   <span class="md-ellipsis">
     Complete Packaging
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
   
 
       </a>
@@ -707,14 +673,6 @@
     Multipack
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
-  
 
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -725,14 +683,6 @@
   <span class="md-ellipsis">
     Multipack
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
   
 
       </a>
@@ -811,14 +761,6 @@
     Loads
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -841,8 +783,6 @@
   
     
     
-      
-        
       
         
       
@@ -1265,35 +1205,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../5_Controlled_Lists/5_017_Measures/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Measures
-  </span>
-  
-    
-  
-  
-    <span class="md-status md-status--new" title="Added in this version">
-    </span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1309,8 +1220,6 @@
   
     
     
-      
-        
       
         
       
@@ -1618,35 +1527,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../6_Relationship_Lists/6_012_Measurements/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Measurements
-  </span>
-  
-    
-  
-  
-    <span class="md-status md-status--new" title="Added in this version">
-    </span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1800,12 +1680,6 @@
 <td style="text-align: left;">The tier associated with the multipack. The inner most tier denoted as 1, and the outermost tier is the biggest number.</td>
 </tr>
 <tr>
-<td style="text-align: left;">measurements fontawesome-solid-square-plus:{ title=&rdquo;Added to this version&rdquo; .addition }</td>
-<td style="text-align: left;"><code>optional</code></td>
-<td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the measurements of the multipack. The entries should be from the <a href="../../6_Relationship_Lists/6_012_Measurements/">Measurements Relationship List</a>.</td>
-</tr>
-<tr>
 <td style="text-align: left;">manufacturers</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
@@ -1849,7 +1723,6 @@ COMPLETE_PACKAGING }o..o{ MULTIPACK : multipack_constituents
     externalIdentifiers Dictionary
     multipackConstituentsIdentifiers List "*"
     tier String
-    measurements List
     manufacturers List
     manufacturedCountry String
     updateDate Date "*"
@@ -1862,7 +1735,6 @@ COMPLETE_PACKAGING }o..o{ MULTIPACK : multipack_constituents
   COMPONENTS }o--o{ LOADS : load_constituents
       RELATIONSHIP_LISTS {
         organisations optional
-        measurements optional
     }</code></pre>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">12 Multipack of Wine JSON</label><label for="__tabbed_1_2">12 Multipack of Wine XML</label></div>

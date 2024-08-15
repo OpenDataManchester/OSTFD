@@ -53,8 +53,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -591,14 +589,6 @@
     Base Materials
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
-  
 
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -609,14 +599,6 @@
   <span class="md-ellipsis">
     Base Materials
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
   
 
       </a>
@@ -695,14 +677,6 @@
     Materials
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -723,14 +697,6 @@
   <span class="md-ellipsis">
     Components
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
   
 
       </a>
@@ -753,14 +719,6 @@
     Complete Packaging
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -782,14 +740,6 @@
     Multipack
   </span>
   
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
-  
 
       </a>
     </li>
@@ -810,14 +760,6 @@
   <span class="md-ellipsis">
     Loads
   </span>
-  
-    
-  
-  
-    <span class="md-status md-status--updated" title="Updated in this version">
-    </span>
-  
-
   
 
       </a>
@@ -841,8 +783,6 @@
   
     
     
-      
-        
       
         
       
@@ -1265,35 +1205,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../5_Controlled_Lists/5_017_Measures/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Measures
-  </span>
-  
-    
-  
-  
-    <span class="md-status md-status--new" title="Added in this version">
-    </span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1309,8 +1220,6 @@
   
     
     
-      
-        
       
         
       
@@ -1618,35 +1527,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../6_Relationship_Lists/6_012_Measurements/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Measurements
-  </span>
-  
-    
-  
-  
-    <span class="md-status md-status--new" title="Added in this version">
-    </span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1798,12 +1678,6 @@ Yes, every packaging item must include a Base Material. This foundational compon
 <td style="text-align: left;">A dictionary of identifiers that might be used to identify the base material in other systems. For example: manufacturer&rsquo;s own internal identifier, bar codes or global trade item number (gtin). To provide external identifiers please follow this format. <code>{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">measurements <span class="twemoji addition" title="Added to this version"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm136 312v-64h-64c-13.3 0-24-10.7-24-24s10.7-24 24-24h64v-64c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24h-64v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></span></td>
-<td style="text-align: left;"><code>optional</code></td>
-<td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the measurements of the base material. The entries should be from the <a href="../../6_Relationship_Lists/6_012_Measurements/">Measurements Relationship List</a>.</td>
-</tr>
-<tr>
 <td style="text-align: left;">certification</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Boolean</td>
@@ -1843,7 +1717,6 @@ Yes, every packaging item must include a Base Material. This foundational compon
     type String
     materialChemCID String
     externalIdentifiers Dictionary
-    measurements List
     certification Boolean
     certificationClaims List
     manufacturers List
@@ -1859,7 +1732,6 @@ Yes, every packaging item must include a Base Material. This foundational compon
   RELATIONSHIP_LISTS {
     certificationClaims optional
     organisations optional
-    measurements optional
   }</code></pre>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Cardboard - JSON</label><label for="__tabbed_1_2">Soda ash - JSON</label><label for="__tabbed_1_3">Cardboard - XML</label><label for="__tabbed_1_4">Soda ash - XML</label></div>
