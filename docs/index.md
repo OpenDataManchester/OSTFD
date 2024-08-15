@@ -27,7 +27,7 @@ This standardisation fosters improved collaboration among manufacturers, brands,
 - Environmental benefits through improved resource use
 - Better interoperability between different systems and databases
 
-**Current Version**: 2.1 (Published 26 July 2024)
+**Current Version**: Version 3.0 UNRELEASED
 
 ## Using the Standard
 

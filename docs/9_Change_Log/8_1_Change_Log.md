@@ -22,6 +22,62 @@ A document that contains all the changes made to the standard.
 - Updated site name
 - Updated repository name and url
 
+## August 1, 2024
+
+### Model
+ - Added Measures controlled list
+ - Added Measurements relationship list
+
+### Data fields
+ - Removed the following attributes from Materials:
+    - areaDensity
+    - areaDensityUnit
+    - areaDensityTolerance
+    - areaDensityToleranceType
+    - areaDensityDate
+ - Removed the following attributes from Components:
+    - height
+    - heightDate
+    - width
+    - widthDate
+    - depth
+    - depthDate
+    - volume
+    - volumeDate
+    - weight
+    - weightTolerance
+    - weightToleranceType
+    - weightDate
+- Removed the following attributes from Complete Packaging:
+    - height
+    - heightDate
+    - width
+    - widthDate
+    - depth
+    - depthDate
+    - volume
+    - volumeDate
+    - weight
+    - weightTolerance
+    - weightToleranceType
+    - weightDate
+    -
+### Documents
+ - Added Measures to nav bar
+ - Added Measurements to nav bar
+ - Removed Guide for how to take measurements from:
+    - Materials
+    - Components
+    - Complete Packaging
+ - Added Measurements relationship list to diagram on:
+    - Base Materials
+    - Materials
+    - Components
+    - Complete Packaging
+    - Multipacks
+    - Loads
+ - Updated home page to show versio 3.0 unreleased
+
 ## July 11, 2024
 ### Documents
 - Added cork-cork explanation to data flow
