@@ -1,12 +1,12 @@
 # Project information
-site_name: Open 3P
+site_name: OSTFD 
 site_url: https://standard.open3p.org
 site_author: Open Data Manchester CIC
-site_description: Open3 P is an open standard for packaging data.
+site_description: OSTFD is an open standard for textiles and fashion data.
 
 # Repository
-repo_name: ODM/Open3P
-repo_url: https://github.com/OpenDataManchester/Open3p
+repo_name: ODM/OSTFD
+repo_url: https://github.com/OpenDataManchester/OSTFD
 
 # Copyright
 copyright: Copyright &copy; Open Data Manchester CIC, and released under the Apache License, Version 2.0.
@@ -15,20 +15,18 @@ copyright: Copyright &copy; Open Data Manchester CIC, and released under the Apa
 theme:
   name: material
   custom_dir: overrides
-  logo: img/Open_3P_logo.png
-  favicon: img/favicon-192.png
   icon:
     repo: fontawesome/brands/git-alt
   palette:
     - scheme: default
-      primary: deep purple
-      accent: pink
+      primary: green
+      accent: cyan
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
-      primary: deep purple
-      accent: pink 
+      primary: green
+      accent: cyan 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -44,58 +42,58 @@ theme:
 nav:
   - Home: index.md
   - Start Here: 
-    - Introduction: 1_Start_Here/1_1_Introduction.md
-    - Key Concepts: 1_Start_Here/1_2_Key_Concepts.md
-    - Data Flow: 1_Start_Here/1_3_Data_Flow.md
-    - Data Schema: 1_Start_Here/1_4_Data_Schema.md
-  - Data Formats: 2_Data_Formats/2_1_Data_Formats.md
-  - Identifiers: 4_Identifiers/4_1_Identifiers.md
-  - Core Schema:
-    - Definition: 3_Data_Specification/3_0_Data_Specification.md
-    - Base Materials: 3_Data_Specification/3_1_Base_Materials.md
-    - Materials: 3_Data_Specification/3_2_Materials.md
-    - Components: 3_Data_Specification/3_3_Components.md
-    - Complete Packaging: 3_Data_Specification/3_4_Complete_Packaging.md
-    - Multipack: 3_Data_Specification/3_5_Multipack.md
-    - Loads: 3_Data_Specification/3_7_Load.md
-  - Controlled Lists:
-    - Definition: 5_Controlled_Lists/5_000_Controlled_Lists.md
-    - Material Type: 5_Controlled_Lists/5_001_Material_Type.md
-    - Certification Source: 5_Controlled_Lists/5_002_Certification_Source.md
-    - Material Purpose: 5_Controlled_Lists/5_003_Material_Purpose.md
-    - Function: 5_Controlled_Lists/5_004_Function.md
-    - Recyclability Source: 5_Controlled_Lists/5_005_Recyclability_Source.md
-    - Shape: 5_Controlled_Lists/5_006_Shape.md
-    - Flexibility: 5_Controlled_Lists/5_007_Flexibility.md
-    - Component Disruptors: 5_Controlled_Lists/5_008_Component_Disruptors.md
-    - Opacity: 5_Controlled_Lists/5_009_Opacity.md
-    - Reuse System: 5_Controlled_Lists/5_010_Reuse_System.md
-    - Recycled Content Evidence Type: 5_Controlled_Lists/5_011_Recycled_Content_Evidence_Type.md
-    - Product Type: 5_Controlled_Lists/5_012_Product_Type.md
-    - Deposit Return Scheme: 5_Controlled_Lists/5_013_Deposit_Return_Scheme.md
-    - Complete Packaging Disruptors: 5_Controlled_Lists/5_014_Complete_Packaging_Disruptors.md
-    - Level: 5_Controlled_Lists/5_015_Level.md
-    - End of Life Route: 5_Controlled_Lists/5_016_End_Of_Life_Route.md
-    - Measures: 5_Controlled_Lists/5_017_Measures.md
-  - Relationship Lists:
-    - Definition: 6_Relationship_Lists/6_000_Relationship_Lists.md
-    - Material Constituents: 6_Relationship_Lists/6_001_Material_Constituents.md
-    - Component Constituents: 6_Relationship_Lists/6_002_Component_Constituents.md
-    - Complete Packaging Constituents: 6_Relationship_Lists/6_003_Complete_Packaging_Constituents.md
-    - Multipack Constituents: 6_Relationship_Lists/6_004_Multipack_Constituents.md
-    - Load Constituents: 6_Relationship_Lists/6_011_Load_Constituents.md
-    - Certification Claims: 6_Relationship_Lists/6_005_Certification_Claims.md
-    - Recyclability Claims: 6_Relationship_Lists/6_006_Recyclability_Claims.md
-    - Component End of Life Routes: 6_Relationship_Lists/6_007_Component_End_of_Life_Routes.md
-    - Complete Packaging End of Life Routes: 6_Relationship_Lists/6_008_Complete_Packaging_End_of_Life_Routes.md
-    - Recycled Content Claims: 6_Relationship_Lists/6_009_Recycled_Content_Claims.md
-    - Organisations: 6_Relationship_Lists/6_010_Organisations.md
-    - Measurements: 6_Relationship_Lists/6_012_Measurements.md
+    - Introduction: start-here/introduction.md
+    - Key Concepts: start-here/key-concepts.md
+    - Data Flow: start-here/data-flow.md
+    - Data Architecture: start-here/data-architecture.md
+  # - Data Formats: 2_Data_Formats/2_1_Data_Formats.md
+  - Identifiers: identifiers/index.md
+  # - Core Schema:
+  #   - Definition: 3_Data_Specification/3_0_Data_Specification.md
+  #   - Base Materials: 3_Data_Specification/3_1_Base_Materials.md
+  #   - Materials: 3_Data_Specification/3_2_Materials.md
+  #   - Components: 3_Data_Specification/3_3_Components.md
+  #   - Complete Packaging: 3_Data_Specification/3_4_Complete_Packaging.md
+  #   - Multipack: 3_Data_Specification/3_5_Multipack.md
+  #   - Loads: 3_Data_Specification/3_7_Load.md
+  # - Controlled Lists:
+  #   - Definition: 5_Controlled_Lists/5_000_Controlled_Lists.md
+  #   - Material Type: 5_Controlled_Lists/5_001_Material_Type.md
+  #   - Certification Source: 5_Controlled_Lists/5_002_Certification_Source.md
+  #   - Material Purpose: 5_Controlled_Lists/5_003_Material_Purpose.md
+  #   - Function: 5_Controlled_Lists/5_004_Function.md
+  #   - Recyclability Source: 5_Controlled_Lists/5_005_Recyclability_Source.md
+  #   - Shape: 5_Controlled_Lists/5_006_Shape.md
+  #   - Flexibility: 5_Controlled_Lists/5_007_Flexibility.md
+  #   - Component Disruptors: 5_Controlled_Lists/5_008_Component_Disruptors.md
+  #   - Opacity: 5_Controlled_Lists/5_009_Opacity.md
+  #   - Reuse System: 5_Controlled_Lists/5_010_Reuse_System.md
+  #   - Recycled Content Evidence Type: 5_Controlled_Lists/5_011_Recycled_Content_Evidence_Type.md
+  #   - Product Type: 5_Controlled_Lists/5_012_Product_Type.md
+  #   - Deposit Return Scheme: 5_Controlled_Lists/5_013_Deposit_Return_Scheme.md
+  #   - Complete Packaging Disruptors: 5_Controlled_Lists/5_014_Complete_Packaging_Disruptors.md
+  #   - Level: 5_Controlled_Lists/5_015_Level.md
+  #   - End of Life Route: 5_Controlled_Lists/5_016_End_Of_Life_Route.md
+  #   - Measures: 5_Controlled_Lists/5_017_Measures.md
+  # - Relationship Lists:
+  #   - Definition: 6_Relationship_Lists/6_000_Relationship_Lists.md
+  #   - Material Constituents: 6_Relationship_Lists/6_001_Material_Constituents.md
+  #   - Component Constituents: 6_Relationship_Lists/6_002_Component_Constituents.md
+  #   - Complete Packaging Constituents: 6_Relationship_Lists/6_003_Complete_Packaging_Constituents.md
+  #   - Multipack Constituents: 6_Relationship_Lists/6_004_Multipack_Constituents.md
+  #   - Load Constituents: 6_Relationship_Lists/6_011_Load_Constituents.md
+  #   - Certification Claims: 6_Relationship_Lists/6_005_Certification_Claims.md
+  #   - Recyclability Claims: 6_Relationship_Lists/6_006_Recyclability_Claims.md
+  #   - Component End of Life Routes: 6_Relationship_Lists/6_007_Component_End_of_Life_Routes.md
+  #   - Complete Packaging End of Life Routes: 6_Relationship_Lists/6_008_Complete_Packaging_End_of_Life_Routes.md
+  #   - Recycled Content Claims: 6_Relationship_Lists/6_009_Recycled_Content_Claims.md
+  #   - Organisations: 6_Relationship_Lists/6_010_Organisations.md
+  #   - Measurements: 6_Relationship_Lists/6_012_Measurements.md
   # - Supporting Files: 7_Supporting_Files/7_2_Example_Files.md
-  - Governance: 8_Governance/8_1_Governance.md
-  - Licence: 10_Licence/10_01_Licence.md
-  - Glossary: 11_Glossary/11_000_Glossary.md
-  - Change Log: 9_Change_Log/8_1_Change_Log.md
+  # - Governance: 8_Governance/8_1_Governance.md
+  - Licence: licence/index.md
+  # - Glossary: 11_Glossary/11_000_Glossary.md
+  - Change Log: change-log/index.md
 
 extra:
   status:

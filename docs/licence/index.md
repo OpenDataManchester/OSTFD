@@ -1,6 +1,6 @@
 ---
 title: Licence
-description: The Open 3P standard is (c) copyright of Open Data Manchester CIC and released under the Apache License, Version 2.0.
+description: The OSTFD standard is (c) copyright of Open Data Manchester CIC and released under the Apache License, Version 2.0.
 ---
 # Licence
 

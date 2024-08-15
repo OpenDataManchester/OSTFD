@@ -98,63 +98,15 @@ Remember, OSTFD defines how to structure and format textiles and fashion data - 
 
     First time here? Get up to speed fast.
 
-    [:octicons-arrow-right-24: Getting started](./1_Start_Here/1_1_Introduction.md)
+    [:octicons-arrow-right-24: Getting started](./start-here/introduction.md)
 
 -   :material-key:{ .lg .middle } __Identifiers__
 
     ---
 
-    Identifying the different aspects of packaging is key.
+    Identifying the different aspects of apparel is key.
 
-    [:octicons-arrow-right-24: Identifiers](./4_Identifiers/4_1_Identifiers.md)
-
--   :material-code-json:{ .lg .middle } __Schema__
-
-    ---
-
-    Jump into the schemas.
-
-    [:octicons-arrow-right-24: Schema](./3_Data_Specification/3_0_Data_Specification.md)
-
--   :fontawesome-solid-list:{ .lg .middle } __Controlled Lists__
-
-    ---
-
-    Establish consistency in data entry.
-
-    [:octicons-arrow-right-24: Controlled Lists](./5_Controlled_Lists/5_000_Controlled_Lists.md)
-
--   :fontawesome-solid-circle-nodes:{ .lg .middle } __Relationship Lists__
-
-    ---
-
-    Joining the dots needs both a dot and a line. Learning about the lines in relationship lists.
-
-    [:octicons-arrow-right-24: Relationship Lists](./6_Relationship_Lists/6_000_Relationship_Lists.md)
-
--   :fontawesome-solid-users:{ .lg .middle } __Governance__
-
-    ---
-
-    Information about the governance behind OSTFD.
-
-    [:octicons-arrow-right-24: Governance](./8_Governance/8_1_Governance.md)
-
--   :material-scale-balance:{ .lg .middle } __Licence__
-
-    ---
-
-    OSTFD is licensed under Apache License, Version 2.0.
-
-    [:octicons-arrow-right-24: License](./10_Licence/10_01_Licence.md)
-
--   :material-library:{ .lg .middle } __Glossary__
-
-    ---
-
-    Learn the abbreviations and jardon of OSTFD.
-
-    [:octicons-arrow-right-24: Glossary](./11_Glossary/11_000_Glossary.md)
+    [:octicons-arrow-right-24: Identifiers](./identifiers/index.md)
 
 -   :material-source-branch:{ .lg .middle } __Change Log__
 
@@ -162,6 +114,7 @@ Remember, OSTFD defines how to structure and format textiles and fashion data - 
 
     Nothing stays the same. Learn about what has changed.
 
-    [:octicons-arrow-right-24: Change Log](./9_Change_Log/8_1_Change_Log.md)
+    [:octicons-arrow-right-24: Change Log](./change-log/index.md)
+
 
 </div>
