@@ -5,12 +5,78 @@ title: Latest Updates
 # Latest Updates
 A document that contains all the changes made to the standard.
 
+## 2.1.3 August 15, 2024 { id="2.1.3"}
+### Documents
+ - Updated descriptions for Material Purpose controlled list.
+ - Updated description for Recycled Content Evidence Type controlled list.
+ - Updated homepage to answer some of the frequency questions asked about Open 3P.
+
+## 2.1.2 August 09, 2024 { id="2.1.2"}
+### Documents
+ - Updated licence
+
 ## 2.1.1 August 07, 2024 { id="2.1.1" }
 ### Documents
 - Added Open 3P logo
 - Added author into meta data
 - Updated site name
 - Updated repository name and url
+
+## August 1, 2024
+
+### Model
+ - Added Measures controlled list
+ - Added Measurements relationship list
+
+### Data fields
+ - Removed the following attributes from Materials:
+    - areaDensity
+    - areaDensityUnit
+    - areaDensityTolerance
+    - areaDensityToleranceType
+    - areaDensityDate
+ - Removed the following attributes from Components:
+    - height
+    - heightDate
+    - width
+    - widthDate
+    - depth
+    - depthDate
+    - volume
+    - volumeDate
+    - weight
+    - weightTolerance
+    - weightToleranceType
+    - weightDate
+- Removed the following attributes from Complete Packaging:
+    - height
+    - heightDate
+    - width
+    - widthDate
+    - depth
+    - depthDate
+    - volume
+    - volumeDate
+    - weight
+    - weightTolerance
+    - weightToleranceType
+    - weightDate
+    -
+### Documents
+ - Added Measures to nav bar
+ - Added Measurements to nav bar
+ - Removed Guide for how to take measurements from:
+    - Materials
+    - Components
+    - Complete Packaging
+ - Added Measurements relationship list to diagram on:
+    - Base Materials
+    - Materials
+    - Components
+    - Complete Packaging
+    - Multipacks
+    - Loads
+ - Updated home page to show versio 3.0 unreleased
 
 ## July 11, 2024
 ### Documents
