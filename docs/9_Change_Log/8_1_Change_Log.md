@@ -9,6 +9,7 @@ A document that contains all the changes made to the standard.
 ### Documents
  - Updated descriptions for Material Purpose controlled list.
  - Updated description for Recycled Content Evidence Type controlled list.
+ - Updated homepage to answer some of the frequency questions asked about Open 3P.
 
 ## 2.1.2 August 09, 2024 { id="2.1.2"}
 ### Documents
