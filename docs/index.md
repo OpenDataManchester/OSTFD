@@ -3,49 +3,47 @@ hide:
   - navigation
   - toc
 title: Home
-description: Open 3P is an open data standard built with and for the packaging supply chain.
+description: OSTFD is the open standard for textiles and fashion data built with and for the apparel supply chain.
 ---
-# Open 3P - The open standard for the packaging value chain
+# OSTFD - The open standard for textiles and fashion data
 
-[![Open Data Manchester](img/Open_3P_banner_compress.png)](https://open3p.org){target=_blank}
+## What is OSTFD?
 
-## What is Open 3P?
+OSTFD is a data standard - a set of guidelines and specifications for organising and formatting textiles and fashion data. It is important to understand that:
 
-Open 3P is a data standard - a set of guidelines and specifications for organising and formatting packaging data. It is important to understand that:
+- OSTFD is **NOT** the data itself, but a framework for structuring data
+- OSTFD is **NOT** a technology or software, but can be implemented using various technologies
 
-- Open 3P is **NOT** the data itself, but a framework for structuring data
-- Open 3P is **NOT** a technology or software, but can be implemented using various technologies
+Think of OSTFD as a blueprint or a set of rules. It defines how textiles and fashion information should be organised and described, but it doesn't contain any actual textiles and fashion data.
 
-Think of Open 3P as a blueprint or a set of rules. It defines how packaging information should be organised and described, but it doesn't contain any actual packaging data.
+## Purpose of OSTFD
 
-## Purpose of Open 3P
-
-Open 3P enables standardised information exchange about packaging materials and their flow through the supply chain. By providing a common "language" for describing packaging data, it allows different systems and organisations to understand and process this information consistently.
+OSTFD enables standardised information exchange about textiles and fashion materials and their flow through the supply chain. By providing a common "language" for describing textiles and fashion data, it allows different systems and organisations to understand and process this information consistently.
 This standardisation fosters improved collaboration among manufacturers, brands, retailers, consumers, recyclers, compliance schemes and regulators, leading to:
 
 - Cost savings through process efficiencies
 - Environmental benefits through improved resource use
 - Better interoperability between different systems and databases
 
-**Current Version**: Version 3.0 UNRELEASED
+**Current Version**: Version 0.1 UNRELEASED
 
 ## Using the Standard
 
-When we say "use the standard", we mean applying the Open 3P guidelines to structure your own packaging data or to create systems that can work with Open 3P-formatted data. This could involve:
+When we say "use the standard", we mean applying the OSTFD guidelines to structure your own textiles and fashion data or to create systems that can work with OSTFD-formatted data. This could involve:
 
-- Organising your existing packaging data according to Open 3P specifications
-- Developing software that can read or write data in the Open 3P format
-- Creating databases that store information in a way compatible with Open 3P
+- Organising your existing textiles and fashion data according to OSTFD specifications
+- Developing software that can read or write data in the OSTFD format
+- Creating databases that store information in a way compatible with OSTFD
 
-Open 3P is free to use, copy and distribute. However, it is copyrighted by [Open Data Manchester CIC](https://www.opendatamanchester.org.uk/) and released under the [Apache Licence, Version 2.0](./10_Licence/10_01_Licence.md). Proper attribution and adherence to the licence terms are required.
+OSTFD is free to use, copy and distribute. However, it is copyrighted by [Open Data Manchester CIC](https://www.opendatamanchester.org.uk/) and released under the [Apache Licence, Version 2.0](./10_Licence/10_01_Licence.md). Proper attribution and adherence to the licence terms are required.
 
 ## Cost
 
-There is no charge for using Open 3P. You may use it for both commercial (business-related) and non-commercial (e.g., research) purposes at no cost.
+There is no charge for using OSTFD. You may use it for both commercial (business-related) and non-commercial (e.g., research) purposes at no cost.
 
 ## Permitted Uses
 
-With Open 3P, you can:
+With OSTFD, you can:
 
 - Share the standard's specifications freely
 - Implement the standard in your technology solutions
@@ -55,28 +53,28 @@ With Open 3P, you can:
 
 Remember, these permissions apply to the standard itself (the set of rules and specifications), not to any specific data or software implementations.
 
-Once granted, these permissions cannot be revoked by Open 3P or Open Data Manchester CIC.
+Once granted, these permissions cannot be revoked by OSTFD or Open Data Manchester CIC.
 
 ## Requirements for Using the Standard As-Is
 
-1. **Attribution**: When you use the Open 3P standard to structure your data or build compatible systems, you must credit Open 3P and Open Data Manchester CIC as the creators of the standard. Provide contact information for Open 3P and/or Open Data Manchester CIC.
-2.	**Integrity**: When referring to or implementing the standard in its original form, you must not modify its specifications. This ensures consistency across all implementations of the official Open 3P standard.
+1. **Attribution**: When you use the OSTFD standard to structure your data or build compatible systems, you must credit OSTFD and Open Data Manchester CIC as the creators of the standard. Provide contact information for OSTFD and/or Open Data Manchester CIC.
+2.	**Integrity**: When referring to or implementing the standard in its original form, you must not modify its specifications. This ensures consistency across all implementations of the official OSTFD standard.
 
 ## Creating Derivative Works
 
-While the original Open 3P standard specifications should not be modified directly, the [Apache 2.0 licence](./10_Licence/10_01_Licence.md) does allow for the creation of derivative works under certain conditions:
+While the original OSTFD standard specifications should not be modified directly, the [Apache 2.0 licence](./10_Licence/10_01_Licence.md) does allow for the creation of derivative works under certain conditions:
 
-1.	Clearly state that your work is a modification of the Open 3P standard and is not endorsed by Open 3P or Open Data Manchester CIC.
-2.	Retain the original copyright notice and attribute the work to Open Data Manchester CIC and Open 3P.
+1.	Clearly state that your work is a modification of the OSTFD standard and is not endorsed by OSTFD or Open Data Manchester CIC.
+2.	Retain the original copyright notice and attribute the work to Open Data Manchester CIC and OSTFD.
 3.	Indicate prominently that you have made changes to the original standard.
 4.	Distribute your derivative work under the same Apache 2.0 licence.
-5.	Inform Open 3P of your modifications or extensions to the standard.
+5.	Inform OSTFD of your modifications or extensions to the standard.
 
 We encourage users to submit suggestions for improvements to the official standard rather than creating separate, incompatible versions. This helps maintain consistency and interoperability within the packaging data ecosystem.
 
 ## Feedback and Improvements
 
-We welcome practical suggestions for improvements to the Open 3P standard. Our collection of schemas (the specific data structures defined by the standard) has been growing gradually since its initial launch in 2021. If you have ideas for enhancements:
+We welcome practical suggestions for improvements to the OSTFD standard. If you have ideas for enhancements:
 
 1.	Contact us with your proposed changes to the standard.
 2.	We will consider your suggestions for future iterations of the standard.
@@ -84,11 +82,11 @@ We welcome practical suggestions for improvements to the Open 3P standard. Our c
 
 ## Scope and Limitations
 
-Open 3P intentionally focuses on key elements for exchanging data through the supply chain. While packaging details can be complex, we prioritise simplicity and user-friendliness over exhaustive detail in our standard. This approach ensures the standard remains practical and accessible for all stakeholders.
+OSTFD intentionally focuses on key elements for exchanging data through the supply chain. While textiles and fashion details can be complex, we prioritise simplicity and user-friendliness over exhaustive detail in our standard. This approach ensures the standard remains practical and accessible for all stakeholders.
 
-Our goal is to provide a balanced, straightforward solution that serves the needs of the entire packaging community while acknowledging the inherent complexities of packaging specifications.
+Our goal is to provide a balanced, straightforward solution that serves the needs of the entire textiles and fashion community while acknowledging the inherent complexities of textiles and fashion specifications.
 
-Remember, Open 3P defines how to structure and format packaging data - it's up to individual users and organisations to apply this standard to their specific data and systems.
+Remember, OSTFD defines how to structure and format textiles and fashion data - it's up to individual users and organisations to apply this standard to their specific data and systems.
 
 ## Contents
 
@@ -138,7 +136,7 @@ Remember, Open 3P defines how to structure and format packaging data - it's up t
 
     ---
 
-    Information about the governance behind Open 3P.
+    Information about the governance behind OSTFD.
 
     [:octicons-arrow-right-24: Governance](./8_Governance/8_1_Governance.md)
 
@@ -146,7 +144,7 @@ Remember, Open 3P defines how to structure and format packaging data - it's up t
 
     ---
 
-    Open 3P is licensed under Apache License, Version 2.0.
+    OSTFD is licensed under Apache License, Version 2.0.
 
     [:octicons-arrow-right-24: License](./10_Licence/10_01_Licence.md)
 
@@ -154,7 +152,7 @@ Remember, Open 3P defines how to structure and format packaging data - it's up t
 
     ---
 
-    Learn the abbreviations and jardon of Open 3P.
+    Learn the abbreviations and jardon of OSTFD.
 
     [:octicons-arrow-right-24: Glossary](./11_Glossary/11_000_Glossary.md)
 
