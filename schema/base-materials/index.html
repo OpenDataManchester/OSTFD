@@ -865,11 +865,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../garments/" class="md-nav__link">
+      <a href="../fashion-and-textile-products/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garments
+    Fashion and Textile Products
   </span>
   
 
@@ -1043,11 +1043,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../constituent-lists/garment-constituents/" class="md-nav__link">
+      <a href="../../constituent-lists/product-constituents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Constituents
+    Product Constituents
   </span>
   
 
@@ -1246,11 +1246,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/garment-end-of-life-routes/" class="md-nav__link">
+      <a href="../../relationship-lists/product-end-of-life-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment End of Life Routes
+    Product End of Life Routes
   </span>
   
 
@@ -1592,11 +1592,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/flexibilities/" class="md-nav__link">
+      <a href="../../controlled-lists/flexibility/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Flexibilities
+    Flexibility
   </span>
   
 
@@ -1739,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors/" class="md-nav__link">
+      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1949,11 +1949,11 @@
 
 
 <h1 id="base-materials">Base Materials<a class="headerlink" href="#base-materials" title="Permanent link">&para;</a></h1>
-<p>The base materials schema contains information regarding the materials at the very start of the process of creating a garment. These are then combined together within the materials table to create more complicated materials.</p>
+<p>The base materials schema contains information regarding the materials at the very start of the process of creating a product. These are then combined together within the materials table to create more complicated materials.</p>
 <div class="admonition question">
 <p class="admonition-title">Frequently Asked Question</p>
-<p>Do all fashion and textiles items need to contain a <code>Base Material</code>?<br />
-Yes, every fashion and textiles item must include a Base Material. This foundational component serves as the building block for all fashion and textile materials. The level of detail in specifying base material(s) can vary based on requirements. For more in-depth insights, refer to the Data Flow section.</p>
+<p>Do all fashion and textiles items need to contain a <code>Base Material</code>?</p>
+<p>Yes, every fashion and textiles item must include a Base Material. This foundational component serves as the building block for all fashion and textile materials. The level of detail in specifying base material(s) can vary based on requirements. For more in-depth insights, refer to the Data Flow section.</p>
 </div>
 <h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <table>
@@ -1976,7 +1976,13 @@ Yes, every fashion and textiles item must include a Base Material. This foundati
 <td style="text-align: left;">name</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">The name of the base material this row relates to. <code>e.g., Cotton or Polypropylene or Wool</code>.</td>
+<td style="text-align: left;">The name of the base material this row relates to. <code>e.g. Cotton or Polypropylene or Wool</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">description</td>
+<td style="text-align: left;"><code>optional</code></td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">A brief description of this base material.</td>
 </tr>
 <tr>
 <td style="text-align: left;">type</td>
@@ -2026,6 +2032,18 @@ Yes, every fashion and textiles item must include a Base Material. This foundati
 <td style="text-align: left;">Date</td>
 <td style="text-align: left;">The date that the base material was provided/last updated. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank">ISO 8601 dateTime standard</a>.</td>
 </tr>
+<tr>
+<td style="text-align: left;">releaseDate</td>
+<td style="text-align: left;"><code>optional</code></td>
+<td style="text-align: left;">Date</td>
+<td style="text-align: left;">The date that the base material was first listed for purchase. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank">ISO 8601 dateTime standard</a>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">discontinueDate</td>
+<td style="text-align: left;"><code>optional</code></td>
+<td style="text-align: left;">Date</td>
+<td style="text-align: left;">The date that the base material was discontinued, meaning it was no longer available for purchase. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank">ISO 8601 dateTime standard</a>.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permanent link">&para;</a></h2>
@@ -2033,6 +2051,7 @@ Yes, every fashion and textiles item must include a Base Material. This foundati
   BASE_MATERIALS {
     identifier UUID "*"
     name String "*"
+    description String
     type String
     externalIdentifiers Dictionary
     measurements List
@@ -2041,6 +2060,8 @@ Yes, every fashion and textiles item must include a Base Material. This foundati
     manufacturers List
     manufacturedCountry String
     updateDate Date "*"
+    releaseDate Date
+    discontinueDate Date
   }
   BASE_MATERIALS }o..o{ CONTROLLED_LISTS : attributes
   BASE_MATERIALS }o--o{ MATERIALS : material_constituents

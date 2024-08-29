@@ -19,7 +19,7 @@
         <link rel="prev" href="../materials/">
       
       
-        <link rel="next" href="../garments/">
+        <link rel="next" href="../fashion-and-textile-products/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -925,11 +925,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../garments/" class="md-nav__link">
+      <a href="../fashion-and-textile-products/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garments
+    Fashion and Textile Products
   </span>
   
 
@@ -1103,11 +1103,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../constituent-lists/garment-constituents/" class="md-nav__link">
+      <a href="../../constituent-lists/product-constituents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Constituents
+    Product Constituents
   </span>
   
 
@@ -1306,11 +1306,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/garment-end-of-life-routes/" class="md-nav__link">
+      <a href="../../relationship-lists/product-end-of-life-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment End of Life Routes
+    Product End of Life Routes
   </span>
   
 
@@ -1652,11 +1652,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/flexibilities/" class="md-nav__link">
+      <a href="../../controlled-lists/flexibility/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Flexibilities
+    Flexibility
   </span>
   
 
@@ -1799,7 +1799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors/" class="md-nav__link">
+      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2069,7 +2069,13 @@
 
 
 <h1 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h1>
-<p>The components schema contains information regarding the individual components that are used to create complete packages. These maybe created from a single material or a combination of materials from the materials schema.</p>
+<p>The components schema contains information regarding the individual components that are used to create products. These maybe created from:</p>
+<ul>
+<li>a single material</li>
+<li>a combination of materials</li>
+<li>other components</li>
+<li>a combination of materials and components</li>
+</ul>
 <h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2089,7 +2095,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">name</td>
-<td style="text-align: left;"><code>optional</code></td>
+<td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">String</td>
 <td style="text-align: left;">The name of this component.</td>
 </tr>
@@ -2115,16 +2121,16 @@
 <td style="text-align: left;">LOWcode</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">The list of waste code for <strong>only</strong> the component, by itself. LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of <code>15 01 02</code>. Please use <a href="https://dsposal.uk/browse/ewc">Dsposal</a> or <a href="https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made">legislation.gov</a> to find the LOWcode. <strong>Note</strong>: The LOWcode can based on its combination with other components and the actual product contained in the completePackaging. Be sure to only include the component LOWcode. If you cannot find the code or are uncertain please enter <code>Uncertain</code>.</td>
+<td style="text-align: left;">The list of waste code for <strong>only</strong> the component, by itself. LOW code is synonymous with European Waste Catalogue Code (EWC). For example: a zip would have a LOWcode of <code>20 01 10</code>. Please use <a href="https://dsposal.uk/browse/ewc">Dsposal</a> or <a href="https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made">legislation.gov</a> to find the LOWcode. <strong>Note</strong>: The LOWcode can based on its combination with other components and the actual product contained in the products. Be sure to only include the component LOWcode.</td>
 </tr>
 <tr>
 <td style="text-align: left;">componentConstituents</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the consituents that are combined to create this component. The entries should be from the <a href="../6_Relationship_Lists/6_002_Component_Constituents.md">Component Constituents Relationship List</a> identifier.</td>
+<td style="text-align: left;">The information regarding the constituents that are combined to create this component. The entries should be from the <a href="../../constituent-lists/component-constituents/">Component Constituents List</a> identifier.</td>
 </tr>
 <tr>
-<td style="text-align: left;">measurements fontawesome-solid-square-plus:{ title=&rdquo;Added to this version&rdquo; .addition }</td>
+<td style="text-align: left;">measurements <span class="twemoji addition" title="Added to this version"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm136 312v-64h-64c-13.3 0-24-10.7-24-24s10.7-24 24-24h64v-64c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24h-64v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></span></td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">List</td>
 <td style="text-align: left;">The information regarding the measurements of the component. The entries should be from the <a href="../6_Relationship_Lists/6_012_Measurements.md">Measurements Relationship List</a>.</td>
@@ -2133,23 +2139,23 @@
 <td style="text-align: left;">shape</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">What is the shape of the component? The entry should contain the <a href="../5_Controlled_Lists/5_006_Shape.md">shape controlled list</a> identifier for the component.</td>
+<td style="text-align: left;">What is the shape of the component? The entry should contain the <a href="../../controlled-lists/shapes/">shapes controlled list</a> identifier for the component.</td>
 </tr>
 <tr>
 <td style="text-align: left;">function</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">What is the function of the component? The entry should contain the <a href="../5_Controlled_Lists/5_004_Function.md">function controlled list</a> identifier for the component.</td>
+<td style="text-align: left;">What is the function of the component? The entry should contain the <a href="../../controlled-lists/functions/">functions controlled list</a> identifier for the component.</td>
 </tr>
 <tr>
 <td style="text-align: left;">flexibility</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">Whether the component is considered flexible or rigid. The entry should be the <a href="../5_Controlled_Lists/5_007_Flexibility.md">flexibility controlled list</a> identifier.</td>
+<td style="text-align: left;">Whether the component is considered flexible or rigid. The entry should be the <a href="../../controlled-lists/flexibility/">flexibility controlled list</a> identifier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">branding</td>
-<td style="text-align: left;"><code>mandatory</code></td>
+<td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Boolean</td>
 <td style="text-align: left;">Does the component contain your own brand (logo, trademark, or any distinctive mark)? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
 </tr>
@@ -2157,7 +2163,7 @@
 <td style="text-align: left;">componentEndOfLifeRoutes</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding this component&rsquo;s proposed end of life routes. The entries should be the <a href="../6_Relationship_Lists/6_007_Component_End_of_Life_Routes.md">component end of life routes</a> identifiers.</td>
+<td style="text-align: left;">The information regarding this component&rsquo;s proposed end of life routes. The entries should be the <a href="../../relationship-lists/component-end-of-life-routes/">component end of life routes</a> identifiers.</td>
 </tr>
 <tr>
 <td style="text-align: left;">colour</td>
@@ -2169,23 +2175,23 @@
 <td style="text-align: left;">opacity</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">The transparency of the colours. The entry should be the <a href="../5_Controlled_Lists/5_009_Opacity.md">opacity controlled list</a> identifier.</td>
+<td style="text-align: left;">The transparency of the colours. The entry should be the <a href="../../controlled-lists/opacities/">opacities controlled list</a> identifier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">loaned</td>
-<td style="text-align: left;"><code>mandatory</code></td>
+<td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Boolean</td>
-<td style="text-align: left;">Is the component hired or loaned out as reusable packaging? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
+<td style="text-align: left;">Is the component hired or loaned? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no. This is for this component ONLY, if the entire product is loaned or hired then use the product schema.</td>
 </tr>
 <tr>
 <td style="text-align: left;">reuseSystems</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The system(s) that facilitates the reuse of the component  <code>e.g., The Reuse Standand, PR3 standards</code>. The entries should be the <a href="../5_Controlled_Lists/5_010_Reuse_System.md">reuse system controlled list</a> identifier(s).</td>
+<td style="text-align: left;">The system(s) that facilitates the reuse of the component  <code>e.g., ????</code>. The entries should be the <a href="../../controlled-lists/reuse-systems/">reuse systems controlled list</a> identifier(s).</td>
 </tr>
 <tr>
 <td style="text-align: left;">partOfMultipack</td>
-<td style="text-align: left;"><code>mandatory</code></td>
+<td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Boolean</td>
 <td style="text-align: left;">Is the component part of a multipack? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
 </tr>
@@ -2193,13 +2199,13 @@
 <td style="text-align: left;">recycledContent</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Decimal</td>
-<td style="text-align: left;">Positive decimal only, maximum value is 100.00. Value should equated to a percentage (e.g. 30 = 30%) The minimum allowable percent of how much recycled content is included in the makeup of the component. It is &lsquo;mandatory&rsquo; for plastic packaging where for the purposes of this standard we refer to <a href="https://www.gov.uk/guidance/work-out-which-packaging-is-subject-to-plastic-packaging-tax" target="_blank">UK&rsquo;s HM Revenue &amp; Customs</a> definition of recycled content. &ldquo;Recycled plastic is plastic that has been reprocessed from recovered material by using a chemical or manufacturing process. This is so it can be used either for its original purpose or for other purposes. This does not include organic recycling. Recovered material is pre-consumer plastic or post-consumer plastic that both: a) is no longer suitable to be used in the process from which it was generated and would otherwise have been used for energy recovery (for example, by incineration) or disposed of as waste (for example, by being sent to landfill); b) has been collected and recovered for use as a material input for a recycling or manufacturing process, instead of new primary material&rdquo;</td>
+<td style="text-align: left;">Positive decimal only, maximum value is 100.00. Value should equated to a percentage (e.g. 30 = 30%) The minimum allowable percent of how much recycled content is included in the makeup of the component.</td>
 </tr>
 <tr>
 <td style="text-align: left;">recycledContentClaims</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the recycled contents. The entries should be the <a href="../6_Relationship_Lists/6_009_Recycled_Content_Claims.md">recycled content claims relationship list</a> indentifiers.</td>
+<td style="text-align: left;">The information regarding the recycled contents. The entries should be the <a href="../../relationship-lists/recycled-content-claims/">recycled content claims relationship list</a> indentifiers.</td>
 </tr>
 <tr>
 <td style="text-align: left;">recyclability</td>
@@ -2211,7 +2217,7 @@
 <td style="text-align: left;">recyclabilityClaims</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding this recyclability claims. The entries should be the <a href="../6_Relationship_Lists/6_006_Recyclability_Claims.md">recyclability claims relationship list</a> identifiers.</td>
+<td style="text-align: left;">The information regarding this recyclability claims. The entries should be the <a href="../../relationship-lists/recyclability-claims/">recyclability claims relationship list</a> identifiers.</td>
 </tr>
 <tr>
 <td style="text-align: left;">certification</td>
@@ -2223,13 +2229,13 @@
 <td style="text-align: left;">certificationClaims</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the certifications. The entries should be the <a href="../6_Relationship_Lists/6_005_Certification_Claims.md">certification claims relationship list</a> identifiers.</td>
+<td style="text-align: left;">The information regarding the certifications. The entries should be the <a href="../../relationship-lists/certification-claims/">certification claims relationship list</a> identifiers.</td>
 </tr>
 <tr>
 <td style="text-align: left;">manufacturers</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the manufacturer(s). The entries should be the <a href="../6_Relationship_Lists/6_010_Organisations.md">Organisations Relationship List</a> identifiers.</td>
+<td style="text-align: left;">The information regarding the manufacturer(s). The entries should be the [Organisations Relationship List](../relationship-lists/organisations.md identifiers.</td>
 </tr>
 <tr>
 <td style="text-align: left;">manufacturedCountry</td>
@@ -2253,7 +2259,13 @@
 <td style="text-align: left;">discontinueDate</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Date</td>
-<td style="text-align: left;">The date that the component will no longer be available to use. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
+<td style="text-align: left;">The date that the component was discontinued, meaning it was no longer available for purchase. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">listedDate</td>
+<td style="text-align: left;"><code>optional</code></td>
+<td style="text-align: left;">Date</td>
+<td style="text-align: left;">The date that the component was first listed for purchase. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank">ISO 8601 dateTime standard</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -2272,11 +2284,11 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
     shape String
     function String
     flexibility String
-    branding Boolean "*"
+    branding Boolean
     componentEndOfLifeRoutes List
     colour String
     opacity String
-    loaned Boolean "*"
+    loaned Boolean
     reuseSystems List
     manufacturers List
     manufacturedCountry String
@@ -2284,7 +2296,7 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
     recycledContentClaims List
     recyclability Boolean
     recyclabilityClaims List
-    partOfMultipack Boolean "*"
+    partOfMultipack Boolean
     certification Boolean
     certificationClaims List
     updateDate Date "*"
@@ -2293,17 +2305,17 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
   }
   COMPONENTS }o..o{ CONTROLLED_LISTS : attributes
   COMPONENTS }o..o{ RELATIONSHIP_LISTS : attributes
-  COMPONENTS }o--o{ COMPLETE_PACKAGING : complete_packaging_constituents
+  COMPONENTS }o--o{ PRODUCTS : products_constituents
   COMPONENTS }o..o{ MULTIPACK : multipack_constituents
   MULTIPACK }o..o{ LOADS : load_constituents
-  COMPLETE_PACKAGING }o..o{ MULTIPACK : multipack_constituents
-  COMPLETE_PACKAGING }o..o{ LOADS : load_constituents
+  PRODUCTS }o..o{ MULTIPACK : multipack_constituents
+  PRODUCTS }o..o{ LOADS : load_constituents
   COMPONENTS }o..o{ LOADS : load_constituents
     CONTROLLED_LISTS {
-    shape optional
-    function optional
+    shapes optional
+    functions optional
     flexibility optional
-    opacity optional
+    opacities optional
     reuseSystem optional
   }
   RELATIONSHIP_LISTS {
@@ -2755,13 +2767,13 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
         
         
           
-          <a href="../garments/" class="md-footer__link md-footer__link--next" aria-label="Next: Garments">
+          <a href="../fashion-and-textile-products/" class="md-footer__link md-footer__link--next" aria-label="Next: Fashion and Textile Products">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Garments
+                Fashion and Textile Products
               </div>
             </div>
             <div class="md-footer__button md-icon">

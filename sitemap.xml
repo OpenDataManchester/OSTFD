@@ -41,11 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/constituent-lists/garment-constituents/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://opendatamanchester.github.io/OSTFD/constituent-lists/load-constituents/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
@@ -57,6 +52,11 @@
     </url>
     <url>
          <loc>https://opendatamanchester.github.io/OSTFD/constituent-lists/multipack-constituents/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/constituent-lists/product-constituents/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -91,17 +91,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/controlled-lists/flexibilities/</loc>
+         <loc>https://opendatamanchester.github.io/OSTFD/controlled-lists/flexibility/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://opendatamanchester.github.io/OSTFD/controlled-lists/functions/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/controlled-lists/garment-disruptors/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -127,6 +122,11 @@
     </url>
     <url>
          <loc>https://opendatamanchester.github.io/OSTFD/controlled-lists/opacities/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/controlled-lists/product-disruptors/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -181,17 +181,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/garment-end-of-life-routes/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/measurements/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/organisations/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/product-end-of-life-routes/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -226,7 +226,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/schema/garments/</loc>
+         <loc>https://opendatamanchester.github.io/OSTFD/schema/fashion-and-textile-products/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>

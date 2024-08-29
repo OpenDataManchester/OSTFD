@@ -889,11 +889,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../garments/" class="md-nav__link">
+      <a href="../fashion-and-textile-products/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garments
+    Fashion and Textile Products
   </span>
   
 
@@ -1067,11 +1067,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../constituent-lists/garment-constituents/" class="md-nav__link">
+      <a href="../../constituent-lists/product-constituents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Constituents
+    Product Constituents
   </span>
   
 
@@ -1270,11 +1270,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/garment-end-of-life-routes/" class="md-nav__link">
+      <a href="../../relationship-lists/product-end-of-life-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment End of Life Routes
+    Product End of Life Routes
   </span>
   
 
@@ -1616,11 +1616,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/flexibilities/" class="md-nav__link">
+      <a href="../../controlled-lists/flexibility/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Flexibilities
+    Flexibility
   </span>
   
 
@@ -1763,7 +1763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors/" class="md-nav__link">
+      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1997,7 +1997,13 @@
 
 
 <h1 id="materials">Materials<a class="headerlink" href="#materials" title="Permanent link">&para;</a></h1>
-<p>The materials schema contains information regarding the materials that are used within components. These maybe a single material from base materials, a combination of base materials and/or a material from the materials schema itself.</p>
+<p>The materials schema contains information regarding the materials that are used within components. These maybe created from:</p>
+<ul>
+<li>a single base material </li>
+<li>a combination of base materials</li>
+<li>other materials</li>
+<li>a combination of base materials and materials</li>
+</ul>
 <h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2017,9 +2023,15 @@
 </tr>
 <tr>
 <td style="text-align: left;">name</td>
+<td style="text-align: left;"><code>mandatory</code></td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">The name of the material this row relates to. <code>e.g. felt or demin or polyester</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">description</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">The name of the material this row relates to. (e.g., Aluminium 3000 Series or Borosilicate glass)</td>
+<td style="text-align: left;">A brief description of this material.</td>
 </tr>
 <tr>
 <td style="text-align: left;">externalIdentifiers</td>
@@ -2031,19 +2043,19 @@
 <td style="text-align: left;">materialConstituents</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the consituents that are combined to create this material. The entries should be from the <a href="../6_Relationship_Lists/6_001_Material_Constituents.md">Material Constituents Relationship List</a> identifier.</td>
+<td style="text-align: left;">The information regarding the consituents that are combined to create this material. The entries should be from the <a href="../../constituent-lists/material-constituents/">Material Constituents List</a> identifier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">combinationPurpose</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">Why is this material being used? Use the identifier of the function that this row relates to. The entry here should be drawn from the <a href="../5_Controlled_Lists/5_004_Function.md">Function Controlled List</a>.</td>
+<td style="text-align: left;">Why is this material being used? Use the identifier of the function that this row relates to. The entry here should be drawn from the <a href="../../controlled-lists/functions/">Functions Controlled List</a>.</td>
 </tr>
 <tr>
-<td style="text-align: left;">measurements fontawesome-solid-square-plus:{ title=&rdquo;Added to this version&rdquo; .addition }</td>
+<td style="text-align: left;">measurements <span class="twemoji addition" title="Added to this version"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm136 312v-64h-64c-13.3 0-24-10.7-24-24s10.7-24 24-24h64v-64c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24h-64v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></span></td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the measurements of the material. The entries should be from the <a href="../6_Relationship_Lists/6_012_Measurements.md">Measurements Relationship List</a>.</td>
+<td style="text-align: left;">The information regarding the measurements of the material. The entries should be from the <a href="../../relationship-lists/measurements/">Measurements Relationship List</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">certification</td>
@@ -2055,13 +2067,13 @@
 <td style="text-align: left;">certificationClaims</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the certification. The entries should be the <a href="../6_Relationship_Lists/6_005_Certification_Claims.md">Certification Claims Relationship List</a> identifiers.</td>
+<td style="text-align: left;">The information regarding the certification. The entries should be the <a href="../../relationship-lists/certification-claims/">Certification Claims Relationship List</a> identifiers.</td>
 </tr>
 <tr>
 <td style="text-align: left;">manufacturers</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the manufacturer(s). The entries should be the <a href="../6_Relationship_Lists/6_010_Organisations.md">Organisations Relationship List</a> identifiers.</td>
+<td style="text-align: left;">The information regarding the manufacturer(s). The entries should be the <a href="../../relationship-lists/organisations/">Organisations Relationship List</a> identifiers.</td>
 </tr>
 <tr>
 <td style="text-align: left;">manufacturedCountry</td>
@@ -2075,6 +2087,18 @@
 <td style="text-align: left;">Date</td>
 <td style="text-align: left;">The date that the material was provided/last updated. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
 </tr>
+<tr>
+<td style="text-align: left;">releaseDate</td>
+<td style="text-align: left;"><code>optional</code></td>
+<td style="text-align: left;">Date</td>
+<td style="text-align: left;">The date that the material was first listed for purchase. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank">ISO 8601 dateTime standard</a>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">discontinueDate</td>
+<td style="text-align: left;"><code>optional</code></td>
+<td style="text-align: left;">Date</td>
+<td style="text-align: left;">The date that the material was delisted, meaning it was no longer available for purchase. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank">ISO 8601 dateTime standard</a>.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permanent link">&para;</a></h2>
@@ -2082,7 +2106,8 @@
 BASE_MATERIALS }o--o{ MATERIALS : material_constituents
   MATERIALS {
     identifier UUID "*"
-    name String
+    name String "*"
+    description String
     externalIdentifiers Dictionary
     materialConstituents List "*"
     combinationPurpose String
@@ -2097,7 +2122,7 @@ BASE_MATERIALS }o--o{ MATERIALS : material_constituents
   MATERIALS }o--o{ COMPONENTS : component_constituents
   MATERIALS }o..o{ RELATIONSHIP_LISTS : attributes
         CONTROLLED_LISTS {
-    function optional
+    functions optional
     }
         RELATIONSHIP_LISTS {
     certificationClaims optional

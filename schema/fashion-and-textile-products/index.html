@@ -7,13 +7,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Garments items are the finished packaging within OSTFD.">
+        <meta name="description" content="Fashion and textile products are the finished product within OSTFD.">
       
       
         <meta name="author" content="Open Data Manchester CIC">
       
       
-        <link rel="canonical" href="https://opendatamanchester.github.io/OSTFD/schema/garments/">
+        <link rel="canonical" href="https://opendatamanchester.github.io/OSTFD/schema/fashion-and-textile-products/">
       
       
         <link rel="prev" href="../components/">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Garments - OSTFD</title>
+        <title>Fashion and Textile Products - OSTFD</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#garments" class="md-skip">
+        <a href="#fashion-and-textile-products" class="md-skip">
           Skip to content
         </a>
       
@@ -151,7 +151,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Garments
+              Fashion and Textile Products
             
           </span>
         </div>
@@ -802,7 +802,7 @@
           
   
   <span class="md-ellipsis">
-    Garments
+    Fashion and Textile Products
   </span>
   
 
@@ -813,7 +813,7 @@
         
   
   <span class="md-ellipsis">
-    Garments
+    Fashion and Textile Products
   </span>
   
 
@@ -1052,11 +1052,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../constituent-lists/garment-constituents/" class="md-nav__link">
+      <a href="../../constituent-lists/product-constituents/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Constituents
+    Product Constituents
   </span>
   
 
@@ -1255,11 +1255,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/garment-end-of-life-routes/" class="md-nav__link">
+      <a href="../../relationship-lists/product-end-of-life-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment End of Life Routes
+    Product End of Life Routes
   </span>
   
 
@@ -1601,11 +1601,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/flexibilities/" class="md-nav__link">
+      <a href="../../controlled-lists/flexibility/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Flexibilities
+    Flexibility
   </span>
   
 
@@ -1748,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors/" class="md-nav__link">
+      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1966,8 +1966,14 @@
                   
 
 
-<h1 id="garments">Garments<a class="headerlink" href="#garments" title="Permanent link">&para;</a></h1>
-<p>The garments schema contains information regarding the complete packages that are used to create loads. These maybe created from a single component or a combination of components from the components schema.</p>
+<h1 id="fashion-and-textile-products">Fashion and Textile Products<a class="headerlink" href="#fashion-and-textile-products" title="Permanent link">&para;</a></h1>
+<p>The fashion and textile products schema contains information regarding the products that are used to create loads. These maybe created from:</p>
+<ul>
+<li>a single component </li>
+<li>a combination of components</li>
+<li>other fashion and textile products</li>
+<li>a combination of components and products</li>
+</ul>
 <h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1989,13 +1995,13 @@
 <td style="text-align: left;">name</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">The name of this garments.</td>
+<td style="text-align: left;">The name of this garment.</td>
 </tr>
 <tr>
 <td style="text-align: left;">description</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">A brief description of this garments.</td>
+<td style="text-align: left;">A brief description of this garment.</td>
 </tr>
 <tr>
 <td style="text-align: left;">externalIdentifiers</td>
@@ -2007,61 +2013,61 @@
 <td style="text-align: left;">imageURLs</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">URL(s) that links to a picture of the garments. Please see the guidelines below on how to capture the image and name the URL.</td>
+<td style="text-align: left;">URL(s) that links to a picture of the garment. Please see the guidelines below on how to capture the image and name the URL.</td>
 </tr>
 <tr>
 <td style="text-align: left;">completePackagingConstituentsIdentifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the consituents that are combined to create this garments. The entries should be from the <a href="../6_Relationship_Lists/6_003_Complete_Packaging_Constituents.md">garments Constituents Relationship List</a> identifier.</td>
+<td style="text-align: left;">The information regarding the consituents that are combined to create this garment. The entries should be from the <a href="../6_Relationship_Lists/6_003_Complete_Packaging_Constituents.md">Garment Constituents Relationship List</a> identifier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LOWcodeWOproduct</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">The list of waste code for <strong>only</strong> the garments, by itself (excluding the product). LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of <code>15 01 02</code>. Please use <a href="https://dsposal.uk/browse/ewc" target="_blank">Dsposal</a> or <a href="https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made" target="_blank">legislation.gov</a> to find the LOWcode. <strong>Note</strong>: The LOWcode can based on its combination with other components and the actual product contained in the garments. Be sure to only include the garments LOWcode and not the garments with the product. If you cannot find the code or are uncertain please enter <code>Uncertain</code>.</td>
+<td style="text-align: left;">The list of waste code for <strong>only</strong> the garment, by itself (excluding the product). LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of <code>15 01 02</code>. Please use <a href="https://dsposal.uk/browse/ewc" target="_blank">Dsposal</a> or <a href="https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made" target="_blank">legislation.gov</a> to find the LOWcode. <strong>Note</strong>: The LOWcode can based on its combination with other components and the actual product contained in the garment. Be sure to only include the garment LOWcode and not the garment with the product. If you cannot find the code or are uncertain please enter <code>Uncertain</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">productType</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">Information about the product contained in the garments. The entry here should be drawn from the <a href="../5_Controlled_Lists/5_012_Product_Type.md">product type controlled list</a>.</td>
+<td style="text-align: left;">Information about the product contained in the garment. The entry here should be drawn from the <a href="../5_Controlled_Lists/5_012_Product_Type.md">product type controlled list</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">LOWcodeWproduct</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">The list of waste code for <strong>everything</strong> in the garments. LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of <code>15 01 02</code>. Please use <a href="https://dsposal.uk/browse/ewc" target="_blank">Dsposal</a> or <a href="https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made" target="_blank">legislation.gov</a> to find the LOWcode. <strong>Note</strong>: The LOWcode can based on its combination with other components and the actual product contained in the garments. Be sure to include the garments LOWcode with the product. If you cannot find the code or are uncertain please enter <code>Uncertain</code>.</td>
+<td style="text-align: left;">The list of waste code for <strong>everything</strong> in the garment. LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of <code>15 01 02</code>. Please use <a href="https://dsposal.uk/browse/ewc" target="_blank">Dsposal</a> or <a href="https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made" target="_blank">legislation.gov</a> to find the LOWcode. <strong>Note</strong>: The LOWcode can based on its combination with other components and the actual product contained in the garment. Be sure to include the garment LOWcode with the product. If you cannot find the code or are uncertain please enter <code>Uncertain</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">onTheGo</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">Boolean</td>
-<td style="text-align: left;">Is the garments often classed as packaging that will end up in street bins? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
+<td style="text-align: left;">Is the garment often classed as packaging that will end up in street bins? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
 </tr>
 <tr>
 <td style="text-align: left;">householdWaste</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">Boolean</td>
-<td style="text-align: left;">Is the garments often classed as packaging that will end up in kerbside collections? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
+<td style="text-align: left;">Is the garment often classed as packaging that will end up in kerbside collections? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
 </tr>
 <tr>
 <td style="text-align: left;">depositReturnSchemes</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">Which countries support a deposit return scheme for this particular garments? The entries here should be drawn from the <a href="../5_Controlled_Lists/5_013_Deposit_Return_Scheme.md">deposit return scheme controlled list</a>.</td>
+<td style="text-align: left;">Which countries support a deposit return scheme for this particular garment? The entries here should be drawn from the <a href="../5_Controlled_Lists/5_013_Deposit_Return_Scheme.md">deposit return scheme controlled list</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">completePackagingEndOfLifeRoutes</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding this garments&rsquo;s proposed end of life routes. The entries should be the <a href="../6_Relationship_Lists/6_008_Complete_Packaging_End_of_Life_Routes.md">garments end of life routes</a> identifiers.</td>
+<td style="text-align: left;">The information regarding this garment&rsquo;s proposed end of life routes. The entries should be the <a href="../6_Relationship_Lists/6_008_Complete_Packaging_End_of_Life_Routes.md">garment end of life routes</a> identifiers.</td>
 </tr>
 <tr>
 <td style="text-align: left;">recyclability</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Boolean</td>
-<td style="text-align: left;">Is the garments recyclable (as determined by a reputable source)? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
+<td style="text-align: left;">Is the garment recyclable (as determined by a reputable source)? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
 </tr>
 <tr>
 <td style="text-align: left;">recyclabilityClaims</td>
@@ -2070,16 +2076,16 @@
 <td style="text-align: left;">The information regarding this recyclability claims. The entries should be the <a href="../6_Relationship_Lists/6_006_Recyclability_Claims.md">recyclability claims relationship list</a> identifiers.</td>
 </tr>
 <tr>
-<td style="text-align: left;">measurements fontawesome-solid-square-plus:{ title=&rdquo;Added to this version&rdquo; .addition }</td>
+<td style="text-align: left;">measurements <span class="twemoji addition" title="Added to this version"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm136 312v-64h-64c-13.3 0-24-10.7-24-24s10.7-24 24-24h64v-64c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24h-64v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></span></td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the measurements of the garments. The entries should be from the <a href="../6_Relationship_Lists/6_012_Measurements.md">Measurements Relationship List</a>.</td>
+<td style="text-align: left;">The information regarding the measurements of the garment. The entries should be from the <a href="../6_Relationship_Lists/6_012_Measurements.md">Measurements Relationship List</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">servingCapacity</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Integer</td>
-<td style="text-align: left;">The serving capacity of the garments - how much of a product that can be contained in the garments.</td>
+<td style="text-align: left;">The serving capacity of the garment - how much of a product that can be contained in the garment.</td>
 </tr>
 <tr>
 <td style="text-align: left;">servingCapacityDate</td>
@@ -2091,13 +2097,13 @@
 <td style="text-align: left;">partOfMultipack</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">Boolean</td>
-<td style="text-align: left;">Is the garments part of a multipack? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
+<td style="text-align: left;">Is the garment part of a multipack? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
 </tr>
 <tr>
 <td style="text-align: left;">certification</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Boolean</td>
-<td style="text-align: left;">Does the garments have a certificate (e.g. FSC, REACH, FSA etc.)? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
+<td style="text-align: left;">Does the garment have a certificate (e.g. FSC, REACH, FSA etc.)? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
 </tr>
 <tr>
 <td style="text-align: left;">certificationClaims</td>
@@ -2121,19 +2127,19 @@
 <td style="text-align: left;">updateDate</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">Date</td>
-<td style="text-align: left;">The date that the garments was provided/last updated. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
+<td style="text-align: left;">The date that the garment was provided/last updated. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">releaseDate</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Date</td>
-<td style="text-align: left;">The date that the garments will be available to use. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
+<td style="text-align: left;">The date that the garment will be available to use. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">discontinueDate</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Date</td>
-<td style="text-align: left;">The date that the garments will no longer be available to use. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
+<td style="text-align: left;">The date that the garment was discontinued, meaning it was no longer available for purchase. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
 </tr>
 </tbody>
 </table>
