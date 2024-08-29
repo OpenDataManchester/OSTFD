@@ -106,71 +106,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_000_Relationship_Lists/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_001_Material_Constituents/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_002_Component_Constituents/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_003_Complete_Packaging_Constituents/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_004_Multipack_Constituents/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_005_Certification_Claims/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_006_Recyclability_Claims/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_007_Component_End_of_Life_Routes/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_008_Complete_Packaging_End_of_Life_Routes/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_009_Recycled_Content_Claims/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_010_Organisations/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_011_Load_Constituents/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/6_Relationship_Lists/6_012_Measurements/</loc>
-         <lastmod>2024-08-29</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://opendatamanchester.github.io/OSTFD/7_Supporting_Files/7_2_Example_Files/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
@@ -186,12 +121,82 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/constituent-lists/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/constituent-lists/component-constituents/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/constituent-lists/garment-constituents/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/constituent-lists/material-constituents/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/constituent-lists/multipack-constituents/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://opendatamanchester.github.io/OSTFD/identifiers/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://opendatamanchester.github.io/OSTFD/licence/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/certification-claims/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/component-end-of-life-routes/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/garment-end-of-life-routes/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/load-constituents/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/measurements/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/organisations/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/recyclability-claims/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://opendatamanchester.github.io/OSTFD/relationship-lists/recycled-content-claims/</loc>
          <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>

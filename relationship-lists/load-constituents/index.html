@@ -7,13 +7,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The material type controlled list for base materials.">
+        <meta name="description" content="The load constituents relationship list.">
       
       
         <meta name="author" content="Open Data Manchester CIC">
       
       
-        <link rel="canonical" href="https://opendatamanchester.github.io/OSTFD/5_Controlled_Lists/5_001_Material_Type/">
+        <link rel="canonical" href="https://opendatamanchester.github.io/OSTFD/relationship-lists/load-constituents/">
       
       
       
@@ -23,7 +23,7 @@
     
     
       
-        <title>Material Type - OSTFD</title>
+        <title>Load Constituents - OSTFD</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#material-type" class="md-skip">
+        <a href="#load-constituents" class="md-skip">
           Skip to content
         </a>
       
@@ -149,7 +149,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Material Type
+              Load Constituents
             
           </span>
         </div>
@@ -920,7 +920,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../relationship-lists/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -953,7 +953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/certification-claims/" class="md-nav__link">
+      <a href="../certification-claims/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -974,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/recyclability-claims/" class="md-nav__link">
+      <a href="../recyclability-claims/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -995,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/component-end-of-life-routes/" class="md-nav__link">
+      <a href="../component-end-of-life-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1016,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/garment-end-of-life-routes/" class="md-nav__link">
+      <a href="../garment-end-of-life-routes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1037,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/recycled-content-claims/" class="md-nav__link">
+      <a href="../recycled-content-claims/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1058,7 +1058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/organisations/" class="md-nav__link">
+      <a href="../organisations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1079,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../relationship-lists/measurements/" class="md-nav__link">
+      <a href="../measurements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1163,59 +1163,171 @@
                   
 
 
-<h1 id="material-type">Material Type<a class="headerlink" href="#material-type" title="Permanent link">&para;</a></h1>
-<p>The Material Type controlled list identifies the type of the <a href="../3_Data_Specification/3_1_Base_Materials.md">base material</a>.</p>
-<p><strong>Controlled lists are maintained by the SCB, if there are values that you believe need to be added then <a href="https://www.open3p.org/contact/">contact us</a> and we can add new values to the lists.</strong></p>
-<h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
+<h1 id="load-constituents">Load Constituents<a class="headerlink" href="#load-constituents" title="Permanent link">&para;</a></h1>
+<p>The loads constituents relationship list identifies the all the complete packaging from different levels (primary, secondary, transit etc.) and multipacks that are combined to create loads. This is only used in <a href="../3_Data_Specification/3_7_Load.md">load</a>.</p>
+<h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;"><div style="width:150px">identifier</div></th>
-<th style="text-align: left;">category</th>
-<th style="text-align: left;">detailed</th>
+<th style="text-align: left;">Column</th>
+<th style="text-align: left;"><div style="width:90px">Status</div></th>
+<th style="text-align: left;">Format</th>
+<th style="text-align: left;">Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">bm-material-type-0001</td>
-<td style="text-align: left;">biobased</td>
-<td style="text-align: left;">from renewable products such as carbohydrates, starch, vegetable fats and oils, bacteria and other biological substances</td>
+<td style="text-align: left;">loadConstituentsIdentifier</td>
+<td style="text-align: left;"><code>mandatory</code></td>
+<td style="text-align: left;">UUID</td>
+<td style="text-align: left;">A globally unique identifier. See <a href="../4_Identifiers/4_1_Identifiers.md">identifiers</a> section for information on how to construct this identifier</td>
 </tr>
 <tr>
-<td style="text-align: left;">bm-material-type-0002</td>
-<td style="text-align: left;">synthetic</td>
-<td style="text-align: left;">derived from crude oil, natural gas or coal</td>
+<td style="text-align: left;">loadCombinationIdentifier</td>
+<td style="text-align: left;"><code>mandatory</code></td>
+<td style="text-align: left;">UUID</td>
+<td style="text-align: left;">The unique identifier of the items that this component is made of. There must be an equivalent record in the <code>Components</code>, <code>Complete_Packaging</code> OR <code>Multipacks</code> data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">bm-material-type-0003</td>
-<td style="text-align: left;">Fossil based</td>
-<td style="text-align: left;">Materials derived from fossil sources, which include the remains of ancient plants and animals. This category encompasses substances like oil-based products, gas-based materials, and coal-based resources.</td>
+<td style="text-align: left;">name</td>
+<td style="text-align: left;"><code>optional</code></td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">The name of this load constituent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">bm-material-type-0004</td>
-<td style="text-align: left;">Animal based</td>
-<td style="text-align: left;">Materials obtained from animal sources. This category includes a wide range of materials such as leather, wool, silk, and other products derived from animals.</td>
+<td style="text-align: left;">externalIdentifiers</td>
+<td style="text-align: left;"><code>optional</code></td>
+<td style="text-align: left;">Dictionary</td>
+<td style="text-align: left;">A dictionary of identifiers that might be used to identify the load constituents in other systems. For example: manufacturer&rsquo;s own internal identifier, bar codes or global trade item number (gtin). To provide external identifiers please follow this format. <code>{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}</code></td>
 </tr>
 <tr>
-<td style="text-align: left;">bm-material-type-0005</td>
-<td style="text-align: left;">Plant based</td>
-<td style="text-align: left;">Materials sourced from plants and plant-derived substances. This category covers a diverse array of materials, including wood, cotton, hemp, and other plant-based fibres.</td>
+<td style="text-align: left;">quantityInLoad</td>
+<td style="text-align: left;"><code>mandatory</code></td>
+<td style="text-align: left;">Integer</td>
+<td style="text-align: left;">Number of units for the packaging items found in a load that this row corresponds to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">bm-material-type-0006</td>
-<td style="text-align: left;">Mineral based</td>
-<td style="text-align: left;">Materials obtained from non-living sources, specifically minerals. This category includes a broad range of substances like stones, and other mineral resources.</td>
-</tr>
-<tr>
-<td style="text-align: left;">bm-material-type-0007</td>
-<td style="text-align: left;">Metal based</td>
-<td style="text-align: left;">Materials specifically derived from metals. This category includes various metallic elements and alloys.</td>
+<td style="text-align: left;">level</td>
+<td style="text-align: left;"><code>mandatory</code></td>
+<td style="text-align: left;">String</td>
+<td style="text-align: left;">The intended use of the component for the packaging. The entry here should be drawn from the <a href="../../5_Controlled_Lists/5_015_Level/">level controlled list</a>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>erDiagram
-  BASE_MATERIALS }o..o| MATERIAL_TYPE : controlled_list</code></pre>
+  COMPONENTS }o..o{ LOAD_CONSTITUENTS : attributes
+  COMPLETE_PACKAGING }o..o{ LOAD_CONSTITUENTS : attributes
+  MULTIPACKS }o..o{ LOAD_CONSTITUENTS : attributes
+  LOAD_CONSTITUENTS {
+    loadConstituentsIdentifier UUID "*"
+    loadCombinationIdentifier UUID "*"
+    name String
+    externalIdentifiers Dictionary
+    quantityInLoad Integer "*"
+    level String "*"
+  }
+  LOAD_CONSTITUENTS }o--o{ LOAD : within
+  LOAD_CONSTITUENTS }o--o{ CONTROLLED_LISTS : attributes
+  CONTROLLED_LISTS {
+    level mandatory
+  }</code></pre>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">To Wine Delivery - JSON</label><label for="__tabbed_1_2">To Wine Delivery - XML</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="hll"><span class="w">    </span><span class="nt">&quot;loadConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CA88F5CE-2D09-AFE0-08D7-44804780F924&quot;</span><span class="p">,</span>
+</span><span class="hll"><span class="w">    </span><span class="nt">&quot;loadCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;111525c0-9a41-4eea-a9b7-a8c23ffcf94d&quot;</span><span class="p">,</span>
+</span><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cases of 12 x wine&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;externalIdentifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;GTIN&quot;</span><span class="p">:</span><span class="s2">&quot;00123456789012&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;quantityInLoad&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;27&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lc-level-0001&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
+<span class="nt">&lt;loadConstituent&gt;</span>
+<span class="hll"><span class="w">  </span><span class="nt">&lt;loadConstituentsIdentifier&gt;</span>CA88F5CE-2D09-AFE0-08D7-44804780F924<span class="nt">&lt;/loadConstituentsIdentifier&gt;</span>
+</span><span class="hll"><span class="w">  </span><span class="nt">&lt;loadCombinationIdentifier&gt;</span>111525c0-9a41-4eea-a9b7-a8c23ffcf94d<span class="nt">&lt;/loadCombinationIdentifier&gt;</span>
+</span><span class="w">  </span><span class="nt">&lt;name&gt;</span>Cases<span class="w"> </span>of<span class="w"> </span>12<span class="w"> </span>x<span class="w"> </span>wine<span class="nt">&lt;/name&gt;</span>
+<span class="w">  </span><span class="nt">&lt;externalIdentifiers&gt;</span>
+<span class="w">    </span><span class="nt">&lt;GTIN&gt;</span>00123456789012<span class="nt">&lt;/GTIN&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/externalIdentifiers&gt;</span>
+<span class="w">  </span><span class="nt">&lt;quantityInLoad&gt;</span>27<span class="nt">&lt;/quantityInLoad&gt;</span>
+<span class="w">  </span><span class="nt">&lt;level&gt;</span>lc-level-0001<span class="nt">&lt;/level&gt;</span>
+<span class="nt">&lt;/loadConstituent&gt;</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<h2 id="data-flow">Data flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    subgraph completePackages["Complete Packages"]
+        cp_pallet[Pallet]
+        cp_shrinkWrap[Shrink Wrap]
+    end
+    subgraph multipacks[Multipacks]
+        mp_wineBox["12 pack of wine
+        -
+        111525c0-9a41-4eea-a9b7-a8c23ffcf94d"]
+    end
+    subgraph multipacks[Multipacks]
+        mp_wineBox["12 pack of wine
+        -
+        111525c0-9a41-4eea-a9b7-a8c23ffcf94d"]
+    end
+    subgraph loadConstituents["`**-**`"]
+      subgraph locs_wineBox ["`**Wine Multipack Constituents**`"]
+        loc_wineBox["`**CA88F5CE-2D09-AFE0-08D7-44804780F924
+        -
+        quantityInLoad: 27
+        level: primary**`"]
+        loc_pallet["`**CA88F5CE-2D09-AFE0-08D7-44804780F924
+        -
+        quantityInLoad: 1
+        level: transit**`"]
+        loc_shrinkWrap["`**CA88F5CE-2D09-AFE0-08D7-44804780F924
+        -
+        quantityInLoad: 1
+        level: transit**`"]
+      end
+    end
+    subgraph loads["Loads"]
+        lo_load["Pallet of multicase wine
+        -
+        ED051AFD-EC7F-0428-B054-8837118922FE"]
+    end
+    cp_pallet --&gt; loc_pallet
+    cp_shrinkWrap --&gt; loc_shrinkWrap
+    mp_wineBox --&gt; loc_wineBox
+    locs_wineBox --&gt; lo_load</code></pre>
 
 
 
