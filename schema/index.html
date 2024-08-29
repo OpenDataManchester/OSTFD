@@ -13,12 +13,16 @@
         <meta name="author" content="Open Data Manchester CIC">
       
       
-        <link rel="canonical" href="https://opendatamanchester.github.io/OSTFD/3_Data_Specification/3_0_Data_Specification/">
+        <link rel="canonical" href="https://opendatamanchester.github.io/OSTFD/schema/">
       
       
+        <link rel="prev" href="../identifiers/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+        <link rel="next" href="base-materials/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
     
     
@@ -27,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -49,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -96,7 +100,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24v112c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm-32 224a32 32 0 1 1 64 0 32 32 0 1 1-64 0z"/></svg>
   </span>
   OSTFD is <strong>free and open</strong>, under the
-  <a rel="me" href="../../10_Licence/10_01_Licence">
+  <a rel="me" href="../10_Licence/10_01_Licence">
     <strong>Apache License, Version 2.0</strong>
   </a>. 
 
@@ -112,7 +116,7 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   You're not viewing the stable version.
-  <a href="../../.."> 
+  <a href="../.."> 
     <strong>Click here to go to stable.</strong>
   </a>
 
@@ -129,7 +133,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="OSTFD" class="md-header__button md-logo" aria-label="OSTFD" data-md-component="logo">
+    <a href=".." title="OSTFD" class="md-header__button md-logo" aria-label="OSTFD" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -264,7 +268,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="OSTFD" class="md-nav__button md-logo" aria-label="OSTFD" data-md-component="logo">
+    <a href=".." title="OSTFD" class="md-nav__button md-logo" aria-label="OSTFD" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -294,7 +298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -361,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
+      <a href="../start-here/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -382,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start-here/key-concepts/" class="md-nav__link">
+      <a href="../start-here/key-concepts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -403,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start-here/data-flow/" class="md-nav__link">
+      <a href="../start-here/data-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -424,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../start-here/data-architecture/" class="md-nav__link">
+      <a href="../start-here/data-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -452,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../identifiers/" class="md-nav__link">
+      <a href="../identifiers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -469,10 +473,250 @@
       
   
   
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    Core Schema
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Core Schema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
-      <a href="../../licence/" class="md-nav__link">
+      <a href="base-materials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Base Materials
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--updated" title="Updated in this version">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="materials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Materials
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--updated" title="Updated in this version">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--updated" title="Updated in this version">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="garments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Garments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="multipacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multipack
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--updated" title="Updated in this version">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="loads/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loads
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--updated" title="Updated in this version">
+    </span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../change-log/" class="md-nav__link">
+      <a href="../change-log/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -530,37 +774,37 @@
 <p><strong>Base Materials</strong></p>
 <hr />
 <p>Contains information regarding the materials at the very start of the process of creating packaging.</p>
-<p><a href="../3_1_Base_Materials/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Base materials</a></p>
+<p><a href="./3_1_Base_Materials.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Base materials</a></p>
 </li>
 <li>
 <p><strong>Materials</strong></p>
 <hr />
 <p>Contains information about how base materials are combined to create more complex materials.</p>
-<p><a href="../3_2_Materials/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Materials</a></p>
+<p><a href="./3_2_Materials.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Materials</a></p>
 </li>
 <li>
 <p><strong>Components</strong></p>
 <hr />
 <p>Contains the information about how materials are formed into indivudal components. This schema is where packaging starts taking form.</p>
-<p><a href="../3_3_Components/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Components</a></p>
+<p><a href="./3_3_Components.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Components</a></p>
 </li>
 <li>
 <p><strong>Complete Packages</strong></p>
 <hr />
 <p>Contains the information on how components are combined together to protect or market a product. This schema is where packaging is fulfilling its role.</p>
-<p><a href="../3_4_Complete_Packaging/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Complete Packages</a></p>
+<p><a href="./3_4_Complete_Packaging.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Complete Packages</a></p>
 </li>
 <li>
 <p><strong>Multipacks (optional)</strong></p>
 <hr />
 <p>Contains the information on the packaging used to protect multipacks of products.</p>
-<p><a href="../3_5_Multipack/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Multipacks</a></p>
+<p><a href="./3_5_Multipack.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Multipacks</a></p>
 </li>
 <li>
 <p><strong>Loads</strong></p>
 <hr />
 <p>Contains the information regard all the packaging used to transport product(s) to a destination.</p>
-<p><a href="../3_7_Load/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Loads</a></p>
+<p><a href="./3_7_Load.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/></svg></span> Loads</a></p>
 </li>
 </ul>
 </div>
@@ -602,7 +846,7 @@ Each schema (excluding base material) is linked and has a defined relationship w
   COMPLETE_PACKAGING }o..o{ LOADS : load_constituents
   MULTIPACK }o..o{ LOADS : load_constituents
   COMPONENTS }o..o{ LOADS : load_constituents</code></pre>
-<p>The diagram above shows how the six core schemas interact with each other including their <a href="../../6_Relationship_Lists/6_000_Relationship_Lists/">relationship lists</a> as these additional entities allow for additional functionality within Open 3P.</p>
+<p>The diagram above shows how the six core schemas interact with each other including their <a href="../6_Relationship_Lists/6_000_Relationship_Lists/">relationship lists</a> as these additional entities allow for additional functionality within Open 3P.</p>
 <p>The following pages detail the information in each of the schemas, and further show how the core schema work with both the controlled lists and the relationship lists.</p>
 
 
@@ -637,6 +881,44 @@ Each schema (excluding base material) is linked and has a defined relationship w
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../identifiers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Identifiers">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Identifiers
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="base-materials/" class="md-footer__link md-footer__link--next" aria-label="Next: Base Materials">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Base Materials
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -717,10 +999,10 @@ Each schema (excluding base material) is linked and has a defined relationship w
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "toc.integrate", "navigation.top", "navigation.path", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "toc.integrate", "navigation.top", "navigation.path", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      <script src="../assets/javascripts/bundle.e1c3ead8.min.js"></script>
       
     
   </body>
