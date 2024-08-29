@@ -1,47 +1,53 @@
 ---
 title: Components
-description: Components are the individaul items of packaging made from materials in Open 3P.
-status: updated
+description: Components are the individaul items of packaging made from materials in OSTFD.
+# status: updated
 ---
 
 # Components
 
-The components schema contains information regarding the individual components that are used to create complete packages. These maybe created from a single material or a combination of materials from the materials schema.
+The components schema contains information regarding the individual components that are used to create products. These maybe created from:
+
+ - a single material
+ - a combination of materials
+ - other components
+ - a combination of materials and components
 
 ## Table
 |Column|<div style="width:90px">Status</div>|Format|Notes|
 |:-|:-|:-|:-|
-|identifier|`mandatory`|UUID|A globally unique identifier. See [identifiers](../4_Identifiers/4_1_Identifiers.md) section for information on how to construct this identifier|
-|name|`optional`|String|The name of this component.|
+|identifier|`mandatory`|UUID|A globally unique identifier. See [identifiers](../identifiers/index.md) section for information on how to construct this identifier|
+|name|`mandatory`|String|The name of this component.|
 |description|`optional`|String|A brief description of this component.|
-|externalIdentifiers|`optional`|Dictionary|A dictionary of identifiers that might be used to identify the component in other systems. For example: manufacturer's own internal identifier, bar codes or global trade item number (gtin). To provide external identifiers please follow this format. `{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}`|
+|externalIdentifiers|`optional`|Dictionary|A dictionary of identifiers that is used to identify the component in other data standards, software systems or protocols. For example: manufacturer's own primary key, bar codes or global trade item number (gtin). To provide external identifiers follow this format. `{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}`. The entries could be drawn from the [External Identifiers Controlled List](../controlled-lists/external-identifiers.md).|
 |imageURLs|`optional`|List|A list of URLs that links to a picture of the component. Please see the guidelines below on how to capture the image and name the URL.|
-|LOWcode|`optional`|String|The list of waste code for **only** the component, by itself. LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of `15 01 02`. Please use [Dsposal](https://dsposal.uk/browse/ewc) or [legislation.gov](https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made) to find the LOWcode. **Note**: The LOWcode can based on its combination with other components and the actual product contained in the completePackaging. Be sure to only include the component LOWcode. If you cannot find the code or are uncertain please enter `Uncertain`.|
-|componentConstituents|`mandatory`|List|The information regarding the consituents that are combined to create this component. The entries should be from the [Component Constituents Relationship List](../6_Relationship_Lists/6_002_Component_Constituents.md) identifier.|
-|measurements fontawesome-solid-square-plus:{ title="Added to this version" .addition }|`mandatory`|List|The information regarding the measurements of the component. The entries should be from the [Measurements Relationship List](../6_Relationship_Lists/6_012_Measurements.md).|
-|shape|`optional`|String|What is the shape of the component? The entry should contain the [shape controlled list](../5_Controlled_Lists/5_006_Shape.md) identifier for the component.|
-|function|`optional`|String|What is the function of the component? The entry should contain the [function controlled list](../5_Controlled_Lists/5_004_Function.md) identifier for the component.|
-|flexibility|`optional`|String|Whether the component is considered flexible or rigid. The entry should be the [flexibility controlled list](../5_Controlled_Lists/5_007_Flexibility.md) identifier.|
-|branding|`mandatory`|Boolean|Does the component contain your own brand (logo, trademark, or any distinctive mark)? Answer as: `TRUE` for yes and `FALSE` for no.|
-|componentEndOfLifeRoutes|`optional`|List|The information regarding this component's proposed end of life routes. The entries should be the [component end of life routes](../6_Relationship_Lists/6_007_Component_End_of_Life_Routes.md) identifiers.|
+|LOWcode|`optional`|String|The list of waste code for **only** the component, by itself. LOW code is synonymous with European Waste Catalogue Code (EWC). For example: a zip would have a LOWcode of `20 01 10`. Please use [Dsposal](https://dsposal.uk/browse/ewc) or [legislation.gov](https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made) to find the LOWcode. **Note**: The LOWcode can based on its combination with other components and the actual product contained in the products. Be sure to only include the component LOWcode.|
+|componentConstituents|`mandatory`|List|The information regarding the constituents that are combined to create this component. The entries should be from the [Component Constituents List](../constituent-lists/component-constituents.md) identifier.|
+|measurements :fontawesome-solid-square-plus:{ title="Added to this version" .addition }|`mandatory`|List|The information regarding the measurements of the component. The entries should be from the [Measurements Relationship List](../6_Relationship_Lists/6_012_Measurements.md).|
+|shape|`optional`|String|What is the shape of the component? The entry should contain the [shapes controlled list](../controlled-lists/shapes.md) identifier for the component.|
+|function|`optional`|String|What is the function of the component? The entry should contain the [functions controlled list](../controlled-lists/functions.md) identifier for the component.|
+|flexibility|`optional`|String|Whether the component is considered flexible or rigid. The entry should be the [flexibility controlled list](../controlled-lists/flexibility.md) identifier.|
+|branding|`optional`|Boolean|Does the component contain your own brand (logo, trademark, or any distinctive mark)? Answer as: `TRUE` for yes and `FALSE` for no.|
+|componentEndOfLifeRoutes|`optional`|List|The information regarding this component's proposed end of life routes. The entries should be the [component end of life routes](../relationship-lists/component-end-of-life-routes.md) identifiers.|
 |colour|`optional`|String|The actual colour of the component at point of production using CMYK (Cyan-Magenta-Yellow-blacK) values. The format is specified according to cmyk(C%, M%, Y%, K%), where C, M, Y, and K are the percent values for the cyan, magenta, yellow, and black values of the color. For example: black is `cmyk(0%,0%,0%,100%)`. If there are multiple colours input `decorative`.|
-|opacity|`optional`|String|The transparency of the colours. The entry should be the [opacity controlled list](../5_Controlled_Lists/5_009_Opacity.md) identifier.|
-|loaned|`mandatory`|Boolean|Is the component hired or loaned out as reusable packaging? Answer as: `TRUE` for yes and `FALSE` for no.|
-|reuseSystems|`optional`|List|The system(s) that facilitates the reuse of the component  `e.g., The Reuse Standand, PR3 standards`. The entries should be the [reuse system controlled list](../5_Controlled_Lists/5_010_Reuse_System.md) identifier(s).|
-|partOfMultipack|`mandatory`|Boolean|Is the component part of a multipack? Answer as: `TRUE` for yes and `FALSE` for no.|
-|recycledContent|`optional`|Decimal|Positive decimal only, maximum value is 100.00. Value should equated to a percentage (e.g. 30 = 30%) The minimum allowable percent of how much recycled content is included in the makeup of the component. It is 'mandatory' for plastic packaging where for the purposes of this standard we refer to [UK's HM Revenue & Customs](https://www.gov.uk/guidance/work-out-which-packaging-is-subject-to-plastic-packaging-tax){target=_blank} definition of recycled content. "Recycled plastic is plastic that has been reprocessed from recovered material by using a chemical or manufacturing process. This is so it can be used either for its original purpose or for other purposes. This does not include organic recycling. Recovered material is pre-consumer plastic or post-consumer plastic that both: a) is no longer suitable to be used in the process from which it was generated and would otherwise have been used for energy recovery (for example, by incineration) or disposed of as waste (for example, by being sent to landfill); b) has been collected and recovered for use as a material input for a recycling or manufacturing process, instead of new primary material"|
-|recycledContentClaims|`optional`|List|The information regarding the recycled contents. The entries should be the [recycled content claims relationship list](../6_Relationship_Lists/6_009_Recycled_Content_Claims.md) indentifiers.|
+|opacity|`optional`|String|The transparency of the colours. The entry should be the [opacities controlled list](../controlled-lists/opacities.md) identifier.|
+|loaned|`optional`|Boolean|Is the component hired or loaned? Answer as: `TRUE` for yes and `FALSE` for no. This is for this component ONLY, if the entire product is loaned or hired then use the product schema.|
+|reuseSystems|`optional`|List|The system(s) that facilitates the reuse of the component  `e.g., ????`. The entries should be the [reuse systems controlled list](../controlled-lists/reuse-systems.md) identifier(s).|
+|partOfMultipack|`optional`|Boolean|Is the component part of a multipack? Answer as: `TRUE` for yes and `FALSE` for no.|
+|recycledContent|`optional`|Decimal|Positive decimal only, maximum value is 100.00. Value should equated to a percentage (e.g. 30 = 30%) The minimum allowable percent of how much recycled content is included in the makeup of the component.|
+|recycledContentClaims|`optional`|List|The information regarding the recycled contents. The entries should be the [recycled content claims relationship list](../relationship-lists/recycled-content-claims.md) indentifiers.|
 |recyclability|`optional`|Boolean|Is the component recyclable (as determined by a reputable source)? Answer as: `TRUE` for yes and `FALSE` for no.|
-|recyclabilityClaims|`optional`|List|The information regarding this recyclability claims. The entries should be the [recyclability claims relationship list](../6_Relationship_Lists/6_006_Recyclability_Claims.md) identifiers.|
+|recyclabilityClaims|`optional`|List|The information regarding this recyclability claims. The entries should be the [recyclability claims relationship list](../relationship-lists/recyclability-claims.md) identifiers.|
 |certification|`optional`|Boolean|Does the component have a certificate (e.g. FSC, REACH, FSA etc.)? Answer as: `TRUE` for yes and `FALSE` for no.|
-|certificationClaims|`optional`|List|The information regarding the certifications. The entries should be the [certification claims relationship list](../6_Relationship_Lists/6_005_Certification_Claims.md) identifiers.|
-|manufacturers|`optional`|List|The information regarding the manufacturer(s). The entries should be the [Organisations Relationship List](../6_Relationship_Lists/6_010_Organisations.md) identifiers.|
+|certificationClaims|`optional`|List|The information regarding the certifications. The entries should be the [certification claims relationship list](../relationship-lists/certification-claims.md) identifiers.|
+|manufacturers|`optional`|List|The information regarding the manufacturer(s). The entries should be the [Organisations Relationship List](../relationship-lists/organisations.md identifiers.|
 |manufacturedCountry|`optional`|String|The country the component was manufactured in. Use the country numeric [ISO codes](https://www.iso.org/obp/ui/#search){target=_blank} as described in the [ISO 3166 international standard](https://www.iso.org/iso-3166-country-codes.html){target=_blank}.|
 |updateDate|`mandatory`|Date|The date that the component was provided/last updated. Use the format `yyyy-mm-dd` adhering to the [ISO 8601 dateTime standard](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |releaseDate|`optional`|Date|The date that the component will be available to use. Use the format `yyyy-mm-dd` adhering to the [ISO 8601 dateTime standard](https://www.iso.org/iso-8601-date-and-time-format.html).|
-|discontinueDate|`optional`|Date|The date that the component will no longer be available to use. Use the format `yyyy-mm-dd` adhering to the [ISO 8601 dateTime standard](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|discontinueDate|`optional`|Date|The date that the component was discontinued, meaning it was no longer available for purchase. Use the format `yyyy-mm-dd` adhering to the [ISO 8601 dateTime standard](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|listedDate|`optional`|Date|The date that the component was first listed for purchase. Use the format `yyyy-mm-dd` adhering to the [ISO 8601 dateTime standard](https://www.iso.org/iso-8601-date-and-time-format.html){target=_blank}.|
 
-## Diagram
+## Diagram 
 
 ``` mermaid
 erDiagram
@@ -58,11 +64,11 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
     shape String
     function String
     flexibility String
-    branding Boolean "*"
+    branding Boolean
     componentEndOfLifeRoutes List
     colour String
     opacity String
-    loaned Boolean "*"
+    loaned Boolean
     reuseSystems List
     manufacturers List
     manufacturedCountry String
@@ -70,7 +76,7 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
     recycledContentClaims List
     recyclability Boolean
     recyclabilityClaims List
-    partOfMultipack Boolean "*"
+    partOfMultipack Boolean
     certification Boolean
     certificationClaims List
     updateDate Date "*"
@@ -79,17 +85,17 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
   }
   COMPONENTS }o..o{ CONTROLLED_LISTS : attributes
   COMPONENTS }o..o{ RELATIONSHIP_LISTS : attributes
-  COMPONENTS }o--o{ COMPLETE_PACKAGING : complete_packaging_constituents
+  COMPONENTS }o--o{ PRODUCTS : products_constituents
   COMPONENTS }o..o{ MULTIPACK : multipack_constituents
   MULTIPACK }o..o{ LOADS : load_constituents
-  COMPLETE_PACKAGING }o..o{ MULTIPACK : multipack_constituents
-  COMPLETE_PACKAGING }o..o{ LOADS : load_constituents
+  PRODUCTS }o..o{ MULTIPACK : multipack_constituents
+  PRODUCTS }o..o{ LOADS : load_constituents
   COMPONENTS }o..o{ LOADS : load_constituents
     CONTROLLED_LISTS {
-    shape optional
-    function optional
+    shapes optional
+    functions optional
     flexibility optional
-    opacity optional
+    opacities optional
     reuseSystem optional
   }
   RELATIONSHIP_LISTS {

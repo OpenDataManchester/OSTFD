@@ -1,11 +1,11 @@
 ---
-title: Complete Packaging Disruptors
-description: The disruptors controlled list for complete packaging.
+title: Product Disruptors
+description: The disruptors controlled list for products.
 ---
 
-# Complete Packaging Disruptors
+# Product Disruptors
 
-The complete packaging disruptors controlled list identifiers what might disrupt the end of life process of a complete packaging item. This is used in [complete packaging end of life routes relationship list](../6_Relationship_Lists/6_008_Complete_Packaging_End_of_Life_Routes.md).
+The product disruptors controlled list identifiers what might disrupt the end of life process of a product item. This is used in [product end of life routes relationship list](../relationship-lists/garment-end-of-life-routes.md).
 
 **Controlled lists are maintained by the SCB, if there are values that you believe need to be added then [contact us](https://www.open3p.org/contact/) and we can add new values to the lists.**
 

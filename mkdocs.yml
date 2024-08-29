@@ -32,11 +32,13 @@ theme:
         name: Switch to light mode
   features:
     - navigation.indexes
-    - toc.integrate
+    # - toc.integrate
     - navigation.top
     - navigation.path
     - navigation.footer
+    - navigation.tabs
     - content.code.copy
+    - content.tooltips
 
 # Page Tree
 nav:
@@ -48,47 +50,50 @@ nav:
     - Data Architecture: start-here/data-architecture.md
   # - Data Formats: 2_Data_Formats/2_1_Data_Formats.md
   - Identifiers: identifiers/index.md
-  # - Core Schema:
-  #   - Definition: 3_Data_Specification/3_0_Data_Specification.md
-  #   - Base Materials: 3_Data_Specification/3_1_Base_Materials.md
-  #   - Materials: 3_Data_Specification/3_2_Materials.md
-  #   - Components: 3_Data_Specification/3_3_Components.md
-  #   - Complete Packaging: 3_Data_Specification/3_4_Complete_Packaging.md
-  #   - Multipack: 3_Data_Specification/3_5_Multipack.md
-  #   - Loads: 3_Data_Specification/3_7_Load.md
-  # - Controlled Lists:
-  #   - Definition: 5_Controlled_Lists/5_000_Controlled_Lists.md
-  #   - Material Type: 5_Controlled_Lists/5_001_Material_Type.md
-  #   - Certification Source: 5_Controlled_Lists/5_002_Certification_Source.md
-  #   - Material Purpose: 5_Controlled_Lists/5_003_Material_Purpose.md
-  #   - Function: 5_Controlled_Lists/5_004_Function.md
-  #   - Recyclability Source: 5_Controlled_Lists/5_005_Recyclability_Source.md
-  #   - Shape: 5_Controlled_Lists/5_006_Shape.md
-  #   - Flexibility: 5_Controlled_Lists/5_007_Flexibility.md
-  #   - Component Disruptors: 5_Controlled_Lists/5_008_Component_Disruptors.md
-  #   - Opacity: 5_Controlled_Lists/5_009_Opacity.md
-  #   - Reuse System: 5_Controlled_Lists/5_010_Reuse_System.md
-  #   - Recycled Content Evidence Type: 5_Controlled_Lists/5_011_Recycled_Content_Evidence_Type.md
-  #   - Product Type: 5_Controlled_Lists/5_012_Product_Type.md
-  #   - Deposit Return Scheme: 5_Controlled_Lists/5_013_Deposit_Return_Scheme.md
-  #   - Complete Packaging Disruptors: 5_Controlled_Lists/5_014_Complete_Packaging_Disruptors.md
-  #   - Level: 5_Controlled_Lists/5_015_Level.md
-  #   - End of Life Route: 5_Controlled_Lists/5_016_End_Of_Life_Route.md
-  #   - Measures: 5_Controlled_Lists/5_017_Measures.md
-  # - Relationship Lists:
-  #   - Definition: 6_Relationship_Lists/6_000_Relationship_Lists.md
-  #   - Material Constituents: 6_Relationship_Lists/6_001_Material_Constituents.md
-  #   - Component Constituents: 6_Relationship_Lists/6_002_Component_Constituents.md
-  #   - Complete Packaging Constituents: 6_Relationship_Lists/6_003_Complete_Packaging_Constituents.md
-  #   - Multipack Constituents: 6_Relationship_Lists/6_004_Multipack_Constituents.md
-  #   - Load Constituents: 6_Relationship_Lists/6_011_Load_Constituents.md
-  #   - Certification Claims: 6_Relationship_Lists/6_005_Certification_Claims.md
-  #   - Recyclability Claims: 6_Relationship_Lists/6_006_Recyclability_Claims.md
-  #   - Component End of Life Routes: 6_Relationship_Lists/6_007_Component_End_of_Life_Routes.md
-  #   - Complete Packaging End of Life Routes: 6_Relationship_Lists/6_008_Complete_Packaging_End_of_Life_Routes.md
-  #   - Recycled Content Claims: 6_Relationship_Lists/6_009_Recycled_Content_Claims.md
-  #   - Organisations: 6_Relationship_Lists/6_010_Organisations.md
-  #   - Measurements: 6_Relationship_Lists/6_012_Measurements.md
+  - Core Schemas:
+    - Core Schemas: schema/index.md
+    - Base Materials: schema/base-materials.md
+    - Materials: schema/materials.md
+    - Components: schema/components.md
+    - Fashion and Textile Products: schema/fashion-and-textile-products.md
+    - Multipack: schema/multipacks.md
+    - Loads: schema/loads.md
+  - Constituents Lists:
+    - Constituents Lists: constituent-lists/index.md
+    - Material Constituents: constituent-lists/material-constituents.md
+    - Component Constituents: constituent-lists/component-constituents.md
+    - Product Constituents: constituent-lists/product-constituents.md
+    - Multipack Constituents: constituent-lists/multipack-constituents.md
+    - Load Constituents: constituent-lists/load-constituents.md
+  - Relationship Lists:
+    - Relationship Lists: relationship-lists/index.md
+    - Certification Claims: relationship-lists/certification-claims.md
+    - Recyclability Claims: relationship-lists/recyclability-claims.md
+    - Component End of Life Routes: relationship-lists/component-end-of-life-routes.md
+    - Product End of Life Routes: relationship-lists/product-end-of-life-routes.md
+    - Recycled Content Claims: relationship-lists/recycled-content-claims.md
+    - Organisations: relationship-lists/organisations.md
+    - Measurements: relationship-lists/measurements.md
+  - Controlled Lists:
+    - Definition: controlled-lists/index.md
+    - External Identifiers: controlled-lists/external-identifiers.md
+    - Material Types: controlled-lists/material-types.md
+    - Certification Sources: controlled-lists/certification-sources.md
+    - Material Purposes: controlled-lists/material-purposes.md
+    - Functions: controlled-lists/functions.md
+    - Recyclability Sources: controlled-lists/recyclability-sources.md
+    - Shapes: controlled-lists/shapes.md
+    - Flexibility: controlled-lists/flexibility.md
+    - Component Disruptors: controlled-lists/component-disruptors.md
+    - Opacities: controlled-lists/opacities.md
+    - Reuse Systems: controlled-lists/reuse-systems.md
+    - Recycled Content Evidence Types: controlled-lists/recycled-content-evidence-types.md
+    - Product Types: controlled-lists/product-types.md
+    - Deposit Return Schemes: controlled-lists/deposit-return-schemes.md
+    - Garment Disruptors: controlled-lists/garment-disruptors.md
+    - Levels: controlled-lists/levels.md
+    - End of Life Routes: controlled-lists/end-of-life-routes.md
+    - Measures: controlled-lists/measures.md
   # - Supporting Files: 7_Supporting_Files/7_2_Example_Files.md
   # - Governance: 8_Governance/8_1_Governance.md
   - Licence: licence/index.md
