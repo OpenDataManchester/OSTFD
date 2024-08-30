@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1254,24 +1245,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Template
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1739,11 +1712,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1915,24 +1888,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Template
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1949,7 +1904,7 @@
 
 
 <h1 id="recycled-content-claims">Recycled Content Claims<a class="headerlink" href="#recycled-content-claims" title="Permanent link">&para;</a></h1>
-<p>The recycled content claims relationship list identifies the document that details the recycled content claim. This is only used in <a href="../3_Data_Specification/3_3_Components.md">components</a>.</p>
+<p>The recycled content claims relationship list identifies the document that details the recycled content claim. This is only used in <a href="../../schema/components/">components</a>.</p>
 <h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1962,25 +1917,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">recycledContentIdentifier</td>
+<td style="text-align: left;">identifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
-<td style="text-align: left;">A globally unique identifier. See <a href="../4_Identifiers/4_1_Identifiers.md">identifiers</a> section for information on how to construct this identifier</td>
+<td style="text-align: left;">A globally unique identifier. See <a href="../../identifiers/">identifiers</a> section for information on how to construct this identifier</td>
 </tr>
 <tr>
-<td style="text-align: left;">recycledContentEvidenceType</td>
+<td style="text-align: left;">evidenceType</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">What type of document provides the information regarding the claim? The entry should be the <a href="../5_Controlled_Lists/5_011_Recycled_Content_Evidence_Type.md">recycled content evidence type</a> identifier.</td>
+<td style="text-align: left;">What type of document provides the information regarding the claim? The entry should be the <a href="../../controlled-lists/recycled-content-evidence-types/">recycled content evidence type</a> identifier.</td>
 </tr>
 <tr>
-<td style="text-align: left;">recycledContentEvidenceReference</td>
+<td style="text-align: left;">evidenceReference</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
 <td style="text-align: left;">An accompanying reference number associated with the recycled content evidence type for the component.</td>
 </tr>
 <tr>
-<td style="text-align: left;">recycledContentIssueDate</td>
+<td style="text-align: left;">issueDate</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Date</td>
 <td style="text-align: left;">The date that the recycled content evidence was issued. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
@@ -1992,39 +1947,15 @@
 
   COMPONENTS }o..o{ RECYCLED_CONTENT_CLAIMS : within
   RECYCLED_CONTENT_CLAIMS {
-    recycledContentIdentifier UUID "*"
-    recycledContentEvidenceType String "*"
-    recycledContentEvidenceReference String
-    recycledContentIssueDate Date
+    identifier UUID "*"
+    evidenceType String "*"
+    evidenceReference String
+    issueDate Date
   }
   RECYCLED_CONTENT_CLAIMS }o--o{ CONTROLLED_LISTS : attributes
   CONTROLLED_LISTS {
-    recycledContentEvidenceType mandatory
+    recycledContentEvidenceTypes mandatory
   }</code></pre>
-<h2 id="template">Template<a class="headerlink" href="#template" title="Permanent link">&para;</a></h2>
-<p>Recycled content claims should be provided as a separate csv file. The specification of this csv file is as follows:</p>
-<p><a href="https://www.open3p.org/wp-content/uploads/2023/09/recycledContentClaims20230922.csv">Recycled Content Claims</a></p>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">JSON</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="mi">--</span><span class="err">A</span><span class="w"> </span><span class="err">cer</span><span class="kc">t</span><span class="err">i</span><span class="kc">f</span><span class="err">ica</span><span class="kc">te</span><span class="w"> </span><span class="err">providi</span><span class="kc">n</span><span class="err">g</span><span class="w"> </span><span class="err">i</span><span class="kc">nf</span><span class="err">orma</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="err">abou</span><span class="kc">t</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">recycled</span><span class="w"> </span><span class="err">co</span><span class="kc">ntent</span><span class="w"> </span><span class="err">claim.</span>
-<span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;recycledContentIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;23e8251a-4fe6-4b25-9966-b08acac9ba34&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;recycledContentEvidenceType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;c-recycled-evidence-0001&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;recycledContentEvidenceReference&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ABC-123-Example&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;recycledContentIssueDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-08-01&quot;</span>
-<span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
 
 
 

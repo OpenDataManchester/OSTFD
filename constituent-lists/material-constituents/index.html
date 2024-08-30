@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The material constituents relationship list.">
+        <meta name="description" content="The material constituents list.">
       
       
         <meta name="author" content="Open Data Manchester CIC">
@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -983,24 +974,6 @@
   <a href="#diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Diagram
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
     </span>
   </a>
   
@@ -1739,11 +1712,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1915,24 +1888,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1949,7 +1904,7 @@
 
 
 <h1 id="material-constituents">Material Constituents<a class="headerlink" href="#material-constituents" title="Permanent link">&para;</a></h1>
-<p>The material constituents relationship list identifies the base_material and other materials that are combined to create materials. This is only used in <a href="../3_Data_Specification/3_2_Materials.md">materials</a>.</p>
+<p>The material constituents list identifies the base materials and other materials that are combined to create materials. This is only used in <a href="../../schema/materials/">materials</a>.</p>
 <h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1962,13 +1917,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">materialConstituentsIdentifier</td>
+<td style="text-align: left;">identifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
-<td style="text-align: left;">A globally unique identifier. See <a href="../4_Identifiers/4_1_Identifiers.md">identifiers</a> section for information on how to construct this identifier</td>
+<td style="text-align: left;">A globally unique identifier. See <a href="../../identifiers/">identifiers</a> section for information on how to construct this identifier</td>
 </tr>
 <tr>
-<td style="text-align: left;">materialCombinationIdentifier</td>
+<td style="text-align: left;">combinationIdentifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
 <td style="text-align: left;">The unique identifier of the materials that this component is made of. There must be an equivalent record in the <code>Base_Materials</code> OR <code>Materials</code> data.</td>
@@ -1977,7 +1932,7 @@
 <td style="text-align: left;">materialPurpose</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">Why is this base material or material being used? Use the identifier of the material purpose that this row relates to. The entry here should be drawn from the <a href="../5_Controlled_Lists/5_003_Material_Purpose.md">Material Purpose Controlled List</a>.</td>
+<td style="text-align: left;">Why is this base material or material being used? Use the identifier of the material purpose that this row relates to. The entry here should be drawn from the <a href="../../controlled-lists/material-purposes/">Material Purpose Controlled List</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">virginMaterial</td>
@@ -2017,226 +1972,6 @@
   CONTROLLED_LISTS {
     materialPurposeControlledList mandatory 
   }</code></pre>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">To Cardboard - JSON</label><label for="__tabbed_1_2">To Glass - JSON</label><label for="__tabbed_1_3">To Cardboard - XML</label><label for="__tabbed_1_4">To Glass - XML</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;95b95bf7-80c0-49bc-9367-ae48d6c107d3&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;222494f7-6703-49bc-a993-8dd2675709fb&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;materialPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;m-material-purpose-0015&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;virginMaterial&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">70.0</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialPercentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100.0</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11eb7b61-05f1-4894-a57b-80e5082f944a&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ff39892f-0a88-4085-9942-4522cecc8337&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;materialPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;m-material-purpose-0015&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;virginMaterial&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100.00</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialPercentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11eb7b61-05f1-4894-a57b-80e5082f944a&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;db481bb7-e57a-4af7-8821-2258338ddd11&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;m-material-purpose-0015&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;virginMaterial&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialPercentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">70.0</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11eb7b61-05f1-4894-a57b-80e5082f944a&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1bdca07b-ed6a-4799-a027-654322cb302f&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;m-material-purpose-0015&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;virginMaterial&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100.0</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialPercentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">15.0</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11eb7b61-05f1-4894-a57b-80e5082f944a&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;42b19543-7138-43ff-a867-a1e551ccba14&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;m-material-purpose-0016&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;virginMaterial&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">70.0</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;materialPercentage&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5.0</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="hll"><span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>95b95bf7-80c0-49bc-9367-ae48d6c107d3<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>222494f7-6703-49bc-a993-8dd2675709fb<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-</span><span class="w">    </span><span class="nt">&lt;materialPurpose&gt;</span>m-material-purpose-0015<span class="nt">&lt;/materialPurpose&gt;</span>
-<span class="w">    </span><span class="nt">&lt;virginMaterial&gt;</span>70<span class="nt">&lt;/virginMaterial&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialPercentage&gt;</span>100<span class="nt">&lt;/materialPercentage&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="hll"><span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>11eb7b61-05f1-4894-a57b-80e5082f944a<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>ff39892f-0a88-4085-9942-4522cecc8337<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-</span><span class="w">    </span><span class="nt">&lt;materialPurpose&gt;</span>m-material-purpose-0015<span class="nt">&lt;/materialPurpose&gt;</span>
-<span class="w">    </span><span class="nt">&lt;virginMaterial&gt;</span>100<span class="nt">&lt;/virginMaterial&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialPercentage&gt;</span>10<span class="nt">&lt;/materialPercentage&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>11eb7b61-05f1-4894-a57b-80e5082f944a<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>db481bb7-e57a-4af7-8821-2258338ddd11<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialPurpose&gt;</span>m-material-purpose-0015<span class="nt">&lt;/materialPurpose&gt;</span>
-<span class="w">    </span><span class="nt">&lt;virginMaterial&gt;</span>0<span class="nt">&lt;/virginMaterial&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialPercentage&gt;</span>70<span class="nt">&lt;/materialPercentage&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>11eb7b61-05f1-4894-a57b-80e5082f944a<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>1bdca07b-ed6a-4799-a027-654322cb302f<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialPurpose&gt;</span>m-material-purpose-0015<span class="nt">&lt;/materialPurpose&gt;</span>
-<span class="w">    </span><span class="nt">&lt;virginMaterial&gt;</span>100<span class="nt">&lt;/virginMaterial&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialPercentage&gt;</span>15<span class="nt">&lt;/materialPercentage&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>11eb7b61-05f1-4894-a57b-80e5082f944a<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>42b19543-7138-43ff-a867-a1e551ccba14<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialPurpose&gt;</span>m-material-purpose-0016<span class="nt">&lt;/materialPurpose&gt;</span>
-<span class="w">    </span><span class="nt">&lt;virginMaterial&gt;</span>70<span class="nt">&lt;/virginMaterial&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialPercentage&gt;</span>5<span class="nt">&lt;/materialPercentage&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
-<h2 id="data-flow">Data flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph baseMaterials[Base Materials]
-        bm_cardboard["Cardboard
-        -
-        222494f7-6703-49bc-a993-8dd2675709fb"]
-        bm_sodaAsh["Soda ash
-        -
-        ff39892f-0a88-4085-9942-4522cecc8337"]
-        bm_cullet["Cullet
-        -
-        db481bb7-e57a-4af7-8821-2258338ddd11"]
-        bm_sand["Sand
-        -
-        1bdca07b-ed6a-4799-a027-654322cb302f"]
-        bm_limestone["Limestone
-        -
-        42b19543-7138-43ff-a867-a1e551ccba14"]
-    end
-    subgraph materialConstituents["`**-**`"]
-        subgraph macs_cardboard ["`**Cardboard Constituents**`"]
-          mac_cardboard["`**95b95bf7-80c0-49bc-9367-ae48d6c107d3
-          -
-          materialPercentage: 100%**`"]
-        end
-        subgraph macs_glass ["`**Glass Constituents**`"]
-          mac_sodaAsh["`**11eb7b61-05f1-4894-a57b-80e5082f944a
-          -
-          materialPercentage: 10%**`"]
-          mac_cullet["`**11eb7b61-05f1-4894-a57b-80e5082f944a
-          -
-          materialPercentage: 70%**`"]
-          mac_sand["`**11eb7b61-05f1-4894-a57b-80e5082f944a
-          -
-          materialPercentage: 15%**`"]
-          mac_limestone["`**11eb7b61-05f1-4894-a57b-80e5082f944a
-          -
-          materialPercentage: 5%**`"]
-        end  
-    end
-    subgraph materials["Materials"]
-        ma_cardboard["Cardboard
-        -
-        16f41cca-1a77-4e31-8b0f-2723f752317b"]
-        ma_glass["Glass
-        -
-        b050ab75-4bcb-4c7f-b8f5-8a1f9e5ba7d3"]
-    end
-    bm_cardboard --&gt; mac_cardboard
-    macs_cardboard --&gt; ma_cardboard
-    bm_sodaAsh --&gt; mac_sodaAsh
-    bm_cullet --&gt; mac_cullet
-    bm_sand --&gt; mac_sand
-    bm_limestone --&gt; mac_limestone
-    macs_glass --&gt; ma_glass</code></pre>
 
 
 

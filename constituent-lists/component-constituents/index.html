@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The component constituents relationship list.">
+        <meta name="description" content="The component constituents list.">
       
       
         <meta name="author" content="Open Data Manchester CIC">
@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1004,24 +995,6 @@
   <a href="#diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Diagram
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
     </span>
   </a>
   
@@ -1739,11 +1712,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1915,24 +1888,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1949,7 +1904,7 @@
 
 
 <h1 id="component-constituents">Component Constituents<a class="headerlink" href="#component-constituents" title="Permanent link">&para;</a></h1>
-<p>The component constituents relationship list identifies the materials that are combined to create components. This is only used in <a href="../3_Data_Specification/3_3_Components.md">components</a>.</p>
+<p>The component constituents list identifies the materials and components that are combined to create components. This is only used in <a href="../../schema/components/">components</a>.</p>
 <h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1962,13 +1917,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">componentConstituentsIdentifier</td>
+<td style="text-align: left;">identifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
-<td style="text-align: left;">A globally unique identifier. See <a href="../4_Identifiers/4_1_Identifiers.md">identifiers</a> section for information on how to construct this identifier</td>
+<td style="text-align: left;">A globally unique identifier. See <a href="../../identifiers/">identifiers</a> section for information on how to construct this identifier</td>
 </tr>
 <tr>
-<td style="text-align: left;">componentCombinationIdentifier</td>
+<td style="text-align: left;">combinationIdentifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
 <td style="text-align: left;">The unique identifier of the materials and components that this component is made of. There must be an equivalent record in the <code>Materials</code> OR <code>Components</code> data.</td>
@@ -1980,107 +1935,11 @@
 
   COMPONENTS }o..o{ COMPONENT_CONSTITUENTS : within
   COMPONENT_CONSTITUENTS {
-    componentConstituentsIdentifier UUID "*"
+    identifier UUID "*"
     componentCombinationIdentifier UUID "*"
   }
   COMPONENT_CONSTITUENTS }o--o{ MATERIALS : attributes
   COMPONENT_CONSTITUENTS }o--o{ COMPONENTS : attributes</code></pre>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">To Cardboard Box - JSON</label><label for="__tabbed_1_2">To Glass Wine Bottle - JSON</label><label for="__tabbed_1_3">To Cardboard Box - XML</label><label for="__tabbed_1_4">To Glass Wine Bottle - XML</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;componentConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6d856739-3893-4321-84b9-738a4ef1c830&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;componentCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;16f41cca-1a77-4e31-8b0f-2723f752317b&quot;</span>
-</span><span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;componentConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;70023f95-2d0f-4e47-ab6e-0ce51d50e55d&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;componentCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;b050ab75-4bcb-4c7f-b8f5-8a1f9e5ba7d3&quot;</span><span class="p">,</span>
-</span><span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;root&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;row&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;componentConstituentsIdentifier&gt;</span>6d856739-3893-4321-84b9-738a4ef1c830<span class="nt">&lt;/componentConstituentsIdentifier&gt;</span>
-</span><span class="w">    </span><span class="nt">&lt;componentCombinationIdentifier&gt;</span>16f41cca-1a77-4e31-8b0f-2723f752317b<span class="nt">&lt;/componentCombinationIdentifier&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/row&gt;</span>
-<span class="nt">&lt;/root&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;root&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;row&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;componentConstituentsIdentifier&gt;</span>70023f95-2d0f-4e47-ab6e-0ce51d50e55d<span class="nt">&lt;/componentConstituentsIdentifier&gt;</span>
-</span><span class="w">    </span><span class="nt">&lt;componentCombinationIdentifier&gt;</span>b050ab75-4bcb-4c7f-b8f5-8a1f9e5ba7d3<span class="nt">&lt;/componentCombinationIdentifier&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/row&gt;</span>
-<span class="nt">&lt;/root&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
-<h2 id="data-flow">Data flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph materials[Materials]
-      ma_cardboard["Cardboard
-      -
-      16f41cca-1a77-4e31-8b0f-2723f752317b"]
-      ma_glass["Glass
-      -
-      b050ab75-4bcb-4c7f-b8f5-8a1f9e5ba7d3"]
-    end
-    subgraph componetConstituents["`**-**`"]
-      subgraph cocs_cardboard ["`**Cardboard Box Constituents**`"]
-        coc_cardboard["`**6d856739-3893-4321-84b9-738a4ef1c830**`"]
-      end
-      subgraph cocs_glass ["`**Wine bottle Constituents**`"]
-        coc_glass["`**70023f95-2d0f-4e47-ab6e-0ce51d50e55d**`"]
-      end  
-    end
-    subgraph components["Components"]
-      co_cardboardBox["Cardboard box
-      - 
-      9dad67b0-d5a2-4afb-9287-e712fd1ea3e6"]
-      co_wineBottle["Wine bottle
-      - 
-      94108707-b914-43f3-bed5-93adbbd208c1"]
-    end
-    ma_cardboard --&gt; coc_cardboard
-    ma_glass --&gt; coc_glass
-    cocs_cardboard --&gt; co_cardboardBox
-    cocs_glass --&gt; co_wineBottle
-</code></pre>
 
 
 

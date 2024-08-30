@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The load constituents relationship list.">
+        <meta name="description" content="The load constituents list.">
       
       
         <meta name="author" content="Open Data Manchester CIC">
@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1067,24 +1058,6 @@
   <a href="#diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Diagram
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
     </span>
   </a>
   
@@ -1739,11 +1712,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1915,24 +1888,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1949,7 +1904,7 @@
 
 
 <h1 id="load-constituents">Load Constituents<a class="headerlink" href="#load-constituents" title="Permanent link">&para;</a></h1>
-<p>The loads constituents relationship list identifies the all the complete packaging from different levels (primary, secondary, transit etc.) and multipacks that are combined to create loads. This is only used in <a href="../3_Data_Specification/3_7_Load.md">load</a>.</p>
+<p>The loads constituents list identifies all the fashion and textile products from different levels (primary, secondary, transit etc.) and multipacks that are combined to create loads. This is only used in <a href="../../schema/loads/">load</a>.</p>
 <h2 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1962,13 +1917,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">loadConstituentsIdentifier</td>
+<td style="text-align: left;">identifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
-<td style="text-align: left;">A globally unique identifier. See <a href="../4_Identifiers/4_1_Identifiers.md">identifiers</a> section for information on how to construct this identifier</td>
+<td style="text-align: left;">A globally unique identifier. See <a href="../../identifiers/">identifiers</a> section for information on how to construct this identifier</td>
 </tr>
 <tr>
-<td style="text-align: left;">loadCombinationIdentifier</td>
+<td style="text-align: left;">combinationIdentifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
 <td style="text-align: left;">The unique identifier of the items that this component is made of. There must be an equivalent record in the <code>Components</code>, <code>Complete_Packaging</code> OR <code>Multipacks</code> data.</td>
@@ -1983,7 +1938,7 @@
 <td style="text-align: left;">externalIdentifiers</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Dictionary</td>
-<td style="text-align: left;">A dictionary of identifiers that might be used to identify the load constituents in other systems. For example: manufacturer&rsquo;s own internal identifier, bar codes or global trade item number (gtin). To provide external identifiers please follow this format. <code>{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}</code></td>
+<td style="text-align: left;">A dictionary of identifiers that might be used to identify the load constituents in other systems. For example: manufacturer&rsquo;s own internal identifier, bar codes or global trade item number (gtin). To provide external identifiers please follow this format. <code>{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}</code>. The entries could be drawn from the <a href="../../controlled-lists/external-identifiers/">External Identifiers Controlled List</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">quantityInLoad</td>
@@ -1995,14 +1950,14 @@
 <td style="text-align: left;">level</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">The intended use of the component for the packaging. The entry here should be drawn from the <a href="../5_Controlled_Lists/5_015_Level.md">level controlled list</a>.</td>
+<td style="text-align: left;">The intended use of the component for the packaging. The entry here should be drawn from the <a href="../../controlled-lists/levels/">level controlled list</a>.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>erDiagram
   COMPONENTS }o..o{ LOAD_CONSTITUENTS : attributes
-  COMPLETE_PACKAGING }o..o{ LOAD_CONSTITUENTS : attributes
+  PRODUCTS }o..o{ LOAD_CONSTITUENTS : attributes
   MULTIPACKS }o..o{ LOAD_CONSTITUENTS : attributes
   LOAD_CONSTITUENTS {
     loadConstituentsIdentifier UUID "*"
@@ -2017,102 +1972,6 @@
   CONTROLLED_LISTS {
     level mandatory
   }</code></pre>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">To Wine Delivery - JSON</label><label for="__tabbed_1_2">To Wine Delivery - XML</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;loadConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CA88F5CE-2D09-AFE0-08D7-44804780F924&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;loadCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;111525c0-9a41-4eea-a9b7-a8c23ffcf94d&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cases of 12 x wine&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;externalIdentifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;GTIN&quot;</span><span class="p">:</span><span class="s2">&quot;00123456789012&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;quantityInLoad&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;27&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lc-level-0001&quot;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;loadConstituent&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;loadConstituentsIdentifier&gt;</span>CA88F5CE-2D09-AFE0-08D7-44804780F924<span class="nt">&lt;/loadConstituentsIdentifier&gt;</span>
-</span><span class="hll"><span class="w">  </span><span class="nt">&lt;loadCombinationIdentifier&gt;</span>111525c0-9a41-4eea-a9b7-a8c23ffcf94d<span class="nt">&lt;/loadCombinationIdentifier&gt;</span>
-</span><span class="w">  </span><span class="nt">&lt;name&gt;</span>Cases<span class="w"> </span>of<span class="w"> </span>12<span class="w"> </span>x<span class="w"> </span>wine<span class="nt">&lt;/name&gt;</span>
-<span class="w">  </span><span class="nt">&lt;externalIdentifiers&gt;</span>
-<span class="w">    </span><span class="nt">&lt;GTIN&gt;</span>00123456789012<span class="nt">&lt;/GTIN&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/externalIdentifiers&gt;</span>
-<span class="w">  </span><span class="nt">&lt;quantityInLoad&gt;</span>27<span class="nt">&lt;/quantityInLoad&gt;</span>
-<span class="w">  </span><span class="nt">&lt;level&gt;</span>lc-level-0001<span class="nt">&lt;/level&gt;</span>
-<span class="nt">&lt;/loadConstituent&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
-<h2 id="data-flow">Data flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph completePackages["Complete Packages"]
-        cp_pallet[Pallet]
-        cp_shrinkWrap[Shrink Wrap]
-    end
-    subgraph multipacks[Multipacks]
-        mp_wineBox["12 pack of wine
-        -
-        111525c0-9a41-4eea-a9b7-a8c23ffcf94d"]
-    end
-    subgraph multipacks[Multipacks]
-        mp_wineBox["12 pack of wine
-        -
-        111525c0-9a41-4eea-a9b7-a8c23ffcf94d"]
-    end
-    subgraph loadConstituents["`**-**`"]
-      subgraph locs_wineBox ["`**Wine Multipack Constituents**`"]
-        loc_wineBox["`**CA88F5CE-2D09-AFE0-08D7-44804780F924
-        -
-        quantityInLoad: 27
-        level: primary**`"]
-        loc_pallet["`**CA88F5CE-2D09-AFE0-08D7-44804780F924
-        -
-        quantityInLoad: 1
-        level: transit**`"]
-        loc_shrinkWrap["`**CA88F5CE-2D09-AFE0-08D7-44804780F924
-        -
-        quantityInLoad: 1
-        level: transit**`"]
-      end
-    end
-    subgraph loads["Loads"]
-        lo_load["Pallet of multicase wine
-        -
-        ED051AFD-EC7F-0428-B054-8837118922FE"]
-    end
-    cp_pallet --&gt; loc_pallet
-    cp_shrinkWrap --&gt; loc_shrinkWrap
-    mp_wineBox --&gt; loc_wineBox
-    locs_wineBox --&gt; lo_load</code></pre>
 
 
 

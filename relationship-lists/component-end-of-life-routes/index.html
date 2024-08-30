@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1212,15 +1203,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Template
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1730,11 +1712,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1906,15 +1888,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Template
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1931,7 +1904,7 @@
 
 
 <h1 id="component-end-of-life-routes">Component End of Life Routes<a class="headerlink" href="#component-end-of-life-routes" title="Permanent link">&para;</a></h1>
-<p>The component end of life routes relationship list identifies the purposed and intended destination and process of this component once it has completed its role as packaging. This is only used in <a href="../3_Data_Specification/3_3_Components.md">components</a>.</p>
+<p>The component end of life routes relationship list identifies the purposed and intended destination and process of this component once it has completed its role as packaging. This is only used in <a href="../../schema/components/">components</a>.</p>
 <h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1944,16 +1917,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">componentEndOfLifeRouteIdentifier</td>
+<td style="text-align: left;">identifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
-<td style="text-align: left;">A globally unique identifier. See <a href="../4_Identifiers/4_1_Identifiers.md">identifiers</a> section for information on how to construct this identifier</td>
+<td style="text-align: left;">A globally unique identifier. See <a href="../../identifiers/">identifiers</a> section for information on how to construct this identifier</td>
 </tr>
 <tr>
-<td style="text-align: left;">componentEndOfLifeRoute</td>
+<td style="text-align: left;">endOfLifeRoute</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">What is the intended end of life route for this component? The entry should be the <a href="../5_Controlled_Lists/5_016_End_Of_Life_Route.md">end of life route controlled list</a> identifier.</td>
+<td style="text-align: left;">What is the intended end of life route for this component? The entry should be the <a href="../../controlled-lists/end-of-life-routes/">end of life route controlled list</a> identifier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">orderOfPrecedence</td>
@@ -1965,7 +1938,7 @@
 <td style="text-align: left;">componentDisruptors</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">What challenges this end of life route for this component has. The entry should be the <a href="../5_Controlled_Lists/5_008_Component_Disruptors.md">component end of life route disruptors controlled list</a> identifier.</td>
+<td style="text-align: left;">What challenges this end of life route for this component has. The entry should be the <a href="../../controlled-lists/component-disruptors/">component end of life route disruptors controlled list</a> identifier.</td>
 </tr>
 </tbody>
 </table>
@@ -1974,19 +1947,16 @@
 
   COMPONENTS }o..o{ COMPONENT_END_OF_LIFE_ROUTES : within
   COMPONENT_END_OF_LIFE_ROUTES {
-    componentEndOfLifeRouteIdentifier UUID "*"
-    componentEndOfLifeRoute String "*"
+    identifier UUID "*"
+    route String "*"
     orderOfPrecedence Integer
     componentDistruptors List
   }
   COMPONENT_END_OF_LIFE_ROUTES }o--o{ CONTROLLED_LISTS : attributes
   CONTROLLED_LISTS {
-    endOfLifeRoute mandatory
+    endOfLifeRoutes mandatory
     componentDistruptors mandatory
   }</code></pre>
-<h2 id="template">Template<a class="headerlink" href="#template" title="Permanent link">&para;</a></h2>
-<p>Component end of life routes should be provided as a separate csv file. The specification of this csv file is as follows:</p>
-<p><a href="https://www.open3p.org/wp-content/uploads/2023/09/componentEOLRoutes20230922.csv">Component End of Life Routes</a></p>
 
 
 

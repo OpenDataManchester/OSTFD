@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -784,24 +775,6 @@
   <a href="#diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Diagram
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
     </span>
   </a>
   
@@ -1739,11 +1712,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1915,24 +1888,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2074,148 +2029,6 @@
     organisations optional
     measurements optional
   }</code></pre>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Cardboard - JSON</label><label for="__tabbed_1_2">Soda ash - JSON</label><label for="__tabbed_1_3">Cardboard - XML</label><label for="__tabbed_1_4">Soda ash - XML</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;222494f7-6703-49bc-a993-8dd2675709fb&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cardboard&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bm-material-type-0001&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;externalIdentifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;primaryKey&quot;</span><span class="p">:</span><span class="s2">&quot;153516&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="s2">&quot;34-56bg&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;certification&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;certificationClaims&quot;</span><span class="p">:</span><span class="w">  </span>
-<span class="w">      </span><span class="p">[</span><span class="s2">&quot;352d6f90-139b-429c-9018-2230ff03a40b&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;manufacturers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;GB-COH-10906273&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;manufacturedCountry&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;724&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;updateDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-02-25&quot;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ff39892f-0a88-4085-9942-4522cecc8337&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Soda ash&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;externalIdentifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;primaryKey&quot;</span><span class="p">:</span><span class="s2">&quot;soda-ash-100-100&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;certification&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;manufacturers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;GB-COH-10906273&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;manufacturedCountry&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;826&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;updateDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-12-07&quot;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="nt">&lt;baseMaterial&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;identifier&gt;</span>222494f7-6703-49bc-a993-8dd2675709fb<span class="nt">&lt;/identifier&gt;</span>
-</span><span class="hll"><span class="w">  </span><span class="nt">&lt;name&gt;</span>Cardboard<span class="nt">&lt;/name&gt;</span>
-</span><span class="w">  </span><span class="nt">&lt;type&gt;</span>bm-material-type-0001<span class="nt">&lt;/type&gt;</span>
-<span class="w">  </span><span class="nt">&lt;externalIdentifiers&gt;</span>
-<span class="w">    </span><span class="nt">&lt;primaryKey&gt;</span>153516<span class="nt">&lt;/primaryKey&gt;</span>
-<span class="w">    </span><span class="nt">&lt;sku&gt;</span>34-56bg<span class="nt">&lt;/sku&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/externalIdentifiers&gt;</span>
-<span class="w">  </span><span class="nt">&lt;certification&gt;</span>true<span class="nt">&lt;/certification&gt;</span>
-<span class="w">  </span><span class="nt">&lt;certificationClaims&gt;</span>352d6f90-139b-429c-9018-2230ff03a40b<span class="nt">&lt;/certificationClaims&gt;</span>
-<span class="w">  </span><span class="nt">&lt;manufacturers&gt;</span>GB-COH-10906273<span class="nt">&lt;/manufacturers&gt;</span>
-<span class="w">  </span><span class="nt">&lt;manufacturedCountry&gt;</span>724<span class="nt">&lt;/manufacturedCountry&gt;</span>
-<span class="w">  </span><span class="nt">&lt;updateDate&gt;</span>2024-02-25<span class="nt">&lt;/updateDate&gt;</span>
-<span class="nt">&lt;/baseMaterial&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="nt">&lt;baseMaterial&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;identifier&gt;</span>ff39892f-0a88-4085-9942-4522cecc8337<span class="nt">&lt;/identifier&gt;</span>
-</span><span class="hll"><span class="w">  </span><span class="nt">&lt;name&gt;</span>Soda<span class="w"> </span>ash<span class="nt">&lt;/name&gt;</span>
-</span><span class="w">  </span><span class="nt">&lt;externalIdentifiers&gt;</span>
-<span class="w">    </span><span class="nt">&lt;primaryKey&gt;</span>soda-ash-100-100<span class="nt">&lt;/primaryKey&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/externalIdentifiers&gt;</span>
-<span class="w">  </span><span class="nt">&lt;certification&gt;</span>false<span class="nt">&lt;/certification&gt;</span>
-<span class="w">  </span><span class="nt">&lt;manufacturers&gt;</span>GB-COH-10906273<span class="nt">&lt;/manufacturers&gt;</span>
-<span class="w">  </span><span class="nt">&lt;manufacturedCountry&gt;</span>826<span class="nt">&lt;/manufacturedCountry&gt;</span>
-<span class="w">  </span><span class="nt">&lt;updateDate&gt;</span>2023-12-07<span class="nt">&lt;/updateDate&gt;</span>
-<span class="nt">&lt;/baseMaterial&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
-<h2 id="data-flow">Data flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph baseMaterials["`**Base Materials**`"]
-        bm_cardboard["`**Cardboard
-        -
-        222494f7-6703-49bc-a993-8dd2675709fb**`"]
-        bm_sodaAsh["`**Soda ash
-        -
-        b050ab75-4bcb-4c7f-b8f5-8a1f9e5ba7d3**`"]
-    end
-    subgraph materials[Materials]
-        ma_cardboard[example materials]
-    end
-    bm_cardboard --&gt; materials
-    bm_sodaAsh --&gt; materials</code></pre>
 
 
 

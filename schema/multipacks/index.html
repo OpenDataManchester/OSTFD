@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -868,24 +859,6 @@
   <a href="#diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Diagram
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
     </span>
   </a>
   
@@ -1739,11 +1712,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1915,24 +1888,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1990,10 +1945,10 @@
 <td style="text-align: left;">A dictionary of identifiers that is used to identify the mutlipack in other data standards, software systems or protocols. For example: manufacturer&rsquo;s own primary key, bar codes or global trade item number (gtin). To provide external identifiers follow this format. <code>{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}</code>. The entries could be drawn from the <a href="../../controlled-lists/external-identifiers/">External Identifiers Controlled List</a>.</td>
 </tr>
 <tr>
-<td style="text-align: left;">multipackConstituentsIdentifiers</td>
+<td style="text-align: left;">constituentsIdentifiers</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the consituents that are combined to create this multipack. The entries should be from the <a href="../6_Relationship_Lists/6_004_Multipack_Constituents.md">Multipack Constituents Relationship List</a> identifier.</td>
+<td style="text-align: left;">The information regarding the consituents that are combined to create this multipack. The entries should be from the <a href="../../constituent-lists/multipack-constituents/">Multipack Constituents Relationship List</a> identifier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">tier</td>
@@ -2005,13 +1960,13 @@
 <td style="text-align: left;">measurements <span class="twemoji addition" title="Added to this version"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm136 312v-64h-64c-13.3 0-24-10.7-24-24s10.7-24 24-24h64v-64c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24h-64v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg></span></td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the measurements of the multipack. The entries should be from the <a href="../6_Relationship_Lists/6_012_Measurements.md">Measurements Relationship List</a>.</td>
+<td style="text-align: left;">The information regarding the measurements of the multipack. The entries should be from the <a href="../../relationship-lists/measurements/">Measurements Relationship List</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">manufacturers</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the manufacturer(s). The entries should be the <a href="../6_Relationship_Lists/6_010_Organisations.md">Organisations Relationship List</a> identifiers.</td>
+<td style="text-align: left;">The information regarding the manufacturer(s). The entries should be the <a href="../../relationship-lists/organisations/">Organisations Relationship List</a> identifiers.</td>
 </tr>
 <tr>
 <td style="text-align: left;">manufacturedCountry</td>
@@ -2042,14 +1997,14 @@
 <h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>erDiagram
 COMPONENTS }o..o{ MULTIPACK : multipack_constituents
-COMPONENTS }o..o{ COMPLETE_PACKAGING : complete_packaging_constituents
-COMPLETE_PACKAGING }o..o{ MULTIPACK : multipack_constituents
+COMPONENTS }o..o{ PRODUCTS : complete_packaging_constituents
+PRODUCTS }o..o{ MULTIPACK : multipack_constituents
   MULTIPACK {
     identifier UUID "*"
     name String
     description String
     externalIdentifiers Dictionary
-    multipackConstituentsIdentifiers List "*"
+    constituentsIdentifiers List "*"
     tier String
     measurements List
     manufacturers List
@@ -2059,145 +2014,13 @@ COMPLETE_PACKAGING }o..o{ MULTIPACK : multipack_constituents
     discontinueDate Date
   }
   MULTIPACK }o--o{ RELATIONSHIP_LISTS : attributes
-  COMPLETE_PACKAGING }o..o{ LOADS : load_constituents
+  PRODUCTS }o..o{ LOADS : load_constituents
   MULTIPACK }o..o{ LOADS : load_constituents
   COMPONENTS }o--o{ LOADS : load_constituents
       RELATIONSHIP_LISTS {
         organisations optional
         measurements optional
     }</code></pre>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">12 Multipack of Wine JSON</label><label for="__tabbed_1_2">12 Multipack of Wine XML</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;111525c0-9a41-4eea-a9b7-a8c23ffcf94d&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;12 pack of wine&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;12 x 750ml of red wine that are sold together. Not to be sold separately.&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;externalIdentifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;GTIN&quot;</span><span class="p">:</span><span class="s2">&quot;00123456789012&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;multipackConstituentsIdentifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;multipackConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;346C5546-282B-C040-CE74-DD0DD4688C0B&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;multipackCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;516ac728-65e3-48c6-9756-37c29c177a7c&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;multipackConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;346C5546-282B-C040-CE74-DD0DD4688C0B&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;multipackCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123f1eab-f674-4009-862a-7168cd5cf53f&quot;</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;tier&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;manufacturers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;GB-COH-10906273&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;manufacturedCountry&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;826&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;updateDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-08-01&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;releaseDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-08-01&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;discontinueDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="w">  </span><span class="nt">&lt;multipack&gt;</span>
-<span class="hll"><span class="w">    </span><span class="nt">&lt;identifier&gt;</span>111525c0-9a41-4eea-a9b7-a8c23ffcf94d<span class="nt">&lt;/identifier&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;name&gt;</span>12<span class="w"> </span>pack<span class="w"> </span>of<span class="w"> </span>wine<span class="nt">&lt;/name&gt;</span>
-</span><span class="w">    </span><span class="nt">&lt;description&gt;</span>12<span class="w"> </span>x<span class="w"> </span>750ml<span class="w"> </span>of<span class="w"> </span>red<span class="w"> </span>wine<span class="w"> </span>that<span class="w"> </span>are<span class="w"> </span>sold<span class="w"> </span>together.<span class="w"> </span>Not<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>sold<span class="w"> </span>separately.<span class="nt">&lt;/description&gt;</span>
-<span class="w">    </span><span class="nt">&lt;externalIdentifiers&gt;</span>
-<span class="w">      </span><span class="nt">&lt;GTIN&gt;</span>00123456789012<span class="nt">&lt;/GTIN&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/externalIdentifiers&gt;</span>
-<span class="w">    </span><span class="nt">&lt;multipackConstituentsIdentifiers&gt;</span>
-<span class="w">      </span><span class="nt">&lt;multipackConstituentsIdentifier&gt;</span>346C5546-282B-C040-CE74-DD0DD4688C0B<span class="nt">&lt;/multipackConstituentsIdentifier&gt;</span>
-<span class="w">      </span><span class="nt">&lt;multipackCombinationIdentifier&gt;</span>516ac728-65e3-48c6-9756-37c29c177a7c<span class="nt">&lt;/multipackCombinationIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/multipackConstituentsIdentifiers&gt;</span>
-<span class="w">    </span><span class="nt">&lt;multipackConstituentsIdentifiers&gt;</span>
-<span class="w">      </span><span class="nt">&lt;multipackConstituentsIdentifier&gt;</span>346C5546-282B-C040-CE74-DD0DD4688C0B<span class="nt">&lt;/multipackConstituentsIdentifier&gt;</span>
-<span class="w">      </span><span class="nt">&lt;multipackCombinationIdentifier&gt;</span>123f1eab-f674-4009-862a-7168cd5cf53f<span class="nt">&lt;/multipackCombinationIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;/multipackConstituentsIdentifiers&gt;</span>
-<span class="w">    </span><span class="nt">&lt;tier&gt;</span>1<span class="nt">&lt;/tier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;manufacturers&gt;</span>GB-COH-10906273<span class="nt">&lt;/manufacturers&gt;</span>
-<span class="w">    </span><span class="nt">&lt;manufacturedCountry&gt;</span>826<span class="nt">&lt;/manufacturedCountry&gt;</span>
-<span class="w">    </span><span class="nt">&lt;updateDate&gt;</span>2022-08-01<span class="nt">&lt;/updateDate&gt;</span>
-<span class="w">    </span><span class="nt">&lt;releaseDate&gt;</span>2022-08-01<span class="nt">&lt;/releaseDate&gt;</span>
-<span class="w">    </span><span class="nt">&lt;discontinueDate&gt;&lt;/discontinueDate&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/multipack&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
-<h2 id="data-flow">Data flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph components[Components]
-        co_example["example components"]
-    end
-    subgraph completePackages[Complete Packages]
-        cp_wineBox["Wine Box
-        -
-        516ac728-65e3-48c6-9756-37c29c177a7c"]
-        cp_wineBottle["Wine Bottle
-        -
-        123f1eab-f674-4009-862a-7168cd5cf53f"]
-    end
-    subgraph multipacks["`**Multipacks**`"]
-        mp_wineBox["`**12 pack of wine
-        -
-        111525c0-9a41-4eea-a9b7-a8c23ffcf94d**`"]
-    end
-    subgraph loads[Loads]
-        lo_load["example loads"]
-    end
-    components --&gt; completePackages
-    cp_wineBox -.-&gt; mp_wineBox
-    cp_wineBottle -.-&gt; mp_wineBox
-    mp_wineBox -.-&gt; loads</code></pre>
 
 
 

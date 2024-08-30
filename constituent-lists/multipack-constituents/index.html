@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The multipack constituents relationship list.">
+        <meta name="description" content="The multipack constituents list.">
       
       
         <meta name="author" content="Open Data Manchester CIC">
@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1046,24 +1037,6 @@
   <a href="#diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Diagram
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
     </span>
   </a>
   
@@ -1739,11 +1712,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1915,24 +1888,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1949,7 +1904,7 @@
 
 
 <h1 id="multipack-constituents">Multipack Constituents<a class="headerlink" href="#multipack-constituents" title="Permanent link">&para;</a></h1>
-<p>The multipack constituents relationship list identifies the complete packaging items and components that are combined to create multipacks. This is only used in <a href="../3_Data_Specification/3_5_Multipack.md">multipack</a>.</p>
+<p>The multipack constituents list identifies the fashion and textile products and components that are combined to create multipacks. This is only used in <a href="../../schema/multipacks/">multipacks</a>.</p>
 <h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1962,13 +1917,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">multipackConstituentsIdentifier</td>
+<td style="text-align: left;">identifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
-<td style="text-align: left;">A globally unique identifier. See <a href="../4_Identifiers/4_1_Identifiers.md">identifiers</a> section for information on how to construct this identifier</td>
+<td style="text-align: left;">A globally unique identifier. See <a href="../../identifiers/">identifiers</a> section for information on how to construct this identifier</td>
 </tr>
 <tr>
-<td style="text-align: left;">multipackCombinationIdentifier</td>
+<td style="text-align: left;">combinationIdentifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
 <td style="text-align: left;">The unique identifier of components and/or complete packaging that this multipack is made of. There must be an equivalent record in the <code>Components</code> OR <code>Complete Packaging</code> data.</td>
@@ -1986,99 +1941,12 @@
 
   MULTIPACK }o..o{ MULTIPACK_CONSTITUENTS : within
   MULTIPACK_CONSTITUENTS {
-    multipackConstituentsIdentifier UUID "*"
-    multipackCombinationIdentifier UUID "*"
+    identifier UUID "*"
+    combinationIdentifier UUID "*"
     identicalQuantity integer "*"
   }
-  MULTIPACK_CONSTITUENTS }o--o{ COMPLETE_PACKAGING : attributes
+  MULTIPACK_CONSTITUENTS }o--o{ PRODUCTS : attributes
   MULTIPACK_CONSTITUENTS }o--o{ COMPONENTS : attributes</code></pre>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">To Multipack of Wine JSON</label><label for="__tabbed_1_2">To Multipack of Wine XML</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;multipackConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;346C5546-282B-C040-CE74-DD0DD4688C0B&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;multipackCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;516ac728-65e3-48c6-9756-37c29c177a7c&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;identicalQuantity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;multipackConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;346C5546-282B-C040-CE74-DD0DD4688C0B&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;multipackCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123f1eab-f674-4009-862a-7168cd5cf53f&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;identicalQuantity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
-<span class="w">  </span><span class="p">}</span><span class="w"> </span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;root&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;row&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;multipackConstituentsIdentifier&gt;</span>346C5546-282B-C040-CE74-DD0DD4688C0B<span class="nt">&lt;/multipackConstituentsIdentifier&gt;</span>
-</span><span class="w">    </span><span class="nt">&lt;multipackCombinationIdentifier&gt;</span>516ac728-65e3-48c6-9756-37c29c177a7c<span class="nt">&lt;/multipackCombinationIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;identicalQuantity&gt;</span>1<span class="nt">&lt;/identicalQuantity&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/row&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;row&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;multipackConstituentsIdentifier&gt;</span>346C5546-282B-C040-CE74-DD0DD4688C0B<span class="nt">&lt;/multipackConstituentsIdentifier&gt;</span>
-</span><span class="w">    </span><span class="nt">&lt;multipackCombinationIdentifier&gt;</span>123f1eab-f674-4009-862a-7168cd5cf53f<span class="nt">&lt;/multipackCombinationIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;identicalQuantity&gt;</span>12<span class="nt">&lt;/identicalQuantity&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/row&gt;</span>
-<span class="nt">&lt;/root&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
-<h2 id="data-flow">Data flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph completePackages[Complete Packages]
-        cp_wineBox["Wine Box
-        -
-        516ac728-65e3-48c6-9756-37c29c177a7c"]
-        cp_wineBottle["Wine Bottle
-        -
-        123f1eab-f674-4009-862a-7168cd5cf53f"]
-    end
-    subgraph multipackConstituents["`**-**`"]
-      subgraph mpcs_wineBox ["`**Wine Multipack Constituents**`"]
-        mpc_wineBox["`**346C5546-282B-C040-CE74-DD0DD4688C0B
-        -
-        identicalQuantity: 1**`"]
-        mpc_wineBottle["`**346C5546-282B-C040-CE74-DD0DD4688C0B
-        -
-        identicalQuantity: 12**`"]
-      end
-    end
-    subgraph multipacks["Multipacks"]
-        mp_wineBox["12 pack of wine
-        -
-        111525c0-9a41-4eea-a9b7-a8c23ffcf94d"]
-    end
-    cp_wineBox --&gt; mpc_wineBox
-    cp_wineBottle --&gt; mpc_wineBottle
-    mpcs_wineBox --&gt; mp_wineBox</code></pre>
 
 
 

@@ -279,7 +279,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../introduction/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -500,6 +500,8 @@
     
       
         
+          
+        
       
         
       
@@ -522,16 +524,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
@@ -540,25 +550,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1673,11 +1664,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1843,7 +1834,7 @@
 <p>The first is our core schemas. These are at functional backbone of the standard. This is where the majority of the data is held. These are shown below as the rectangles.</p>
 <p>The second is our relationships. These define the relationships between these core schemas. These are shown below as the lines.</p>
 <pre class="mermaid"><code>erDiagram
-  RAW_MATERIALS }o--o{ MATERIALS : material_constituents
+  BASE_MATERIALS }o--o{ MATERIALS : material_constituents
   MATERIALS }o--o{ COMPONENTS : component_constituents
   COMPONENTS }o--o{ GARMENTS : garment_constituents
   GARMENTS }o..o{ MULTIPACK : multipack_constituents

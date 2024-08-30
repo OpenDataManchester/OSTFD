@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -805,24 +796,6 @@
   <a href="#diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Diagram
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
     </span>
   </a>
   
@@ -1763,11 +1736,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1940,24 +1913,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data flow
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#guide-for-how-to-take-measurements" class="md-nav__link">
     <span class="md-ellipsis">
       Guide for how to take measurements
@@ -2040,10 +1995,10 @@
 <td style="text-align: left;">A dictionary of identifiers that is used to identify the material in other data standards, software systems or protocols. For example: manufacturer&rsquo;s own primary key, bar codes or global trade item number (gtin). To provide external identifiers follow this format. <code>{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}</code>. The entries could be drawn from the <a href="../../controlled-lists/external-identifiers/">External Identifiers Controlled List</a>.</td>
 </tr>
 <tr>
-<td style="text-align: left;">materialConstituents</td>
+<td style="text-align: left;">constituentIdentifiers</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">List</td>
-<td style="text-align: left;">The information regarding the consituents that are combined to create this material. The entries should be from the <a href="../../constituent-lists/material-constituents/">Material Constituents List</a> identifier.</td>
+<td style="text-align: left;">The information regarding the constituents that are combined to create this material. The entries should be from the <a href="../../constituent-lists/material-constituents/">Material Constituents List</a> identifier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">combinationPurpose</td>
@@ -2129,260 +2084,6 @@ BASE_MATERIALS }o--o{ MATERIALS : material_constituents
     organisations optional
     measurements optional
       }</code></pre>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Cardboard - JSON</label><label for="__tabbed_1_2">Glass - JSON</label><label for="__tabbed_1_3">Cardboard - XML</label><label for="__tabbed_1_4">Glass - XML</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;16f41cca-1a77-4e31-8b0f-2723f752317b&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Cardboard&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;externalIdentifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;sapPK&quot;</span><span class="p">:</span><span class="s2">&quot;153517&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;SKU&quot;</span><span class="p">:</span><span class="s2">&quot;34-56bg&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;materialConstituents&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;95b95bf7-80c0-49bc-9367-ae48d6c107d3&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;222494f7-6703-49bc-a993-8dd2675709fb&quot;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;combinationPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;function-0048&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;certification&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;certificationClaims&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;307801c3-f6f7-4ca6-8553-6f367b37fd1e&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;manufacturers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;GB-COH-10906273&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;manufacturedCountry&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;826&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;updateDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-12-07&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;b050ab75-4bcb-4c7f-b8f5-8a1f9e5ba7d3&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Glass&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;externalIdentifiers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;internal id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;70-wine-glass&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;materialConstituents&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11eb7b61-05f1-4894-a57b-80e5082f944a&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ff39892f-0a88-4085-9942-4522cecc8337&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11eb7b61-05f1-4894-a57b-80e5082f944a&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1bdca07b-ed6a-4799-a027-654322cb302f&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11eb7b61-05f1-4894-a57b-80e5082f944a&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ff39892f-0a88-4085-9942-4522cecc8337&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;materialConstituentsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;11eb7b61-05f1-4894-a57b-80e5082f944a&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;materialCombinationIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;42b19543-7138-43ff-a867-a1e551ccba14&quot;</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;combinationPurpose&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;function-0005&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;certification&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;manufacturers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;GB-COH-10906273&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;manufacturedCountry&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;826&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;updateDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-08-01&quot;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;material&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;identifier&gt;</span>16f41cca-1a77-4e31-8b0f-2723f752317b<span class="nt">&lt;/identifier&gt;</span>
-</span><span class="hll"><span class="w">  </span><span class="nt">&lt;name&gt;</span>Cardboard<span class="nt">&lt;/name&gt;</span>
-</span><span class="w">  </span><span class="nt">&lt;externalIdentifiers&gt;</span>
-<span class="w">    </span><span class="nt">&lt;sapPK&gt;</span>153517<span class="nt">&lt;/sapPK&gt;</span>
-<span class="w">    </span><span class="nt">&lt;SKU&gt;</span>34-56bg<span class="nt">&lt;/SKU&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/externalIdentifiers&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>95b95bf7-80c0-49bc-9367-ae48d6c107d3<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>222494f7-6703-49bc-a993-8dd2675709fb<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-<span class="w">  </span><span class="nt">&lt;combinationPurpose&gt;</span>function-0048<span class="nt">&lt;/combinationPurpose&gt;</span>
-<span class="w">  </span><span class="nt">&lt;certification&gt;</span>true<span class="nt">&lt;/certification&gt;</span>
-<span class="w">  </span><span class="nt">&lt;certificationClaims&gt;</span>307801c3-f6f7-4ca6-8553-6f367b37fd1e<span class="nt">&lt;/certificationClaims&gt;</span>
-<span class="w">  </span><span class="nt">&lt;manufacturers&gt;</span>GB-COH-10906273<span class="nt">&lt;/manufacturers&gt;</span>
-<span class="w">  </span><span class="nt">&lt;manufacturedCountry&gt;</span>826<span class="nt">&lt;/manufacturedCountry&gt;</span>
-<span class="w">  </span><span class="nt">&lt;updateDate&gt;</span>2023-12-07<span class="nt">&lt;/updateDate&gt;</span>
-<span class="nt">&lt;/material&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;material&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;identifier&gt;</span>b050ab75-4bcb-4c7f-b8f5-8a1f9e5ba7d3<span class="nt">&lt;/identifier&gt;</span>
-</span><span class="hll"><span class="w">  </span><span class="nt">&lt;name&gt;</span>Glass<span class="nt">&lt;/name&gt;</span>
-</span><span class="w">  </span><span class="nt">&lt;externalIdentifiers&gt;</span>
-<span class="w">    </span><span class="nt">&lt;internal_id&gt;</span>70-wine-glass<span class="nt">&lt;/internal_id&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/externalIdentifiers&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>11eb7b61-05f1-4894-a57b-80e5082f944a<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>ff39892f-0a88-4085-9942-4522cecc8337<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>11eb7b61-05f1-4894-a57b-80e5082f944a<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>1bdca07b-ed6a-4799-a027-654322cb302f<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>11eb7b61-05f1-4894-a57b-80e5082f944a<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>ff39892f-0a88-4085-9942-4522cecc8337<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-<span class="w">  </span><span class="nt">&lt;materialConstituents&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialConstituentsIdentifier&gt;</span>11eb7b61-05f1-4894-a57b-80e5082f944a<span class="nt">&lt;/materialConstituentsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;materialCombinationIdentifier&gt;</span>42b19543-7138-43ff-a867-a1e551ccba14<span class="nt">&lt;/materialCombinationIdentifier&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/materialConstituents&gt;</span>
-<span class="w">  </span><span class="nt">&lt;combinationPurpose&gt;</span>function-0005<span class="nt">&lt;/combinationPurpose&gt;</span>
-<span class="w">  </span><span class="nt">&lt;certification&gt;</span>false<span class="nt">&lt;/certification&gt;</span>
-<span class="w">  </span><span class="nt">&lt;manufacturers&gt;</span>GB-COH-10906273<span class="nt">&lt;/manufacturers&gt;</span>
-<span class="w">  </span><span class="nt">&lt;manufacturedCountry&gt;</span>826<span class="nt">&lt;/manufacturedCountry&gt;</span>
-<span class="w">  </span><span class="nt">&lt;updateDate&gt;</span>2022-08-01<span class="nt">&lt;/updateDate&gt;</span>
-<span class="nt">&lt;/material&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
-<h2 id="data-flow">Data flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    subgraph baseMaterials[Base Materials]
-        bm_cardboard["Cardboard
-        -
-        222494f7-6703-49bc-a993-8dd2675709fb"]
-        bm_sodaAsh["Soda ash
-        -
-        ff39892f-0a88-4085-9942-4522cecc8337"]
-        bm_cullet["Cullet
-        -
-        db481bb7-e57a-4af7-8821-2258338ddd11"]
-        bm_sand["Sand
-        -
-        1bdca07b-ed6a-4799-a027-654322cb302f"]
-        bm_limestone["Limestone
-        -
-        42b19543-7138-43ff-a867-a1e551ccba14"]
-    end
-    subgraph materials["`**Materials**`"]
-        ma_cardboard["`**Cardboard
-        -
-        16f41cca-1a77-4e31-8b0f-2723f752317b**`"]
-        ma_glass["`**Glass
-        -
-        b050ab75-4bcb-4c7f-b8f5-8a1f9e5ba7d3**`"]
-    end
-        subgraph components[Components]
-        co_example[example components]
-    end
-    bm_cardboard --&gt; ma_cardboard
-    bm_sodaAsh --&gt; ma_glass
-    bm_cullet --&gt; ma_glass
-    bm_sand --&gt; ma_glass
-    bm_limestone --&gt; ma_glass
-    ma_cardboard --&gt; components
-    ma_glass --&gt; components</code></pre>
 <h2 id="guide-for-how-to-take-measurements">Guide for how to take measurements<a class="headerlink" href="#guide-for-how-to-take-measurements" title="Permanent link">&para;</a></h2>
 <h3 id="units">Units<a class="headerlink" href="#units" title="Permanent link">&para;</a></h3>
 <p>All measurements should be given using the metric system.</p>

@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1191,24 +1182,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Template
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1739,11 +1712,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1915,24 +1888,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Template
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1951,8 +1906,8 @@
 <h1 id="recyclability-claims">Recyclability Claims<a class="headerlink" href="#recyclability-claims" title="Permanent link">&para;</a></h1>
 <p>The recyclability claims relationship list identifies organisations and schemes that provide the recyclability claims. This is used in the following schemas:</p>
 <ul>
-<li><a href="../3_Data_Specification/3_3_Components.md">Components</a></li>
-<li><a href="../3_Data_Specification/3_4_Complete_Packaging.md">Complete Packaging</a></li>
+<li><a href="../../schema/components/">Components</a></li>
+<li><a href="../../schema/fashion-and-textile-products/">Fashion and Textile Products</a></li>
 </ul>
 <h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
 <table>
@@ -1966,19 +1921,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">recyclabilityIdentifier</td>
+<td style="text-align: left;">identifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
-<td style="text-align: left;">A globally unique identifier. See <a href="../4_Identifiers/4_1_Identifiers.md">identifiers</a> section for information on how to construct this identifier</td>
+<td style="text-align: left;">A globally unique identifier. See <a href="../../identifiers/">identifiers</a> section for information on how to construct this identifier</td>
 </tr>
 <tr>
-<td style="text-align: left;">recyclabilitySource</td>
+<td style="text-align: left;">source</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">String</td>
-<td style="text-align: left;">What source provided the certificate? The entry should be the <a href="../5_Controlled_Lists/5_005_Recyclability_Source.md">recyclability source controlled list</a> identifier.</td>
+<td style="text-align: left;">What source provided the certificate? The entry should be the <a href="../../controlled-lists/recyclability-sources/">recyclability source controlled list</a> identifier.</td>
 </tr>
 <tr>
-<td style="text-align: left;">recyclabilityIssueDate</td>
+<td style="text-align: left;">issueDate</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Date</td>
 <td style="text-align: left;">The date that the certificate was provided/last updated. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
@@ -1989,38 +1944,16 @@
 <pre class="mermaid"><code>erDiagram
 
   COMPONENTS }o..o{ RECYCLABILITY_CLAIMS : within
-  COMPLETE_PACKAGING }o..o{ RECYCLABILITY_CLAIMS : within
+  PRODUCTS }o..o{ RECYCLABILITY_CLAIMS : within
   RECYCLABILITY_CLAIMS {
-    recyclabilityIdentifier UUID "*"
-    recyclabilitySource String "*"
-    recyclabilityIssueDate Date
+    identifier UUID "*"
+    source String "*"
+    issueDate Date
   }
   RECYCLABILITY_CLAIMS }o--o{ CONTROLLED_LISTS : attributes
   CONTROLLED_LISTS {
-    recyclabilitySource mandatory 
+    recyclabilitySources mandatory 
   }</code></pre>
-<h2 id="template">Template<a class="headerlink" href="#template" title="Permanent link">&para;</a></h2>
-<p>Recyclability claims should be provided as a separate csv file. The specification of this csv file is as follows:</p>
-<p><a href="https://www.open3p.org/wp-content/uploads/2023/09/recyclabilityClaims20230922.csv">Recyclability Claims Template</a></p>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">JSON</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="mi">--</span><span class="err">Claim</span><span class="w"> </span><span class="err">provided</span><span class="w"> </span><span class="err">by</span><span class="w"> </span><span class="err">OPRL.</span>
-<span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;recyclabilityIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;b101889f-87e5-4c42-abb7-0df5fc3d1a26&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;recyclabilitySource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;recyclability-source-0001&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;recyclabilityIssueDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2022-08-01&quot;</span>
-<span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
 
 
 

@@ -277,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../start-here/introduction/" class="md-tabs__link">
+        <a href="../../start-here/" class="md-tabs__link">
           
   
     
@@ -498,6 +498,8 @@
     
       
         
+          
+        
       
         
       
@@ -520,16 +522,24 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../start-here/" class="md-nav__link ">
+              
   
   <span class="md-ellipsis">
     Start Here
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
@@ -538,25 +548,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../start-here/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1313,15 +1304,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#guide-for-how-to-take-measurements" class="md-nav__link">
     <span class="md-ellipsis">
       Guide for how to take measurements
@@ -1780,11 +1762,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../controlled-lists/garment-disruptors.md" class="md-nav__link">
+      <a href="../../controlled-lists/product-disruptors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Garment Disruptors
+    Fashion and Textile Product Disruptors
   </span>
   
 
@@ -1957,15 +1939,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#guide-for-how-to-take-measurements" class="md-nav__link">
     <span class="md-ellipsis">
       Guide for how to take measurements
@@ -2036,25 +2009,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">measurementIdentifier</td>
+<td style="text-align: left;">identifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
-<td style="text-align: left;">A globally unique identifier. See <a href="../4_Identifiers/4_1_Identifiers.md">identifiers</a> section for information on how to construct this identifier</td>
+<td style="text-align: left;">A globally unique identifier. See <a href="../../identifiers/">identifiers</a> section for information on how to construct this identifier</td>
 </tr>
 <tr>
 <td style="text-align: left;">itemIdentifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">UUID</td>
-<td style="text-align: left;">The unique identifier of the items that this component is made of. There must be an equivalent record in the <code>Base_Materials</code>, <code>Materials</code>, <code>Components</code>, <code>Complete_Packaging</code>, <code>Multipacks</code> OR <code>Load</code> data.</td>
+<td style="text-align: left;">The unique identifier of the items that this component is made of. There must be an equivalent record in the <code>Base Materials</code>, <code>Materials</code>, <code>Components</code>, <code>Textile and Fashion Products</code>, <code>Multipacks</code> OR <code>Load</code> data.</td>
 </tr>
 <tr>
 <td style="text-align: left;">measureIdentifier</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">ID</td>
-<td style="text-align: left;">The measure type of this item. The entry here should be drawn from the <a href="../5_Controlled_Lists/5_017_Measures.md">meausures</a>.</td>
+<td style="text-align: left;">The measure type of this item. The entry here should be drawn from the <a href="../../controlled-lists/measures/">meausures</a>.</td>
 </tr>
 <tr>
-<td style="text-align: left;">measurementValue</td>
+<td style="text-align: left;">value</td>
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">Decimal</td>
 <td style="text-align: left;">The value of this measurement.</td>
@@ -2084,10 +2057,10 @@
   as["ALL SCHEMA"]
   as }o..o{ MEASUREMENTS : attributes
   MEASUREMENTS {
-    measurementIdentifier UUID "*"
+    identifier UUID "*"
     itemIdentifier UUID "*"
     measureIdentifier ID "*"
-    measurementValue Decimal
+    value Decimal
     tolerance Decimal
     toleranceType String
     date Date
@@ -2096,141 +2069,6 @@
   CONTROLLED_LISTS {
     measures mandatory
   }</code></pre>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Wine bottle Measurements - JSON</label><label for="__tabbed_1_2">Wine bottle Measurements - XML</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="hll"><span class="w">    </span><span class="nt">&quot;measurementIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e83b250b-8fd5-472f-82d1-049b0c4e9ca9&quot;</span><span class="p">,</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&quot;itemIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;94108707-b914-43f3-bed5-93adbbd208c1&quot;</span><span class="p">,</span>
-</span><span class="w">    </span><span class="nt">&quot;measureIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;measure-0001&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;measurementValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;tolerance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;toleranceType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;percentage&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;measurementsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e83b250b-8fd5-472f-82d1-049b0c4e9ca9&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;itemIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;94108707-b914-43f3-bed5-93adbbd208c1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;measureIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;measure-0002&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;measurementValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">305</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2015-06-16&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;measurementsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e83b250b-8fd5-472f-82d1-049b0c4e9ca9&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;itemIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;94108707-b914-43f3-bed5-93adbbd208c1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;measureIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;measure-0003&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;measurementValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">72.4</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2015-06-16&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;measurementsIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e83b250b-8fd5-472f-82d1-049b0c4e9ca9&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;itemIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;94108707-b914-43f3-bed5-93adbbd208c1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;measureIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;measure-0004&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;measurementValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">72.4</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2015-06-16&quot;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">]</span>
-</code></pre></div></td></tr></table></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;root&gt;</span>
-<span class="hll"><span class="w">  </span><span class="nt">&lt;row&gt;</span>
-</span><span class="hll"><span class="w">    </span><span class="nt">&lt;measurementIdentifier&gt;</span>e83b250b-8fd5-472f-82d1-049b0c4e9ca9<span class="nt">&lt;/measurementIdentifier&gt;</span>
-</span><span class="w">    </span><span class="nt">&lt;itemIdentifier&gt;</span>94108707-b914-43f3-bed5-93adbbd208c1<span class="nt">&lt;/itemIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measureIdentifier&gt;</span>measure-0001<span class="nt">&lt;/measureIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measurementValue&gt;</span>700<span class="nt">&lt;/measurementValue&gt;</span>
-<span class="w">    </span><span class="nt">&lt;tolerance&gt;</span>6<span class="nt">&lt;/tolerance&gt;</span>
-<span class="w">    </span><span class="nt">&lt;toleranceType&gt;</span>percentage<span class="nt">&lt;/toleranceType&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/row&gt;</span>
-<span class="w">  </span><span class="nt">&lt;row&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measurementsIdentifier&gt;</span>e83b250b-8fd5-472f-82d1-049b0c4e9ca9<span class="nt">&lt;/measurementsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;itemIdentifier&gt;</span>94108707-b914-43f3-bed5-93adbbd208c1<span class="nt">&lt;/itemIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measureIdentifier&gt;</span>measure-0002<span class="nt">&lt;/measureIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measurementValue&gt;</span>305<span class="nt">&lt;/measurementValue&gt;</span>
-<span class="w">    </span><span class="nt">&lt;date&gt;</span>2015-06-16<span class="nt">&lt;/date&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/row&gt;</span>
-<span class="w">  </span><span class="nt">&lt;row&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measurementsIdentifier&gt;</span>e83b250b-8fd5-472f-82d1-049b0c4e9ca9<span class="nt">&lt;/measurementsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;itemIdentifier&gt;</span>94108707-b914-43f3-bed5-93adbbd208c1<span class="nt">&lt;/itemIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measureIdentifier&gt;</span>measure-0003<span class="nt">&lt;/measureIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measurementValue&gt;</span>72.4<span class="nt">&lt;/measurementValue&gt;</span>
-<span class="w">    </span><span class="nt">&lt;date&gt;</span>2015-06-16<span class="nt">&lt;/date&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/row&gt;</span>
-<span class="w">  </span><span class="nt">&lt;row&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measurementsIdentifier&gt;</span>e83b250b-8fd5-472f-82d1-049b0c4e9ca9<span class="nt">&lt;/measurementsIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;itemIdentifier&gt;</span>94108707-b914-43f3-bed5-93adbbd208c1<span class="nt">&lt;/itemIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measureIdentifier&gt;</span>measure-0004<span class="nt">&lt;/measureIdentifier&gt;</span>
-<span class="w">    </span><span class="nt">&lt;measurementValue&gt;</span>72.4<span class="nt">&lt;/measurementValue&gt;</span>
-<span class="w">    </span><span class="nt">&lt;date&gt;</span>2015-06-16<span class="nt">&lt;/date&gt;</span>
-<span class="w">  </span><span class="nt">&lt;/row&gt;</span>
-<span class="nt">&lt;/root&gt;</span>
-</code></pre></div></td></tr></table></div>
-</div>
-</div>
-</div>
 <h2 id="guide-for-how-to-take-measurements">Guide for how to take measurements<a class="headerlink" href="#guide-for-how-to-take-measurements" title="Permanent link">&para;</a></h2>
 <h3 id="units">Units<a class="headerlink" href="#units" title="Permanent link">&para;</a></h3>
 <p>All measurements should be given using the metric system.</p>
