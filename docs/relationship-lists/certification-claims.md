@@ -7,17 +7,17 @@ description: The certification claims relationship list.
 
 The Certification Claims relationship list identifies the certificates that can be assigned to various tables. This is used in the following schemas:
 
-* [Base Materials](../3_Data_Specification/3_1_Base_Materials.md)
-* [Materials](../3_Data_Specification/3_2_Materials.md)
-* [Components](../3_Data_Specification/3_3_Components.md)
-* [Complete Packaging](../3_Data_Specification/3_4_Complete_Packaging.md)
+* [Base Materials](../schema/base-materials.md)
+* [Materials](../schema/materials.md)
+* [Components](../schema/components.md)
+* [Fashion and Textile Products](../schema/fashion-and-textile-products.md)
 
 ## Data
 |Column|<div style="width:90px">Status</div>|Format|Notes|
 |:-|:-|:-|:-|
-|certificationIdentifier|`mandatory`|UUID|A globally unique identifier. See [identifiers](../4_Identifiers/4_1_Identifiers.md) section for information on how to construct this identifier|
-|certificationSource|`mandatory`|String|What source provided the certificate? The entry should be the [Certification Source Controlled List](../5_Controlled_Lists/5_002_Certification_Source.md) identifier.|
-|certificationIssueDate|`optional`|Date|The date that the certificate was provided/last updated. Use the format `yyyy-mm-dd` adhering to the [ISO 8601 dateTime standard](https://www.iso.org/iso-8601-date-and-time-format.html).|
+|identifier|`mandatory`|UUID|A globally unique identifier. See [identifiers](../identifiers/index.md) section for information on how to construct this identifier|
+|source|`mandatory`|String|What source provided the certificate? The entry should be the [Certification Sources Controlled List](../controlled-lists/certification-sources.md) identifier.|
+|issueDate|`optional`|Date|The date that the certificate was provided/last updated. Use the format `yyyy-mm-dd` adhering to the [ISO 8601 dateTime standard](https://www.iso.org/iso-8601-date-and-time-format.html).|
 
 ## Diagram
 
@@ -26,34 +26,14 @@ erDiagram
   BASE_MATERIALS }o..o{ CERTIFICATION_CLAIMS : within
   MATERIALS }o..o{ CERTIFICATION_CLAIMS : within
   COMPONENTS}o..o{ CERTIFICATION_CLAIMS : within
-  COMPLETE_PACKAGING }o..o{ CERTIFICATION_CLAIMS : within
+  PRODUCTS }o..o{ CERTIFICATION_CLAIMS : within
   CERTIFICATION_CLAIMS {
-    certificationIdentifier UUID "*"
-    certificationSource String "*"
-    certificationIssueDate Date
+    identifier UUID "*"
+    source String "*"
+    issueDate Date
   }
   CERTIFICATION_CLAIMS }o--o{ CONTROLLED_LISTS : attributes
   CONTROLLED_LISTS {
-    certificationSource mandatory 
+    certificationSources mandatory 
   }
 ```
-
-## Template
-
-Certification claims should be provided as a separate csv file. The specification of this csv file is as follows:
-
-[Certification Claims Template](https://www.open3p.org/wp-content/uploads/2023/09/certificationClaims20230922.csv)
-
-## Example
-
-=== "JSON"
-
-    ``` json linenums="1"
-    --A certificate provided by the FSA.
-    {
-      "certificationIdentifier": "eed87ac3-6e3e-45fb-af2c-dd0f64fdb597",
-      "certificationSource": "certification-source-0002",
-      "certificationIssueDate": "2022-08-01"
-    }
-    ```
-

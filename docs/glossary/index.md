@@ -1,6 +1,6 @@
 ---
 title: Glossary
-description: Open 3P's list of words relating to the packaging value chain.
+description: OSTFD's list of words relating to the packaging value chain.
 ---
 
 # Glossary

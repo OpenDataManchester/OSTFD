@@ -5,7 +5,7 @@ description: The material purpose controlled list for materials.
 
 # Material Purpose
 
-The material purpose controlled list identifies the purpose of this material in this combination of [material constituents](../6_Relationship_Lists/6_001_Material_Constituents.md).
+The material purpose controlled list identifies the purpose of this material in this combination of [material constituents](../constituent-lists/material-constituents.md).
 
 **Controlled lists are maintained by the SCB, if there are values that you believe need to be added then [contact us](https://www.open3p.org/contact/) and we can add new values to the lists.**
 

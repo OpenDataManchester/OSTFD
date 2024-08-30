@@ -6,7 +6,7 @@ status: new
 
 # Measures
 
-The measures controlled list identifies the measurement that is being used within the different schemas. This is used in [measures relationship list](#).
+The measures controlled list identifies the measurement that is being used within the different schemas. This is used in [measures relationship list](../relationship-lists/measurements.md).
 
 **Controlled lists are maintained by the SCB, if there are values that you believe need to be added then [contact us](https://www.open3p.org/contact/) and we can add new values to the lists.**
 

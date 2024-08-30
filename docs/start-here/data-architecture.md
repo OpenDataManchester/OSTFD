@@ -13,7 +13,7 @@ The second is our relationships. These define the relationships between these co
 
 ``` mermaid
 erDiagram
-  RAW_MATERIALS }o--o{ MATERIALS : material_constituents
+  BASE_MATERIALS }o--o{ MATERIALS : material_constituents
   MATERIALS }o--o{ COMPONENTS : component_constituents
   COMPONENTS }o--o{ GARMENTS : garment_constituents
   GARMENTS }o..o{ MULTIPACK : multipack_constituents

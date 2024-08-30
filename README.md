@@ -1,6 +1,6 @@
 # Welcome to OSTFD
 
-This is the OSTFD project repository. It contains all the schemas, controlled lists and additional information to publish the website. For the site itself, please see ## instead. 
+This is the OSTFD project repository. It contains all the schemas, controlled lists and additional information to publish the website. For the site itself, please see [https://opendatamanchester.github.io/OSTFD/](https://opendatamanchester.github.io/OSTFD/) instead. 
 
 The site is build with [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/) from this repository.
 
@@ -11,7 +11,7 @@ OSTFD is the open standard for textiles and fashion data. The project to create 
 - Open Data Manchester
 - QSA
 
-v0.1-alpha was created and set under pre-release ####.
+v0.1-alpha was created and set under pre-release on the 2024-08-15.
 
 Work is currently in development to incorporate other geographies with aims to becoming the global standard for textiles and fashion data.
 

@@ -5,7 +5,7 @@ description: The material type controlled list for base materials.
 
 # Material Type
 
-The Material Type controlled list identifies the type of the [base material](../3_Data_Specification/3_1_Base_Materials.md).
+The Material Type controlled list identifies the type of the [base material](../schema/base-materials.md).
 
 **Controlled lists are maintained by the SCB, if there are values that you believe need to be added then [contact us](https://www.open3p.org/contact/) and we can add new values to the lists.**
 

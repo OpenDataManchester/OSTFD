@@ -35,7 +35,7 @@ When we say "use the standard", we mean applying the OSTFD guidelines to structu
 - Developing software that can read or write data in the OSTFD format
 - Creating databases that store information in a way compatible with OSTFD
 
-OSTFD is free to use, copy and distribute. However, it is copyrighted by [Open Data Manchester CIC](https://www.opendatamanchester.org.uk/) and released under the [Apache Licence, Version 2.0](./10_Licence/10_01_Licence.md). Proper attribution and adherence to the licence terms are required.
+OSTFD is free to use, copy and distribute. However, it is copyrighted by [Open Data Manchester CIC](https://www.opendatamanchester.org.uk/) and released under the [Apache Licence, Version 2.0](./licence/index.md). Proper attribution and adherence to the licence terms are required.
 
 ## Cost
 
@@ -62,7 +62,7 @@ Once granted, these permissions cannot be revoked by OSTFD or Open Data Manchest
 
 ## Creating Derivative Works
 
-While the original OSTFD standard specifications should not be modified directly, the [Apache 2.0 licence](./10_Licence/10_01_Licence.md) does allow for the creation of derivative works under certain conditions:
+While the original OSTFD standard specifications should not be modified directly, the [Apache 2.0 licence](./licence/index.md) does allow for the creation of derivative works under certain conditions:
 
 1.	Clearly state that your work is a modification of the OSTFD standard and is not endorsed by OSTFD or Open Data Manchester CIC.
 2.	Retain the original copyright notice and attribute the work to Open Data Manchester CIC and OSTFD.
@@ -98,7 +98,7 @@ Remember, OSTFD defines how to structure and format textiles and fashion data - 
 
     First time here? Get up to speed fast.
 
-    [:octicons-arrow-right-24: Getting started](./start-here/introduction.md)
+    [:octicons-arrow-right-24: Getting started](./start-here/index.md.md)
 
 -   :material-key:{ .lg .middle } __Identifiers__
 

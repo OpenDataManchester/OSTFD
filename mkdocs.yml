@@ -44,7 +44,7 @@ theme:
 nav:
   - Home: index.md
   - Start Here: 
-    - Introduction: start-here/introduction.md
+    - Start Here: start-here/index.md
     - Key Concepts: start-here/key-concepts.md
     - Data Flow: start-here/data-flow.md
     - Data Architecture: start-here/data-architecture.md
@@ -90,7 +90,7 @@ nav:
     - Recycled Content Evidence Types: controlled-lists/recycled-content-evidence-types.md
     - Product Types: controlled-lists/product-types.md
     - Deposit Return Schemes: controlled-lists/deposit-return-schemes.md
-    - Garment Disruptors: controlled-lists/garment-disruptors.md
+    - Fashion and Textile Product Disruptors: controlled-lists/product-disruptors.md
     - Levels: controlled-lists/levels.md
     - End of Life Routes: controlled-lists/end-of-life-routes.md
     - Measures: controlled-lists/measures.md
