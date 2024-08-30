@@ -98,7 +98,7 @@ Remember, OSTFD defines how to structure and format textiles and fashion data - 
 
     First time here? Get up to speed fast.
 
-    [:octicons-arrow-right-24: Getting started](./start-here/index.md.md)
+    [:octicons-arrow-right-24: Getting started](./start-here/index.md)
 
 -   :material-key:{ .lg .middle } __Identifiers__
 
