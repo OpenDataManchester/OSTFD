@@ -1,6 +1,7 @@
 ---
 title: Care Label Claims
 description: The care label claims relationship list.
+status: new
 ---
 
 # Care Label Claims

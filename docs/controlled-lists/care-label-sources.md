@@ -1,6 +1,7 @@
 ---
 title: Care Label Source
 description: The care label source controlled list.
+status: new
 ---
 
 # Care Label Source
