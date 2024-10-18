@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Components are the individaul items of packaging made from materials in OSTFD.">
+        <meta name="description" content="Components are the individaul items of garments made from materials in OSTFD.">
       
       
         <meta name="author" content="Open Data Manchester CIC">
@@ -2165,12 +2165,6 @@
 <td style="text-align: left;">What is the function of the component? The entry should contain the <a href="../../controlled-lists/functions/">functions controlled list</a> identifier for the component.</td>
 </tr>
 <tr>
-<td style="text-align: left;">flexibility</td>
-<td style="text-align: left;"><code>optional</code></td>
-<td style="text-align: left;">String</td>
-<td style="text-align: left;">Whether the component is considered flexible or rigid. The entry should be the <a href="../../controlled-lists/flexibility/">flexibility controlled list</a> identifier.</td>
-</tr>
-<tr>
 <td style="text-align: left;">branding</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">Boolean</td>
@@ -2187,12 +2181,6 @@
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">String</td>
 <td style="text-align: left;">The actual colour of the component at point of production using CMYK (Cyan-Magenta-Yellow-blacK) values. The format is specified according to cmyk(C%, M%, Y%, K%), where C, M, Y, and K are the percent values for the cyan, magenta, yellow, and black values of the color. For example: black is <code>cmyk(0%,0%,0%,100%)</code>. If there are multiple colours input <code>decorative</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;">opacity</td>
-<td style="text-align: left;"><code>optional</code></td>
-<td style="text-align: left;">String</td>
-<td style="text-align: left;">The transparency of the colours. The entry should be the <a href="../../controlled-lists/opacities/">opacities controlled list</a> identifier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">loaned</td>
@@ -2312,11 +2300,9 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
     measurements List "*"
     shape String
     function String
-    flexibility String
     branding Boolean
     componentEndOfLifeRoutes List
     colour String
-    opacity String
     loaned Boolean
     reuseSystems List
     manufacturers List
@@ -2345,8 +2331,6 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
     CONTROLLED_LISTS {
     shapes optional
     functions optional
-    flexibility optional
-    opacities optional
     reuseSystem optional
   }
   RELATIONSHIP_LISTS {

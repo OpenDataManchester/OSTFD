@@ -7,7 +7,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Multipacks contain multiple identical packaging items within OSTFD.">
+        <meta name="description" content="Multipacks contain multiple identical garments within OSTFD.">
       
       
         <meta name="author" content="Open Data Manchester CIC">
@@ -1966,7 +1966,7 @@
 
 
 <h1 id="multipacks">Multipacks<a class="headerlink" href="#multipacks" title="Permanent link">&para;</a></h1>
-<p>The multipacks schema contains information regarding the multipacks that are used to create loads. These are created from a number of either identical or different complete packages from the complete packaging schema.</p>
+<p>The multipacks schema contains information regarding the multipacks that are used to create loads. These are created from a number of either identical or different garments from the fashion and textile products schema.</p>
 <div class="admonition note">
 <p class="admonition-title">Optional</p>
 <p>The multipack portion is optional (only applies to multipacks). If the garmemt or component is <em>not</em> in a multipack, all of the fields below are optional.</p>
@@ -2059,7 +2059,7 @@
 <h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>erDiagram
 COMPONENTS }o..o{ MULTIPACK : multipack_constituents
-COMPONENTS }o..o{ PRODUCTS : complete_packaging_constituents
+COMPONENTS }o..o{ PRODUCTS : products_constituents
 PRODUCTS }o..o{ MULTIPACK : multipack_constituents
   MULTIPACK {
     identifier UUID "*"

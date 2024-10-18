@@ -2057,24 +2057,6 @@
 <td style="text-align: left;">The list of waste code for <strong>everything</strong> in the garment. LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of <code>15 01 02</code>. Please use <a href="https://dsposal.uk/browse/ewc" target="_blank">Dsposal</a> or <a href="https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made" target="_blank">legislation.gov</a> to find the LOWcode. <strong>Note</strong>: The LOWcode can based on its combination with other components and the actual product contained in the garment. Be sure to include the garment LOWcode with the product. If you cannot find the code or are uncertain please enter <code>Uncertain</code>.</td>
 </tr>
 <tr>
-<td style="text-align: left;">onTheGo</td>
-<td style="text-align: left;"><code>mandatory</code></td>
-<td style="text-align: left;">Boolean</td>
-<td style="text-align: left;">Is the garment often classed as packaging that will end up in street bins? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
-</tr>
-<tr>
-<td style="text-align: left;">householdWaste</td>
-<td style="text-align: left;"><code>mandatory</code></td>
-<td style="text-align: left;">Boolean</td>
-<td style="text-align: left;">Is the garment often classed as packaging that will end up in kerbside collections? Answer as: <code>TRUE</code> for yes and <code>FALSE</code> for no.</td>
-</tr>
-<tr>
-<td style="text-align: left;">depositReturnSchemes</td>
-<td style="text-align: left;"><code>mandatory</code></td>
-<td style="text-align: left;">List</td>
-<td style="text-align: left;">Which countries support a deposit return scheme for this particular garment? The entries here should be drawn from the <a href="../../controlled-lists/deposit-return-schemes/">deposit return scheme controlled list</a>.</td>
-</tr>
-<tr>
 <td style="text-align: left;">endOfLifeRoutes</td>
 <td style="text-align: left;"><code>optional</code></td>
 <td style="text-align: left;">List</td>
@@ -2097,18 +2079,6 @@
 <td style="text-align: left;"><code>mandatory</code></td>
 <td style="text-align: left;">List</td>
 <td style="text-align: left;">The information regarding the measurements of the garment. The entries should be from the <a href="../../relationship-lists/measurements/">Measurements Relationship List</a>.</td>
-</tr>
-<tr>
-<td style="text-align: left;">servingCapacity</td>
-<td style="text-align: left;"><code>optional</code></td>
-<td style="text-align: left;">Integer</td>
-<td style="text-align: left;">The serving capacity of the garment - how much of a product that can be contained in the garment.</td>
-</tr>
-<tr>
-<td style="text-align: left;">servingCapacityDate</td>
-<td style="text-align: left;"><code>optional</code></td>
-<td style="text-align: left;">Date</td>
-<td style="text-align: left;">The date that the serving capacity was last verified/measured. Use the format <code>yyyy-mm-dd</code> adhering to the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601 dateTime standard</a>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">partOfMultipack</td>
@@ -2185,9 +2155,6 @@ COMPONENTS }o--o{ PRODUCTS : complete_packaging_constituents
     LOWcodeWOproduct String
     productType String
     LOWcodeWproduct String
-    onTheGo Boolean "*"
-    householdWaste Boolean "*"
-    depositReturnSchemes List "*"
     endOfLifeRoutes List
     recyclability Boolean
     recyclabilityClaims List
@@ -2214,7 +2181,6 @@ COMPONENTS }o--o{ PRODUCTS : complete_packaging_constituents
   COMPONENTS }o..o{ LOADS : load_constituents
       CONTROLLED_LISTS {
       productType optional
-      depositReturnScheme optional
     }
     RELATIONSHIP_LISTS {
       measurements mandatory

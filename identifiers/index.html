@@ -2078,38 +2078,38 @@
 
 
 <h1 id="identifiers">Identifiers<a class="headerlink" href="#identifiers" title="Permanent link">&para;</a></h1>
-<p>Identifiers are crucial for uniquely referencing items within the Open 3P ecosystem, enabling both humans and machines to accurately identify and reference specific objects. Without identifiers, it can be challenging for different stakeholders to recognise that they are referring to the same thing, leading to confusion and inefficiencies.</p>
+<p>Identifiers are crucial for uniquely referencing items within the OSTFD ecosystem, enabling both humans and machines to accurately identify and reference specific objects. Without identifiers, it can be challenging for different stakeholders to recognise that they are referring to the same thing, leading to confusion and inefficiencies.</p>
 <h2 id="types-of-identifiers">Types of Identifiers<a class="headerlink" href="#types-of-identifiers" title="Permanent link">&para;</a></h2>
-<p>In the Open 3P data standard, various types of identifiers are used to distinguish and categorise items based on their generation method and intended usage. These identifiers can be broadly categorised into three types:</p>
+<p>In the OSTFD data standard, various types of identifiers are used to distinguish and categorise items based on their generation method and intended usage. These identifiers can be broadly categorised into three types:</p>
 <ol>
 <li>
 <p><strong>Universally Unique Identifier (UUID)</strong>: These identifiers are globally unique and do not contain any information about the user, organisation, or machine that created them. UUIDs ensure complete anonymity and eliminate the risk of conflicts with other identifiers.</p>
 </li>
 <li>
-<p><strong>Controlled List Identifier</strong>: Controlled list identifiers are specifically created for use within the Open 3P standard. They define specific attributes within the standard and are regulated by the Standard Custodian Board to maintain consistency and integrity across the ecosystem.</p>
+<p><strong>Controlled List Identifier</strong>: Controlled list identifiers are specifically created for use within the OSTFD standard. They define specific attributes within the standard and are regulated by the Standard Custodian Board to maintain consistency and integrity across the ecosystem.</p>
 </li>
 <li>
-<p><strong>External Identifier</strong>: External identifiers are generated outside the Open 3P standard but can be incorporated into it to establish links with external data sources. One example is the Global Trade Item Number (GTIN), commonly used as a barcode. While GTINs are not specific to the Open 3P standard, they provide valuable links to external product data and are widely recognised in the industry.</p>
+<p><strong>External Identifier</strong>: External identifiers are generated outside the OSTFD standard but can be incorporated into it to establish links with external data sources. One example is the Global Trade Item Number (GTIN), commonly used as a barcode. While GTINs are not specific to the OSTFD standard, they provide valuable links to external product data and are widely recognised in the industry.</p>
 </li>
 </ol>
 <div class="admonition question">
 <p class="admonition-title">Why Not Use GTIN as the Packaging Identifier?</p>
-<p>The question often arises as to why GTINs are not used as packaging identifiers within the Open 3P standard. There are several reasons for this decision:</p>
+<p>The question often arises as to why GTINs are not used as textile and fashion identifiers within the OSTFD standard. There are several reasons for this decision:</p>
 <ol>
 <li>
-<p><strong>Organisational Identifiability</strong>: GTINs inherently contain information about the organisation that provided the item, potentially compromising anonymity within the Open 3P ecosystem.</p>
+<p><strong>Organisational Identifiability</strong>: GTINs inherently contain information about the organisation that provided the item, potentially compromising anonymity within the OSTFD ecosystem.</p>
 </li>
 <li>
-<p><strong>Stability and Flexibility</strong>: GTINs do not need to change when minor packaging variations occur, leading to potential inconsistencies in the identification process.</p>
+<p><strong>Stability and Flexibility</strong>: GTINs do not need to change when minor textile and fashion variations occur, leading to potential inconsistencies in the identification process.</p>
 </li>
 <li>
-<p><strong>Access and Standards</strong>: GTINs are regulated by standards bodies and may not be readily accessible or applicable to all packaging items within the Open 3P ecosystem.</p>
+<p><strong>Access and Standards</strong>: GTINs are regulated by standards bodies and may not be readily accessible or applicable to all textile and fashion items within the OSTFD ecosystem.</p>
 </li>
 </ol>
 </div>
-<p>By utilising a standardised approach to identifiers within the Open 3P ecosystem, stakeholders can ensure consistency, interoperability, and accuracy in referencing packaging materials and products.</p>
+<p>By utilising a standardised approach to identifiers within the OSTFD ecosystem, stakeholders can ensure consistency, interoperability, and accuracy in referencing textile and fashion materials and products.</p>
 <h2 id="universally-unique-identifier-uuid">Universally Unique Identifier (UUID)<a class="headerlink" href="#universally-unique-identifier-uuid" title="Permanent link">&para;</a></h2>
-<p>Each record in each schema needs to have an identifier. Since the packaging supply chain is global, the Open 3P data standard needs to be global and thus the unique identifier also needs to be global. We are therefore using the <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">Universally Unique Identifier (UUID)</a> standard methodology to (probabilistically) guarantee uniqueness.</p>
+<p>Each record in each schema needs to have an identifier. Since the textile and fashion supply chain is global, the OSTFD data standard needs to be global and thus the unique identifier also needs to be global. We are therefore using the <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">Universally Unique Identifier (UUID)</a> standard methodology to (probabilistically) guarantee uniqueness.</p>
 <blockquote>
 <p>A universally unique identifier (UUID) is a 128-bit label used for information in computer systems. The term globally unique identifier (GUID) is also used.</p>
 <p>-<em><a href="https://datatracker.ietf.org/doc/html/rfc4122">A Universally Unique IDentifier (UUID) URN Namespace</a></em></p>
@@ -2156,13 +2156,14 @@
 </div>
 </div>
 <h2 id="controlled-list-identifier">Controlled List Identifier<a class="headerlink" href="#controlled-list-identifier" title="Permanent link">&para;</a></h2>
-<p>Controlled lists are fundamental elements of data standards, crucial for maintaining consistency and accuracy in data entry within the packaging industry. They serve as centralised repositories for standardised terms and phrases used across various aspects of packaging.</p>
+<p>Controlled lists are fundamental elements of data standards, crucial for maintaining consistency and accuracy in data entry within the textile and fashion industry. They serve as centralised repositories for standardised terms and phrases used across various aspects of textile and fashion.</p>
 <p>Each entry in a controlled list is assigned a unique identifier, allowing for precise referencing of specific records within the list. These identifiers serve as keys to access detailed information about each term or concept, ensuring clarity and uniformity in data representation.</p>
-<p>By leveraging controlled list identifiers, stakeholders can streamline data entry processes, minimise errors, and promote interoperability across different systems and platforms within the packaging ecosystem.</p>
+<p>By leveraging controlled list identifiers, stakeholders can streamline data entry processes, minimise errors, and promote interoperability across different systems and platforms within the textile and fashion ecosystem.</p>
 <h2 id="external-identifier">External Identifier<a class="headerlink" href="#external-identifier" title="Permanent link">&para;</a></h2>
-<p>External identifiers play a vital role in linking data within the Open 3P standard to external sources, enabling seamless integration and access to additional information. While these identifiers are generated outside the Open 3P standard, they can be incorporated into it to establish connections with relevant external data sources.</p>
-<p>One example of an external identifier commonly used in the packaging industry is the Global Trade Item Number (GTIN), which is widely recognised as a barcode. GTINs provide valuable links to external product data and facilitate efficient inventory management and supply chain operations.</p>
-<p>To provide external identifiers within the Open 3P standard, follow this format:</p>
+<p>External identifiers play a vital role in linking data within the OSTFD standard to external sources, enabling seamless integration and access to additional information. While these identifiers are generated outside the OSTFD standard, they can be incorporated into it to establish connections with relevant external data sources.</p>
+<p>One example of an external identifier commonly used in the textile and fashion industry is the Global Trade Item Number (GTIN), which is widely recognised as a barcode. GTINs provide valuable links to external product data and facilitate efficient inventory management and supply chain operations.</p>
+<p>Within in the controlled lists OSTFD has included an optional controlled list for <a href="../controlled-lists/external-identifiers/">external identifiers</a>, that suggest some examples from <a href="schema.org">schema.org</a></p>
+<p>To provide external identifiers within the OSTFD standard, follow this format:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">JSON</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -2186,7 +2187,7 @@
 </div>
 </div>
 </div>
-<p>By adhering to standardised formats for external identifiers, stakeholders can ensure interoperability and compatibility with external data sources, enhancing data quality and facilitating seamless data exchange within the packaging ecosystem.</p>
+<p>By adhering to standardised formats for external identifiers, stakeholders can ensure interoperability and compatibility with external data sources, enhancing data quality and facilitating seamless data exchange within the textile and fashion ecosystem.</p>
 
 
 
