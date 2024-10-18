@@ -6,10 +6,9 @@ description: The loads contains items what are delivered to a location within OS
 
 # Loads
 
-All the complete packaging from different levels (primary, secondary, transit etc.), including multipacks, put together to send to the final destination. Each row corresponds a unique complete packaging (or multipack) item sent to a specific location during a specific time period.
+All the textile and fashion products, including multipacks, are combined together to send to the final destination. Each row corresponds to a unique textile and fashion products (or multipack) item sent to a specific location during a specific time period.
 
-Note that all core entities can be incorporated into loads. This is to faciliate the interface between one organisastion's product is another organisation's packaging item.
-
+Note that all core entities can be incorporated into loads.
 ## Table
 |Column|<div style="width:90px">Status</div>|Format|Notes|
 |:-|:-|:-|:-|
@@ -39,7 +38,7 @@ MULTIPACK }o..o{ LOADS : load_constituents
 COMPONENTS }o..o{ MULTIPACK : multipack_constituents
 PRODUCTS }o..o{ MULTIPACK : multipack_constituents
 PRODUCTS }o..o{ LOADS : load_constituents
-COMPONENTS }o..o{ PRODUCTS : complete_packaging_constituents
+COMPONENTS }o..o{ PRODUCTS : products_constituents
   LOADS {
     identifier UUID "*"
     name String

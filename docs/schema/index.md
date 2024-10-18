@@ -17,7 +17,7 @@ There are six core schemas that are the foundations of OSTFD.
 
     ---
 
-    Contains information regarding the materials at the very start of the process of creating packaging.
+    Contains information regarding the materials at the very start of the process of creating textile and fashion items.
 
     [:octicons-arrow-right-24: Base materials](./base-materials.md)
 

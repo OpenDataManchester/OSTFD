@@ -1,6 +1,6 @@
 ---
 title: Components
-description: Components are the individaul items of packaging made from materials in OSTFD.
+description: Components are the individaul items of garments made from materials in OSTFD.
 # status: updated
 ---
 
@@ -26,11 +26,9 @@ The components schema contains information regarding the individual components t
 |measurements :fontawesome-solid-square-plus:{ title="Added to this version" .addition }|`mandatory`|List|The information regarding the measurements of the component. The entries should be from the [Measurements Relationship List](../relationship-lists/measurements.md).|
 |shape|`optional`|String|What is the shape of the component? The entry should contain the [shapes controlled list](../controlled-lists/shapes.md) identifier for the component.|
 |function|`optional`|String|What is the function of the component? The entry should contain the [functions controlled list](../controlled-lists/functions.md) identifier for the component.|
-|flexibility|`optional`|String|Whether the component is considered flexible or rigid. The entry should be the [flexibility controlled list](../controlled-lists/flexibility.md) identifier.|
 |branding|`optional`|Boolean|Does the component contain your own brand (logo, trademark, or any distinctive mark)? Answer as: `TRUE` for yes and `FALSE` for no.|
 |componentEndOfLifeRoutes|`optional`|List|The information regarding this component's proposed end of life routes. The entries should be the [component end of life routes](../relationship-lists/component-end-of-life-routes.md) identifiers.|
 |colour|`optional`|String|The actual colour of the component at point of production using CMYK (Cyan-Magenta-Yellow-blacK) values. The format is specified according to cmyk(C%, M%, Y%, K%), where C, M, Y, and K are the percent values for the cyan, magenta, yellow, and black values of the color. For example: black is `cmyk(0%,0%,0%,100%)`. If there are multiple colours input `decorative`.|
-|opacity|`optional`|String|The transparency of the colours. The entry should be the [opacities controlled list](../controlled-lists/opacities.md) identifier.|
 |loaned|`optional`|Boolean|Is the component hired or loaned? Answer as: `TRUE` for yes and `FALSE` for no. This is for this component ONLY, if the entire product is loaned or hired then use the product schema.|
 |reuseSystems|`optional`|List|The system(s) that facilitates the reuse of the component  `e.g., ????`. The entries should be the [reuse systems controlled list](../controlled-lists/reuse-systems.md) identifier(s).|
 |partOfMultipack|`optional`|Boolean|Is the component part of a multipack? Answer as: `TRUE` for yes and `FALSE` for no.|
@@ -65,11 +63,9 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
     measurements List "*"
     shape String
     function String
-    flexibility String
     branding Boolean
     componentEndOfLifeRoutes List
     colour String
-    opacity String
     loaned Boolean
     reuseSystems List
     manufacturers List
@@ -98,8 +94,6 @@ MATERIALS }o--o{ COMPONENTS : component_constituents
     CONTROLLED_LISTS {
     shapes optional
     functions optional
-    flexibility optional
-    opacities optional
     reuseSystem optional
   }
   RELATIONSHIP_LISTS {

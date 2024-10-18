@@ -1,12 +1,12 @@
 ---
 title: Multipacks
-description: Multipacks contain multiple identical packaging items within OSTFD.
+description: Multipacks contain multiple identical garments within OSTFD.
 # status: updated
 ---
 
 # Multipacks
 
-The multipacks schema contains information regarding the multipacks that are used to create loads. These are created from a number of either identical or different complete packages from the complete packaging schema.
+The multipacks schema contains information regarding the multipacks that are used to create loads. These are created from a number of either identical or different garments from the fashion and textile products schema.
 
 !!! note "Optional"
 
@@ -33,7 +33,7 @@ The multipacks schema contains information regarding the multipacks that are use
 ``` mermaid
 erDiagram
 COMPONENTS }o..o{ MULTIPACK : multipack_constituents
-COMPONENTS }o..o{ PRODUCTS : complete_packaging_constituents
+COMPONENTS }o..o{ PRODUCTS : products_constituents
 PRODUCTS }o..o{ MULTIPACK : multipack_constituents
   MULTIPACK {
     identifier UUID "*"

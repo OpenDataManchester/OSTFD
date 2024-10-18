@@ -23,6 +23,15 @@ A document that contains all the changes made to the standard.
         - careLabelClaims
 
  - Added yieldLossRatePercentage to Component Constituents
+ - Removed mention of packaging in:
+
+    - Identifiers
+    - Data Flow
+    - Core schema
+    - Components
+    - Fashion and textile products
+    - Multipacks
+    - Loads
 
 ## 0.1-alpha 2024-08-30 { id="0.0.3"}
 **Documents**

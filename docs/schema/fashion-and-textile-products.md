@@ -25,15 +25,10 @@ The fashion and textile products schema contains information regarding the produ
 |LOWcodeWOproduct|`optional`|String|The list of waste code for **only** the garment, by itself (excluding the product). LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of `15 01 02`. Please use [Dsposal](https://dsposal.uk/browse/ewc){target=_blank} or [legislation.gov](https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made){target=_blank} to find the LOWcode. **Note**: The LOWcode can based on its combination with other components and the actual product contained in the garment. Be sure to only include the garment LOWcode and not the garment with the product. If you cannot find the code or are uncertain please enter `Uncertain`.|
 |productType|`optional`|String|Information about the product contained in the garment. The entry here should be drawn from the [product type controlled list](../controlled-lists/product-types.md).|
 |LOWcodeWproduct|`optional`|String|The list of waste code for **everything** in the garment. LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of `15 01 02`. Please use [Dsposal](https://dsposal.uk/browse/ewc){target=_blank} or [legislation.gov](https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made){target=_blank} to find the LOWcode. **Note**: The LOWcode can based on its combination with other components and the actual product contained in the garment. Be sure to include the garment LOWcode with the product. If you cannot find the code or are uncertain please enter `Uncertain`.|
-|onTheGo|`mandatory`|Boolean|Is the garment often classed as packaging that will end up in street bins? Answer as: `TRUE` for yes and `FALSE` for no.|
-|householdWaste|`mandatory`|Boolean|Is the garment often classed as packaging that will end up in kerbside collections? Answer as: `TRUE` for yes and `FALSE` for no.|
-|depositReturnSchemes|`mandatory`|List|Which countries support a deposit return scheme for this particular garment? The entries here should be drawn from the [deposit return scheme controlled list](../controlled-lists//deposit-return-schemes.md).|
 |endOfLifeRoutes|`optional`|List|The information regarding this garment's proposed end of life routes. The entries should be the [product end of life routes](../relationship-lists/product-end-of-life-routes.md) identifiers.|
 |recyclability|`optional`|Boolean|Is the garment recyclable (as determined by a reputable source)? Answer as: `TRUE` for yes and `FALSE` for no.|
 |recyclabilityClaims|`optional`|List|The information regarding this recyclability claims. The entries should be the [recyclability claims relationship list](../relationship-lists/recyclability-claims.md) identifiers.|
 measurements :fontawesome-solid-square-plus:{ title="Added to this version" .addition }|`mandatory`|List|The information regarding the measurements of the garment. The entries should be from the [Measurements Relationship List](../relationship-lists/measurements.md).|
-|servingCapacity|`optional`|Integer|The serving capacity of the garment - how much of a product that can be contained in the garment.|
-|servingCapacityDate|`optional`|Date|The date that the serving capacity was last verified/measured. Use the format `yyyy-mm-dd` adhering to the [ISO 8601 dateTime standard](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |partOfMultipack|`mandatory`|Boolean|Is the garment part of a multipack? Answer as: `TRUE` for yes and `FALSE` for no.|
 |certification|`optional`|Boolean|Does the garment have a certificate (e.g. FSC, REACH, FSA etc.)? Answer as: `TRUE` for yes and `FALSE` for no.|
 |certificationClaims|`optional`|List|The information regarding the certifications. The entries should be the [certification claims relationship list](../relationship-lists/certification-claims.md) identifiers.|
@@ -60,9 +55,6 @@ COMPONENTS }o--o{ PRODUCTS : complete_packaging_constituents
     LOWcodeWOproduct String
     productType String
     LOWcodeWproduct String
-    onTheGo Boolean "*"
-    householdWaste Boolean "*"
-    depositReturnSchemes List "*"
     endOfLifeRoutes List
     recyclability Boolean
     recyclabilityClaims List
@@ -89,7 +81,6 @@ COMPONENTS }o--o{ PRODUCTS : complete_packaging_constituents
   COMPONENTS }o..o{ LOADS : load_constituents
       CONTROLLED_LISTS {
       productType optional
-      depositReturnScheme optional
     }
     RELATIONSHIP_LISTS {
       measurements mandatory

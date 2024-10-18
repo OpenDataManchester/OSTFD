@@ -1,6 +1,6 @@
 ---
 title: Data Flow
-description: The intented flow of data through the packaging value chain using OSTFD.
+description: The intented flow of data through the textiles and fashion value chain using OSTFD.
 ---
 
 # Data Flow
