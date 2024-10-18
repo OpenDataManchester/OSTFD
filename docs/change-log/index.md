@@ -5,6 +5,23 @@ title: Latest Updates
 # Latest Updates
 A document that contains all the changes made to the standard.
 
+## 0.1-alpha 2024-10-18 { id="0.0.4"}
+**Documents**
+
+ - Added care label information including
+
+    - Controlled List - Care Label Sources
+    - Relationship List - Care Label Claims
+    - Components - Fields:
+
+        - careLabel
+        - careLabelClaims
+
+    - Fashion and Textile Products - Fields:
+
+        - careLabel
+        - careLabelClaims
+
 ## 0.1-alpha 2024-08-30 { id="0.0.3"}
 **Documents**
 

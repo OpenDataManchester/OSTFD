@@ -37,6 +37,8 @@ measurements :fontawesome-solid-square-plus:{ title="Added to this version" .add
 |partOfMultipack|`mandatory`|Boolean|Is the garment part of a multipack? Answer as: `TRUE` for yes and `FALSE` for no.|
 |certification|`optional`|Boolean|Does the garment have a certificate (e.g. FSC, REACH, FSA etc.)? Answer as: `TRUE` for yes and `FALSE` for no.|
 |certificationClaims|`optional`|List|The information regarding the certifications. The entries should be the [certification claims relationship list](../relationship-lists/certification-claims.md) identifiers.|
+|careLabel|`optional`|Boolean|Does the garment have a care label (e.g. GINETEX, ASTM D5489, ISO 20471 etc.)? Answer as: `TRUE` for yes and `FALSE` for no.|
+|careLabelClaims|`optional`|List|The information regarding the care labels. The entries should be the [care label claims relationship list](../relationship-lists/care-label-claims.md) identifiers.|
 |manufacturers|`optional`|List|The information regarding the manufacturer(s). The entries should be the [Organisations Relationship List](../relationship-lists/organisations.md) identifiers.|
 |manufacturedCountry|`optional`|String|The country the component was manufactured in. Use the country numeric [ISO codes](https://www.iso.org/obp/ui/#search){target=_blank} as described in the [ISO 3166 international standard](https://www.iso.org/iso-3166-country-codes.html){target=_blank}.|
 |updateDate|`mandatory`|Date|The date that the garment was provided/last updated. Use the format `yyyy-mm-dd` adhering to the [ISO 8601 dateTime standard](https://www.iso.org/iso-8601-date-and-time-format.html).|
@@ -70,6 +72,8 @@ COMPONENTS }o--o{ PRODUCTS : complete_packaging_constituents
     partOfMultipack Boolean "*"
     certification Boolean
     certificationClaims List
+    careLabel Boolean
+    careLabelClaims List
     manufacturers List
     manufacturedCountry String
     updateDate Date "*"
@@ -92,6 +96,7 @@ COMPONENTS }o--o{ PRODUCTS : complete_packaging_constituents
       productEndOfLifeRoutes mandatory
       recyclabilityClaims optional
       certificationClaims optional
+      careLabelClaims optional
       organisations optional
     }
 ```

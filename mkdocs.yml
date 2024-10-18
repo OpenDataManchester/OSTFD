@@ -67,33 +67,35 @@ nav:
     - Load Constituents: constituent-lists/load-constituents.md
   - Relationship Lists:
     - Relationship Lists: relationship-lists/index.md
+    - Care Label Claims: relationship-lists/care-label-claims.md
     - Certification Claims: relationship-lists/certification-claims.md
-    - Recyclability Claims: relationship-lists/recyclability-claims.md
     - Component End of Life Routes: relationship-lists/component-end-of-life-routes.md
-    - Product End of Life Routes: relationship-lists/product-end-of-life-routes.md
-    - Recycled Content Claims: relationship-lists/recycled-content-claims.md
-    - Organisations: relationship-lists/organisations.md
     - Measurements: relationship-lists/measurements.md
+    - Organisations: relationship-lists/organisations.md
+    - Product End of Life Routes: relationship-lists/product-end-of-life-routes.md
+    - Recyclability Claims: relationship-lists/recyclability-claims.md
+    - Recycled Content Claims: relationship-lists/recycled-content-claims.md
   - Controlled Lists:
     - Definition: controlled-lists/index.md
-    - External Identifiers: controlled-lists/external-identifiers.md
-    - Material Types: controlled-lists/material-types.md
-    - Certification Sources: controlled-lists/certification-sources.md
-    - Material Purposes: controlled-lists/material-purposes.md
-    - Functions: controlled-lists/functions.md
-    - Recyclability Sources: controlled-lists/recyclability-sources.md
-    - Shapes: controlled-lists/shapes.md
-    - Flexibility: controlled-lists/flexibility.md
+    - Care Label Sources: controlled-lists/care-label-sources.md
     - Component Disruptors: controlled-lists/component-disruptors.md
-    - Opacities: controlled-lists/opacities.md
-    - Reuse Systems: controlled-lists/reuse-systems.md
-    - Recycled Content Evidence Types: controlled-lists/recycled-content-evidence-types.md
-    - Product Types: controlled-lists/product-types.md
+    - Certification Sources: controlled-lists/certification-sources.md
     - Deposit Return Schemes: controlled-lists/deposit-return-schemes.md
-    - Fashion and Textile Product Disruptors: controlled-lists/product-disruptors.md
-    - Levels: controlled-lists/levels.md
     - End of Life Routes: controlled-lists/end-of-life-routes.md
+    - External Identifiers: controlled-lists/external-identifiers.md
+    - Fashion and Textile Product Disruptors: controlled-lists/product-disruptors.md
+    - Flexibility: controlled-lists/flexibility.md
+    - Functions: controlled-lists/functions.md
+    - Levels: controlled-lists/levels.md
+    - Material Purposes: controlled-lists/material-purposes.md
+    - Material Types: controlled-lists/material-types.md
     - Measures: controlled-lists/measures.md
+    - Opacities: controlled-lists/opacities.md
+    - Product Types: controlled-lists/product-types.md
+    - Recyclability Sources: controlled-lists/recyclability-sources.md
+    - Recycled Content Evidence Types: controlled-lists/recycled-content-evidence-types.md
+    - Reuse Systems: controlled-lists/reuse-systems.md
+    - Shapes: controlled-lists/shapes.md
   # - Supporting Files: 7_Supporting_Files/7_2_Example_Files.md
   # - Governance: 8_Governance/8_1_Governance.md
   - Licence: licence/index.md
