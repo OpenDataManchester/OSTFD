@@ -22,6 +22,8 @@ A document that contains all the changes made to the standard.
         - careLabel
         - careLabelClaims
 
+ - Added yieldLossRatePercentage to Component Constituents
+
 ## 0.1-alpha 2024-08-30 { id="0.0.3"}
 **Documents**
 
