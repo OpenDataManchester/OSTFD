@@ -22,9 +22,6 @@ The fashion and textile products schema contains information regarding the produ
 |externalIdentifiers|`optional`|Dictionary|A dictionary of identifiers that is used to identify the garment in other data standards, software systems or protocols. For example: manufacturer's own primary key, bar codes or global trade item number (gtin). To provide external identifiers follow this format. `{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}`. The entries could be drawn from the [External Identifiers Controlled List](../controlled-lists/external-identifiers.md).|
 |imageURLs|`optional`|List|URL(s) that links to a picture of the garment. Please see the guidelines below on how to capture the image and name the URL.|
 |constituentIdentifiers|`mandatory`|List|The information regarding the consituents that are combined to create this garment. The entries should be from the [Garment Constituents Relationship List](../constituent-lists/product-constituents.md) identifier.|
-|LOWcodeWOproduct|`optional`|String|The list of waste code for **only** the garment, by itself (excluding the product). LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of `15 01 02`. Please use [Dsposal](https://dsposal.uk/browse/ewc){target=_blank} or [legislation.gov](https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made){target=_blank} to find the LOWcode. **Note**: The LOWcode can based on its combination with other components and the actual product contained in the garment. Be sure to only include the garment LOWcode and not the garment with the product. If you cannot find the code or are uncertain please enter `Uncertain`.|
-|productType|`optional`|String|Information about the product contained in the garment. The entry here should be drawn from the [product type controlled list](../controlled-lists/product-types.md).|
-|LOWcodeWproduct|`optional`|String|The list of waste code for **everything** in the garment. LOW code is synonymous with European Waste Catalogue Code (EWC). For example: an empty bottle would have a LOWcode of `15 01 02`. Please use [Dsposal](https://dsposal.uk/browse/ewc){target=_blank} or [legislation.gov](https://www.legislation.gov.uk/uksi/2005/895/schedule/1/made){target=_blank} to find the LOWcode. **Note**: The LOWcode can based on its combination with other components and the actual product contained in the garment. Be sure to include the garment LOWcode with the product. If you cannot find the code or are uncertain please enter `Uncertain`.|
 |endOfLifeRoutes|`optional`|List|The information regarding this garment's proposed end of life routes. The entries should be the [product end of life routes](../relationship-lists/product-end-of-life-routes.md) identifiers.|
 |recyclability|`optional`|Boolean|Is the garment recyclable (as determined by a reputable source)? Answer as: `TRUE` for yes and `FALSE` for no.|
 |recyclabilityClaims|`optional`|List|The information regarding this recyclability claims. The entries should be the [recyclability claims relationship list](../relationship-lists/recyclability-claims.md) identifiers.|
@@ -52,9 +49,6 @@ COMPONENTS }o--o{ PRODUCTS : complete_packaging_constituents
     externalIdentifiers Dictionary
     imageURLs List
     constituentIdentifiers List "*"
-    LOWcodeWOproduct String
-    productType String
-    LOWcodeWproduct String
     endOfLifeRoutes List
     recyclability Boolean
     recyclabilityClaims List
@@ -72,16 +66,12 @@ COMPONENTS }o--o{ PRODUCTS : complete_packaging_constituents
     releaseDate Date
     discontinueDate Date
   }
-  PRODUCTS }o..o{ CONTROLLED_LISTS : attributes
   PRODUCTS }O..O{ RELATIONSHIP_LISTS : attributes
   PRODUCTS }o..o{ MULTIPACK : multipack_constituents
   COMPONENTS }o..o{ MULTIPACK : multipack_constituents
   PRODUCTS }o..o{ LOADS : load_constituents
   MULTIPACK }o..o{ LOADS : load_constituents
   COMPONENTS }o..o{ LOADS : load_constituents
-      CONTROLLED_LISTS {
-      productType optional
-    }
     RELATIONSHIP_LISTS {
       measurements mandatory
       productEndOfLifeRoutes mandatory
