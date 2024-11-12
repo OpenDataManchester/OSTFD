@@ -136,16 +136,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/data-formats/</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/glossary/</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://opendatamanchester.github.io/OSTFD/governance/</loc>
          <lastmod>2024-11-12</lastmod>
          <changefreq>daily</changefreq>
