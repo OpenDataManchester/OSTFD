@@ -14,7 +14,7 @@ The loads constituents list identifies all the fashion and textile products and 
 |combinationIdentifier|`mandatory`|UUID|The unique identifier of the items that this component is made of. There must be an equivalent record in the `Components`, `Complete_Packaging` OR `Multipacks` data.|
 |name|`optional`|String|The name of this load constituent.|
 |externalIdentifiers|`optional`|Dictionary|A dictionary of identifiers that might be used to identify the load constituents in other systems. For example: manufacturer's own internal identifier, bar codes or global trade item number (gtin). To provide external identifiers please follow this format. `{'externalIdentifierName1': 'identifier1', 'externalIdentifierName2': 'identifier2'}`. The entries could be drawn from the [External Identifiers Controlled List](../controlled-lists/external-identifiers.md).|
-|quantityInLoad|`mandatory`|Integer|Number of units for the packaging items found in a load that this row corresponds to.|
+|quantityInLoad|`mandatory`|Integer|Number of units fashion and textile items found in a load that this row corresponds to.|
 
 ## Diagram
 
