@@ -31,5 +31,4 @@ erDiagram
     quantityInLoad Integer "*"
   }
   LOAD_CONSTITUENTS }o--o{ LOAD : within
-  LOAD_CONSTITUENTS }o--o{ CONTROLLED_LISTS : attributes
 ```

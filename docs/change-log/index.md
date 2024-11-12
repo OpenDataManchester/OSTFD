@@ -11,6 +11,7 @@ A document that contains all the changes made to the standard.
  - Removed reference to LOW and EWC Codes
  - Removed more references to packaging, packages and package
  - Removed product types
+ - Removed levels
 
 
 ## 0.1-alpha 2024-10-18 { id="0.0.4"}
