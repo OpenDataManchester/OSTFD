@@ -80,7 +80,7 @@ There are various online tools available, including but not limited to and in no
 === "T-SQL"
 
     ``` t-sql
-    NEWID ( )
+    SELECT NEWID () AS UUID
     ```
 
 ## Controlled List Identifier
@@ -97,7 +97,7 @@ External identifiers play a vital role in linking data within the OSTFD standard
 
 One example of an external identifier commonly used in the textile and fashion industry is the Global Trade Item Number (GTIN), which is widely recognised as a barcode. GTINs provide valuable links to external product data and facilitate efficient inventory management and supply chain operations.
 
-Within in the controlled lists OSTFD has included an optional controlled list for [external identifiers](../controlled-lists/external-identifiers.md), that suggest some examples from [schema.org](schema.org)
+Within in the controlled lists OSTFD has included an optional controlled list for [external identifiers](../controlled-lists/external-identifiers.md), that suggest some examples from [schema.org](https://schema.org)
 
 To provide external identifiers within the OSTFD standard, follow this format:
 
