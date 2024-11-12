@@ -5,7 +5,7 @@ description: The organisations relationship list.
 
 # Organisations
 
-The organisations relationship list identifies the organisations that are involved within the packaging value chain. This is used in the following schemas:
+The organisations relationship list identifies the organisations that are involved within the fashion and textiles value chain. This is used in the following schemas:
 
 * [Base Materials](../schema/base-materials.md)
 * [Materials](../schema/materials.md)
