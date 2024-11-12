@@ -86,11 +86,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://opendatamanchester.github.io/OSTFD/controlled-lists/levels/</loc>
-         <lastmod>2024-11-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://opendatamanchester.github.io/OSTFD/controlled-lists/material-purposes/</loc>
          <lastmod>2024-11-12</lastmod>
          <changefreq>daily</changefreq>
